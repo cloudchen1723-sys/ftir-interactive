@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#080f19">
+  <meta name="description" content="大学仪器分析课程：从光程差、干涉图到背景与样品的 FTIR 交互教学实验。">
+  <title>FTIR · 从信号到光谱</title>
+  <link rel="stylesheet" href="./lesson.css?v=model2">
+  <link rel="stylesheet" href="./instrument-ui.css?v=detail1">
+  <link rel="stylesheet" href="./story.css?v=simple2">
+  <link rel="stylesheet" href="./home.css?v=journey1">
+</head>
+<body data-view="home">
+  <a class="skip" href="#content">跳到教学内容</a>
+  <header class="home-header">
+    <a class="home-brand" href="./" aria-label="FTIR 首页">FTIR<span>傅里叶变换红外光谱仪<br>交互式科学课堂</span></a>
+    <nav aria-label="首页导航"><button data-view="home" aria-current="page">首页</button><button data-view="story">原理探索</button><button data-view="instrument">仪器结构</button></nav>
+    <span class="home-course">仪器分析 · 交互教学</span>
+  </header>
+  <header class="site-header">
+    <a class="brand" href="./"><span class="brand-symbol" aria-hidden="true">∿</span><span><strong>从信号到光谱</strong><small>傅里叶变换红外光谱仪 · 仪器分析</small></span></a>
+    <span class="edition">FTIR / 结构与原理</span>
+  </header>
+  <div class="shell">
+    <aside class="sidebar">
+      <p class="overline">学习与实验</p>
+      <nav aria-label="学习方式">
+        <button data-view="story" aria-current="page">跟着问题探索</button>
+        <button data-view="instrument">仪器全景</button>
+      </nav>
+      <details class="lab-menu"><summary>自由实验</summary><nav aria-label="深入实验">
+        <button data-view="absorption">能级与吸收</button>
+        <button data-view="measurement"><span>02</span> 模拟测量 <small>背景 → 样品 → 结果</small></button>
+        <button data-view="signals"><span>03</span> 信号怎样叠加 <small>单分量与宽带</small></button>
+        <button data-view="fourier"><span>04</span> 从信号找回波数 <small>周期匹配与变换</small></button>
+        <button data-view="quality"><span>05</span> 判断测量质量 <small>扫描长度与显示点</small></button>
+      </nav></details>
+      <div class="sidebar-note"><span class="status-dot"></span> 理想模型 · 合成数据<p>先看关系，再看公式。这里的操作不是实物仪器操作规程。</p></div>
+      <button id="resetAll" class="text-button">重置全部实验</button>
+    </aside>
+    <main id="content" tabindex="-1"></main>
+  </div>
+  <footer>中文仪器分析教学实验 <span>颜色用于区分路径与数据；红外辐射本身不可见。</span></footer>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript><p class="notice">本页需要 JavaScript 执行交互计算。FTIR 的基本链路：光程差编码 → 干涉图 → 单光束谱 → 样品／背景取比 → 透射率与吸光度。</p></noscript>
+  <script src="./physics.js?v=round1-3"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js" onload="window.dispatchEvent(new Event('ftir-3d-ready'))"></script>
+  <script src="./optics.js?v=model2"></script>
+  <script src="./part-detail.js?v=1"></script>
+  <script src="./instrument.js?v=detail1"></script>
+  <script src="./absorption.js?v=1"></script>
+  <script src="./story-model.js?v=1"></script>
+  <script src="./story.js?v=simple2"></script>
+  <script src="./home-signal.js?v=journey1"></script>
+  <script src="./home-lab.js?v=journey1"></script>
+  <script src="./home-transition.js?v=journey1"></script>
+  <script src="./home.js?v=journey1"></script>
+  <script src="./lesson.js?v=journey1"></script>
+</body>
+</html>

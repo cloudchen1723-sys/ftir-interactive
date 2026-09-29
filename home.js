@@ -1,0 +1,10 @@
+/* Approved cover layout; only the signal renderer is replaced. */
+(function(){
+  'use strict';
+  window.mountFTIRHome=function(host){
+    host.innerHTML=`<div class="home-journey"><div class="home-stage"><section class="home-hero" aria-labelledby="home-title"><div class="home-copy"><p class="home-kicker">看不见的光，可读懂的分子</p><h1 id="home-title">从一道干涉图，<br>到一张<span>分子指纹</span></h1><p class="home-subtitle">看懂 FTIR 如何把分子的红外吸收变成一张光谱。</p><div class="home-actions"><button class="home-primary" data-transition-start>开始探索 <span aria-hidden="true">↗</span></button><button class="home-secondary" data-go="instrument">自由探索仪器 <span aria-hidden="true">→</span></button></div></div><figure class="home-signal"><canvas class="signal-material" role="img" aria-label="连续 FTIR 信号材质：合成教学数据，非定量视觉；不是傅里叶变换过程动画。蓝金为视觉编码，细线数量不代表物理谱分量数。">合成干涉信号与恢复谱形的连续示意。</canvas><figcaption class="sr-only">合成教学数据 · 连续视觉隐喻，非定量曲线；颜色不代表红外可见颜色。</figcaption></figure><div class="home-end"><span>FTIR / 结构与原理</span><span>从一次测量，理解一台仪器。</span></div></section><div class="home-lab" role="region" aria-label="Michelson 光学核心" inert aria-hidden="true"><p class="sr-only">理想结构示意：分束器建立通向固定镜和移动镜的两路，返回后沿输出方向到探测器。向上滚动可返回首页封面。</p><div class="home-lab-core" aria-hidden="true"></div><svg class="home-lab-fallback" viewBox="0 0 600 360" role="img" aria-label="Michelson 光学核心示意：分束器分出通向固定镜和移动镜的两路，返回后沿输出方向到探测器"><path d="M35 178H285V48M285 178H515M285 178V320" fill="none" stroke="#8aaebe" stroke-width="2"/><path d="M257 206L313 150M255 48H315M515 146V210" fill="none" stroke="#c4d6db" stroke-width="10"/><circle cx="285" cy="305" r="15" fill="#506f7d"/></svg><div class="home-lab-next"><p>从仪器内部，继续理解它怎样得到光谱。</p><button data-go="story">进入教学探索 <span aria-hidden="true">→</span></button></div></div><div class="home-continuity" aria-hidden="true"></div></div></div>`;
+    const disposeSignal=window.FTIRHomeSignal.mount(host.querySelector('.signal-material'),window.FTIRPhysics);
+    const disposeTransition=window.mountFTIRHomeTransition(host.querySelector('.home-journey'),disposeSignal);
+    return()=>{disposeTransition();disposeSignal();};
+  };
+})();

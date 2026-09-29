@@ -1,0 +1,81 @@
+/* Cover-only styles. The teaching scenes keep their existing dark palette. */
+.home-header{display:none}
+body[data-view=home]{color-scheme:light;--ink:#14242e;--muted:#617080;--paper:#fafbf9;--line:#dee4e8;--green:#225dbc;background:#fafbf9;color:#14242e;font-family:"Microsoft YaHei","PingFang SC",system-ui,sans-serif}
+body[data-view=home] .site-header,body[data-view=home] .sidebar,body[data-view=home]>footer{display:none}
+body[data-view=home] .shell{max-width:none;margin:0;display:block}
+body[data-view=home] main{padding:0;max-width:none;margin:0;outline:none}
+body[data-view=home] .home-header{display:flex;align-items:center;justify-content:space-between;gap:28px;padding:23px 4.2%;height:96px;box-sizing:border-box}
+.home-brand{display:flex;align-items:center;gap:19px;color:#14242e;text-decoration:none;font:38px Georgia,"Times New Roman",serif;letter-spacing:.045em}
+.home-brand>span{border-left:1px solid #cdd5dc;padding-left:19px;font:12px/1.9 "Microsoft YaHei",sans-serif;letter-spacing:.1em;color:#657585}
+.home-header nav{display:flex;gap:34px}.home-header nav button{border:0;border-radius:0;background:none;color:#354553;padding:11px 0;font-size:15px;position:relative}
+.home-header nav button[aria-current=page]:after{content:"";position:absolute;bottom:2px;left:0;width:100%;height:2px;background:#152630}
+.home-header .home-course{font-size:12px;color:#72818e;letter-spacing:.1em}
+.home-hero{min-height:calc(100svh - 96px);display:flex;flex-direction:column;overflow:hidden}
+.home-copy{text-align:center;padding:48px 24px 0;position:relative;z-index:1}
+.home-kicker{font-size:13px;letter-spacing:.3em;color:#768696;margin:0 0 23px}
+.home-copy h1{font-family:"Noto Serif CJK SC","Source Han Serif SC","Songti SC","SimSun",serif;font-size:clamp(48px,5.35vw,86px);font-weight:400;line-height:1.27;letter-spacing:.015em;margin:0;color:#10212b}
+.home-copy h1 span{color:#195dc4}.home-subtitle{font-size:clamp(16px,1.4vw,21px);line-height:1.8;letter-spacing:.035em;margin:22px 0 0;color:#42505c}
+.home-actions{display:flex;align-items:center;justify-content:center;gap:28px;margin-top:29px}
+.home-actions button{font:16px "Microsoft YaHei",sans-serif;min-height:50px;padding:14px 28px;transition:background .18s,color .18s;cursor:pointer}
+.home-actions .home-primary{background:#122630;color:#fff;border:1px solid #122630;border-radius:30px;min-width:173px}.home-primary span{display:inline-block;margin-left:24px;font-size:20px}
+.home-actions .home-primary:hover{background:#225dbc;border-color:#225dbc;color:#fff}.home-actions .home-secondary{background:none;border:0;color:#4c6070;padding:14px 0;border-radius:0}.home-secondary span{margin-left:12px}.home-actions .home-secondary:hover{background:transparent;color:#195dc4}
+body[data-view=home] button:focus-visible,body[data-view=home] a:focus-visible{outline:2px solid #195dc4;outline-offset:6px}
+.home-header nav button:hover{background:none!important;color:#195dc4!important}
+.home-signal{width:100%;margin:16px 0 0;flex:1;display:flex;flex-direction:column;justify-content:center;min-height:220px}
+.home-signal svg{width:100%;height:auto;max-height:340px;display:block;overflow:visible}
+.home-signal figcaption{display:flex;justify-content:space-between;align-items:center;margin:-5px 4.2% 0;font-size:12px;color:#758696;letter-spacing:.08em}
+.home-signal figcaption>span:first-child{display:flex;align-items:center;gap:14px}.home-caption-line{display:inline-block;width:45px;height:1px;background:#b7c4cf}
+.home-end{display:flex;align-items:center;justify-content:space-between;margin:30px 4.2% 23px;padding-top:16px;border-top:1px solid #e3e7e9;color:#7a8792;font-size:12px;letter-spacing:.08em}
+@media(min-width:1700px){.home-copy{padding-top:60px}.home-signal{margin-top:24px}}
+@media(max-width:900px){.home-header .home-course{display:none}.home-header nav{gap:22px}.home-brand>span{font-size:11px}.home-copy{padding-top:45px}.home-copy h1{font-size:60px}.home-signal svg{width:125%;max-width:none;margin-left:-12.5%}}
+@media(max-width:580px){body[data-view=home] .home-header{height:80px;padding:16px 22px;gap:15px}.home-brand{font-size:31px}.home-brand>span{display:none}.home-header nav{gap:18px}.home-header nav button{font-size:13px}.home-hero{min-height:calc(100svh - 80px)}.home-copy{padding:46px 20px 0}.home-kicker{font-size:12px;letter-spacing:.15em;margin-bottom:25px}.home-copy h1{font-size:clamp(35px,9vw,50px);line-height:1.4;letter-spacing:0}.home-subtitle{font-size:16px;max-width:310px;margin:23px auto 0;line-height:1.9}.home-actions{gap:20px;margin-top:28px}.home-actions button{font-size:14px}.home-actions .home-primary{min-width:140px;padding:12px 20px}.home-primary span{margin-left:14px}.home-signal{margin-top:35px;min-height:210px}.home-signal svg{width:165%;margin-left:-18%;max-height:none}.home-signal figcaption{margin:18px 22px 0;gap:14px;font-size:10px;letter-spacing:0}.home-end{margin:28px 22px 20px;font-size:10px;letter-spacing:0}.home-caption-line{width:22px}}
+@media(prefers-reduced-motion:reduce){.home-actions button{transition:none}}
+/* Refinement after the first browser pass: keep the entire signal in a short
+ * projection viewport, and preserve both domains rather than crop mobile art. */
+@media(min-width:901px) and (max-height:820px){
+  body[data-view=home] .home-header{height:80px;padding-top:16px;padding-bottom:16px}
+  .home-hero{min-height:calc(100svh - 80px)}.home-copy{padding-top:24px}
+  .home-kicker{margin-bottom:17px;font-size:12px}
+  .home-copy h1{font-size:clamp(54px,5vw,72px);line-height:1.2}
+  .home-subtitle{margin-top:18px;font-size:17px}.home-actions{margin-top:22px}
+  .home-signal{margin-top:12px;min-height:190px}.home-signal svg{max-height:225px}
+  .home-end{margin-top:20px;margin-bottom:18px;padding-top:12px}
+}
+@media(max-width:900px){.home-signal svg{width:100%;margin-left:0}}
+@media(max-width:580px){
+  .home-copy{padding-top:34px}.home-signal svg{height:210px;max-height:none}
+  .home-signal{margin-top:20px}.home-signal figcaption{font-size:11px;flex-direction:column;gap:9px;margin-top:8px}
+}
+/* Signal-only pass: larger uninterrupted visual, without changing the Hero copy. */
+.home-signal{min-height:300px}
+.home-signal svg{height:clamp(300px,28vw,460px);max-height:none}
+.home-signal .signal-material{display:block;width:100%;height:clamp(300px,28vw,460px)}
+.home-signal figcaption.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);margin:0;padding:0}
+@media(min-width:901px) and (max-height:820px){.home-signal{min-height:315px}.home-signal svg{height:315px;max-height:none}}
+@media(max-width:580px){.home-signal{min-height:285px}.home-signal svg{height:285px;max-height:none}}
+@media(min-width:901px) and (max-height:820px){.home-signal .signal-material{height:315px}}
+@media(max-width:580px){.home-signal .signal-material{height:285px}}
+
+/* One pinned editorial-to-optical timeline; the approved cover layout is unchanged at p=0. */
+body[data-view=home] .home-header{position:sticky;top:0;z-index:20;background:var(--header-background,#fafbf9)}
+body[data-view=home] .home-brand,body[data-view=home] .home-header nav button{color:var(--header-ink,#14242e)}
+body[data-view=home] .home-brand>span,body[data-view=home] .home-course{color:var(--header-muted,#657585)}
+body[data-view=home] .home-header nav button[aria-current=page]:after{background:var(--header-rule,#152630)}
+.home-journey{height:265svh;background:#fafbf9}
+.home-stage{position:sticky;top:96px;height:calc(100svh - 96px);overflow:hidden;background:#fafbf9;isolation:isolate;--cover-opacity:1;--signal-opacity:1;--signal-contraction:1;--lab-dark:0;--model-opacity:0;--thread-opacity:0;--lab-next-opacity:0}
+.home-stage .home-hero{min-height:100%;position:relative;z-index:1}
+.home-stage .home-copy,.home-stage .home-end{opacity:var(--cover-opacity)}
+.home-stage .signal-material{opacity:var(--signal-opacity);transform:scaleY(var(--signal-contraction));transform-origin:50% 55%;will-change:transform,opacity}
+.home-lab{position:absolute;inset:0;z-index:2;background:radial-gradient(ellipse at 50% 43%,#17232d,#0b1118 67%);opacity:var(--lab-dark);pointer-events:none}
+.home-lab:not([inert]){pointer-events:auto}
+.home-lab-core{position:absolute;inset:1% 4% 12%;opacity:var(--model-opacity)}
+.home-lab-core canvas{display:block;width:100%;height:100%}
+.home-lab-fallback{position:absolute;width:min(68vw,850px);height:58%;left:50%;top:45%;transform:translate(-50%,-50%);opacity:var(--model-opacity)}
+.home-lab-fallback[hidden]{display:none}
+.home-lab-next{position:absolute;bottom:5.5%;left:0;right:0;text-align:center;opacity:var(--lab-next-opacity);color:#bdccd3;font-size:15px;z-index:3}
+.home-lab-next p{margin:0 0 14px}.home-lab-next button{background:transparent;border:1px solid #8ba6b078;color:#e3edf0;border-radius:30px;padding:11px 24px;font-size:15px}
+.home-lab-next button:hover:not(:disabled),.home-lab-next button:focus-visible{background:#1c313d;border-color:#9cbecb}
+.home-lab-next button span{margin-left:20px}
+.home-continuity{position:absolute;left:0;right:0;top:78%;height:1px;z-index:3;pointer-events:none;opacity:var(--thread-opacity);background:linear-gradient(90deg,transparent 2%,#668fbc 30%,#c7a274 48%,#82b8c5 66%,transparent 98%)}
+@media(max-width:580px){body[data-view=home] .home-stage{top:80px;height:calc(100svh - 80px)}.home-journey{height:185svh}.home-lab-core{inset:10% 0 18%}.home-lab-fallback{width:96vw;height:47%;top:44%}.home-lab-next{bottom:9%;padding:0 20px;font-size:14px}.home-continuity{top:72%}}
+@media(prefers-reduced-motion:reduce){body[data-view=home] .home-lab{transition:opacity .22s linear!important}body[data-view=home] .home-stage .home-copy,body[data-view=home] .home-stage .home-signal{transition:opacity .22s linear!important}}
