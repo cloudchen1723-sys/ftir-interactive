@@ -1,0 +1,84 @@
+{
+  "view1280": {
+    "width": 1280,
+    "height": 720,
+    "gsap": "3.13.0",
+    "shots": [
+      {
+        "name": "entry",
+        "beat": "0"
+      },
+      {
+        "name": "beat1",
+        "beat": "1"
+      },
+      {
+        "name": "beat2",
+        "beat": "2"
+      },
+      {
+        "name": "beat3",
+        "beat": "3"
+      },
+      {
+        "name": "beat4",
+        "beat": "4"
+      },
+      {
+        "name": "beat5",
+        "beat": "5"
+      }
+    ],
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "top": 0,
+      "right": 1280,
+      "bottom": 720,
+      "left": 0
+    }
+  },
+  "view1024": {
+    "width": 1024,
+    "height": 768,
+    "gsap": "3.13.0",
+    "shots": [
+      {
+        "name": "entry",
+        "beat": "0"
+      },
+      {
+        "name": "beat1",
+        "beat": "1"
+      },
+      {
+        "name": "beat2",
+        "beat": "2"
+      },
+      {
+        "name": "beat3",
+        "beat": "3"
+      },
+      {
+        "name": "beat4",
+        "beat": "4"
+      },
+      {
+        "name": "beat5",
+        "beat": "5"
+      }
+    ],
+    "stage": {
+      "x": 0,
+      "y": 96,
+      "width": 1024,
+      "height": 576,
+      "top": 96,
+      "right": 1024,
+      "bottom": 672,
+      "left": 0
+    }
+  }
+}

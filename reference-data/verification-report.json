@@ -1,0 +1,190 @@
+{
+  "generatedAt": "2026-09-29T12:27:52.185Z",
+  "datasets": [
+    {
+      "id": "acetone-pnnl-2025",
+      "sourceFile": "NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+      "sourceSha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9",
+      "outputFile": "acetone.json",
+      "outputSha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a",
+      "pointCount": 19908,
+      "xRange": {
+        "min": 400.182104,
+        "max": 9997.903769
+      },
+      "yRange": {
+        "min": 7.542e-7,
+        "max": 0.4668434262
+      },
+      "sourceDeclaredPointCount": null,
+      "checks": {
+        "pointCountMatchesSource": true,
+        "xStrictlyDescending": true,
+        "allValuesFinite": true,
+        "jsonRoundTripExact": true
+      },
+      "localMaximaForReview": [
+        {
+          "windowCm1": [
+            1680,
+            1750
+          ],
+          "point": [
+            1715.427229,
+            0.4668434262
+          ]
+        },
+        {
+          "windowCm1": [
+            1200,
+            1240
+          ],
+          "point": [
+            1222.210307,
+            0.3223489225
+          ]
+        },
+        {
+          "windowCm1": [
+            1340,
+            1380
+          ],
+          "point": [
+            1362.991677,
+            0.2525934577
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ethanol-pnnl-2025",
+      "sourceFile": "NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+      "sourceSha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467",
+      "outputFile": "ethanol.json",
+      "outputSha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b",
+      "pointCount": 19907,
+      "xRange": {
+        "min": 399.689557,
+        "max": 9996.944655
+      },
+      "yRange": {
+        "min": 2.6406847e-7,
+        "max": 0.4199425
+      },
+      "sourceDeclaredPointCount": null,
+      "checks": {
+        "pointCountMatchesSource": true,
+        "xStrictlyDescending": true,
+        "allValuesFinite": true,
+        "jsonRoundTripExact": true
+      },
+      "localMaximaForReview": [
+        {
+          "windowCm1": [
+            3100,
+            3700
+          ],
+          "point": [
+            3338.26435,
+            0.087796532
+          ]
+        },
+        {
+          "windowCm1": [
+            1020,
+            1080
+          ],
+          "point": [
+            1050.081254,
+            0.4199425
+          ]
+        },
+        {
+          "windowCm1": [
+            2850,
+            3000
+          ],
+          "point": [
+            2974.257136,
+            0.10802076
+          ]
+        }
+      ]
+    },
+    {
+      "id": "polystyrene-pnnl-2017",
+      "sourceFile": "polystyrene-pnnl.jdx",
+      "sourceSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+      "outputFile": "polystyrene.json",
+      "outputSha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1",
+      "pointCount": 15345,
+      "xRange": {
+        "min": 399.68952816,
+        "max": 7797.4901
+      },
+      "yRange": {
+        "min": 0.00004419990460032,
+        "max": 0.5429999844302982
+      },
+      "sourceDeclaredPointCount": 15345,
+      "checks": {
+        "pointCountMatchesSource": true,
+        "xStrictlyDescending": true,
+        "allValuesFinite": true,
+        "jsonRoundTripExact": true
+      },
+      "localMaximaForReview": [
+        {
+          "windowCm1": [
+            3000,
+            3050
+          ],
+          "point": [
+            3025.8508755799994,
+            0.03310000140072768
+          ]
+        },
+        {
+          "windowCm1": [
+            1585,
+            1615
+          ],
+          "point": [
+            1601.6392691399997,
+            0.02789999908908928
+          ]
+        },
+        {
+          "windowCm1": [
+            1475,
+            1510
+          ],
+          "point": [
+            1493.16005064,
+            0.08410000079054016
+          ]
+        },
+        {
+          "windowCm1": [
+            735,
+            770
+          ],
+          "point": [
+            757.4298842799999,
+            0.10700000109960575
+          ]
+        },
+        {
+          "windowCm1": [
+            680,
+            715
+          ],
+          "point": [
+            698.6100413599997,
+            0.5429999844302982
+          ]
+        }
+      ]
+    }
+  ]
+}

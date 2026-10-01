@@ -157,7 +157,7 @@
     selection.rotation.x=-Math.PI/2;selection.visible=false;selection.castShadow=false;
     // Non-occluding DOM hotspots are keyboard/touch alternatives to mesh picking.
     const names={source:'红外光源',collimator:'准直组件',splitter:'分束器',fixed:'固定镜',moving:'移动镜',sample:'样品仓',collector:'收集光学',detector:'探测器',laser:'参考激光',electronics:'信号采集'};
-    let selected='',closed=false,mode='inside',disposed=false,mm=0,drag=null,down=null,raf=0,detail=null;
+    let selected='',closed=false,mode='inside',disposed=false,mm=0,drag=null,down=null,raf=0,detail=null,hotspotWhitelist=null,hotspotOffsets={};
     function inspect(id){
       if(!objects[id]||!window.FTIRPartDetail)return;
       detail?.dispose();
@@ -179,12 +179,17 @@
       const w=host.clientWidth,h=host.clientHeight,used=[];
       for(const {id,el} of labels){
         const g=objects[id],p=new T.Vector3();g.getWorldPosition(p);p.y=O.Y+.74;p.project(camera);
-        const x=(p.x*.5+.5)*w,y=(-p.y*.5+.5)*h;
-        const outside=closed||!g.visible||p.z>1||x<35||x>w-35||y<45||y>h-90;
+        const rawX=(p.x*.5+.5)*w,rawY=(-p.y*.5+.5)*h,offset=hotspotOffsets[id]||[0,0],x=rawX+offset[0],y=rawY+offset[1];
+        const outside=closed||!g.visible||!!hotspotWhitelist&&!hotspotWhitelist.has(id)||p.z>1||x<35||x>w-35||y<45||y>h-90;
         el.hidden=outside;el.style.left=x+'px';el.style.top=y+'px';el.classList.toggle('selected',selected===id);
         const collision=used.some(a=>Math.abs(a.x-x)<90&&Math.abs(a.y-y)<27);
         el.classList.toggle('compact',collision&&selected!==id);if(!outside&&!collision)used.push({x,y});
       }
+    }
+    function getPartAnchors(ids){
+      const wanted=ids||Object.keys(objects),w=host.clientWidth,h=host.clientHeight,out={};
+      wanted.forEach(id=>{const g=objects[id];if(!g||!w||!h)return;const p=new T.Vector3();g.getWorldPosition(p);p.y=O.Y+.74;p.project(camera);out[id]={x:(p.x*.5+.5)*w,y:(-p.y*.5+.5)*h,visible:g.visible&&p.z<=1};});
+      return out;
     }
     function requestDraw(){if(raf||disposed)return;raf=requestAnimationFrame(()=>{raf=0;draw();});}
     function setMirror(value){
@@ -246,7 +251,7 @@
     controls.addEventListener('change',requestDraw);
     const observer=new ResizeObserver(resize);observer.observe(host);resize();view();
     return {
-      setMirror,focus:id=>select(id,false),inspect:id=>{select(id,false);inspect(id);},setMode,view,
+      setMirror,focus:id=>select(id,false),inspect:id=>{select(id,false);inspect(id);},setMode,view,getPartAnchors,getCameraPose(){return {position:camera.position.toArray(),target:controls.target.toArray()};},setCameraPose(pose={}){if(Array.isArray(pose.position))camera.position.fromArray(pose.position);if(Array.isArray(pose.target))controls.target.fromArray(pose.target);camera.updateProjectionMatrix();controls.update();requestDraw();},setHotspotsVisible(ids){hotspotWhitelist=ids===undefined?null:new Set(ids||[]);labels.forEach(l=>{l.el.hidden=!!hotspotWhitelist&&!hotspotWhitelist.has(l.id);});requestDraw();},setHotspotLabels(map={}){labels.forEach(l=>{const name=map[l.id];if(name){l.el.innerHTML='<i></i><span>'+name.zh+'<small>'+(name.en||'')+'</small></span>';}});requestDraw();},setHotspotOffsets(map={}){hotspotOffsets=map||{};requestDraw();},
       setSample(visible){sampleInsert.visible=visible;requestDraw();},
       trace(step){Object.entries(beamObjects).forEach(([id,o])=>{const groups=[['input'],['fixed','moving'],['output','detect']];o.material.opacity=(step<0||groups[step]?.includes(id)) ? .7 : .07;});requestDraw();},
       reset(){selected='';selection.visible=false;view();callbacks.onSelect?.('');},

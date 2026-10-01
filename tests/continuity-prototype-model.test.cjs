@@ -1,0 +1,12 @@
+const assert=require('node:assert/strict');
+const m=require('../continuity-prototype-model.js');
+assert.equal(m.states.length,10);
+assert.deepEqual(m.states.map(s=>s.id),[0,1,2,3,4,5,6,7,8,9]);
+assert.equal(m.mirrorToOPD(5),10);
+assert.equal(m.periodCount(1000),1);
+assert.equal(m.periodCount(3000),3);
+assert.equal(m.power(1000,0),1);
+const a=m.curve(1000),b=m.curve(3000,.6);
+assert.equal(a.xs.length,241);assert.equal(b.xs.length,241);
+assert.ok(Math.abs(a.ys[0]-1)<1e-12);assert.ok(Math.abs(b.ys[0]-.6)<1e-12);
+console.log('PASS continuity model: N0-N3 states, OPD doubling, shared-axis periods and weighted signals');

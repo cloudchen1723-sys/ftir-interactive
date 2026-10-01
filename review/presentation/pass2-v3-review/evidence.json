@@ -1,0 +1,28 @@
+{
+  "evidence": {
+    "beat": "5",
+    "progress": "1.0000",
+    "label": "3000 cm⁻¹ 响应",
+    "power": "1.00",
+    "recordOpacity": "1",
+    "dot1": {
+      "x": "1480",
+      "y": "245"
+    },
+    "dot3": {
+      "x": "1480",
+      "y": "485"
+    },
+    "trace1Length": 4281,
+    "trace3Length": 4032,
+    "mirrorLabel": "330",
+    "ticks": "M850 642v16M1165 642v16M1480 642v16"
+  },
+  "errors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+  ]
+}

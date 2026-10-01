@@ -1,0 +1,75 @@
+{
+  "rec": [
+    {
+      "beat": 0,
+      "progress": "0.7400",
+      "trace1000": 8,
+      "trace3000": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(39.30937499999999 0)",
+      "p1000": "0.04",
+      "track3Transform": null
+    },
+    {
+      "beat": 1,
+      "progress": "1.0000",
+      "trace1000": 8,
+      "trace3000": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "p1000": "0.50",
+      "track3Transform": null
+    },
+    {
+      "beat": 2,
+      "progress": "1.0000",
+      "trace1000": 8,
+      "trace3000": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "p1000": "0.50",
+      "track3Transform": null
+    },
+    {
+      "beat": 3,
+      "progress": "1.0000",
+      "trace1000": 8,
+      "trace3000": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "p1000": "0.50",
+      "track3Transform": null
+    },
+    {
+      "beat": 4,
+      "progress": "1.0000",
+      "trace1000": 4299,
+      "trace3000": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(70 0)",
+      "p1000": "1.00",
+      "track3Transform": null
+    },
+    {
+      "beat": 5,
+      "progress": "1.0000",
+      "trace1000": 4299,
+      "trace3000": 4217,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(70 0)",
+      "p1000": "1.00",
+      "track3Transform": null
+    }
+  ],
+  "err": [
+    "console:Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "console:Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "console:Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}

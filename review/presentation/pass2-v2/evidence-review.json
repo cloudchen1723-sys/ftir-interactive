@@ -1,0 +1,153 @@
+{
+  "rec": [
+    {
+      "tag": "stable0-1280x720",
+      "beat": "0",
+      "progress": "1.0000",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(0 0)",
+      "power": "1.00",
+      "track3": null
+    },
+    {
+      "tag": "mid1-1280x720",
+      "beat": "1",
+      "progress": "0.7987",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(42.39375000000001 0)",
+      "power": "0.12",
+      "track3": null
+    },
+    {
+      "tag": "stable1-1280x720",
+      "beat": "1",
+      "progress": "1.0000",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "power": "0.50",
+      "track3": null
+    },
+    {
+      "tag": "mid2-1280x720",
+      "beat": "2",
+      "progress": "0.7022",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "power": "0.50",
+      "track3": null
+    },
+    {
+      "tag": "stable2-1280x720",
+      "beat": "2",
+      "progress": "1.0000",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "power": "0.50",
+      "track3": null
+    },
+    {
+      "tag": "mid3-1280x720",
+      "beat": "3",
+      "progress": "0.9754",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "power": "0.50",
+      "track3": null
+    },
+    {
+      "tag": "stable3-1280x720",
+      "beat": "3",
+      "progress": "1.0000",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(52.5 0)",
+      "power": "0.50",
+      "track3": null
+    },
+    {
+      "tag": "mid4-1280x720",
+      "beat": "4",
+      "progress": "0.6350",
+      "t1": 1860,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(31.446153846153834 0)",
+      "power": "0.03",
+      "track3": null
+    },
+    {
+      "tag": "stable4-1280x720",
+      "beat": "4",
+      "progress": "1.0000",
+      "t1": 4299,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(70 0)",
+      "power": "1.00",
+      "track3": null
+    },
+    {
+      "tag": "mid5-1280x720",
+      "beat": "5",
+      "progress": "0.6410",
+      "t1": 4299,
+      "t3": 2380,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(41.01176470588234 0)",
+      "power": "0.07",
+      "track3": null
+    },
+    {
+      "tag": "stable5-1280x720",
+      "beat": "5",
+      "progress": "1.0000",
+      "t1": 4299,
+      "t3": 4217,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(70 0)",
+      "power": "1.00",
+      "track3": null
+    },
+    {
+      "tag": "stable0-1024x768",
+      "beat": "0",
+      "progress": "1.0000",
+      "t1": 8,
+      "t3": 8,
+      "label": "0",
+      "labelY": "-22",
+      "labelTransform": "translate(0 0)",
+      "power": "1.00",
+      "track3": null
+    }
+  ],
+  "errs": [
+    "console:Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "console:Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "console:Failed to load resource: the server responded with a status of 404 (Not Found)"
+  ]
+}

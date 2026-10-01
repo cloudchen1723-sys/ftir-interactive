@@ -1,0 +1,2 @@
+const {chromium}=require('C:/Users/Chen/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright');
+(async()=>{console.log('before');const b=await chromium.launch({headless:true,timeout:5000,executablePath:'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'});console.log('launched');await b.close();console.log('closed')})().catch(e=>{console.error(e);process.exitCode=1});

@@ -239,6 +239,7 @@
     if(restore&&!restore.disabled)restore.focus({preventScroll:true});
   }
   function go(view){stopPlayback();state.view=view;render();$('#content').focus({preventScroll:true});window.scrollTo({top:0,behavior:'instant'});}
+  window.navigateFTIRView=go;
   document.querySelectorAll('button[data-view]').forEach(b=>b.addEventListener('click',()=>{go(b.dataset.view);document.querySelector('.lab-menu')?.removeAttribute('open');}));
   $('#resetAll').addEventListener('click',()=>{window.resetFTIRStory?.();state=initial();signalDraft=null;render();announce('所有模拟测量与原理实验已重置。');});
   window.addEventListener('resize',()=>{clearTimeout(resizeTimer);resizeTimer=setTimeout(()=>paint?.(),100);});

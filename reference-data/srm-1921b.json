@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "recordType": "calibration-certificate-values-not-spectrum",
+  "name": "NIST SRM 1921b Infrared Transmission Wavelength/Wavenumber Standard",
+  "certificateUrl": "https://tsapps.nist.gov/srmext/certificates/1921b.pdf",
+  "issueDate": "2026-09-15",
+  "validThrough": "2027-12-31",
+  "material": "matte-finish polystyrene film, approximately 38 micrometers thick",
+  "purpose": "Calibration of infrared spectrophotometer wavelength/wavenumber scale from 540 to 3125 cm^-1",
+  "nominalTemperatureC": 23,
+  "important": "These certified locations are separate from processed/polystyrene.json and must never be presented as a complete SRM spectrum.",
+  "certifiedWavenumbersVacuumCm1": {
+    "centroidMethod": [
+      { "band": 1, "value": 544.92, "expandedUncertainty": 2.43 },
+      { "band": 2, "value": 842.10, "expandedUncertainty": 1.29 },
+      { "band": 3, "value": 906.82, "expandedUncertainty": 0.10 },
+      { "band": 4, "value": 1028.42, "expandedUncertainty": 0.27 },
+      { "band": 5, "value": 1069.27, "expandedUncertainty": 0.77 },
+      { "band": 6, "value": 1154.62, "expandedUncertainty": 0.09 },
+      { "band": 7, "value": 1583.04, "expandedUncertainty": 0.09 },
+      { "band": 8, "value": 1601.38, "expandedUncertainty": 0.11 },
+      { "band": 10, "value": 2850.20, "expandedUncertainty": 0.12 },
+      { "band": 11, "value": 3001.40, "expandedUncertainty": 0.09 },
+      { "band": 12, "value": 3026.44, "expandedUncertainty": 0.09 },
+      { "band": 13, "value": 3060.14, "expandedUncertainty": 0.09 },
+      { "band": 14, "value": 3082.22, "expandedUncertainty": 0.09 }
+    ],
+    "bandMinimumMethod": [
+      { "band": 1, "value": 539.41, "expandedUncertainty": 2.63 },
+      { "band": 2, "value": 841.79, "expandedUncertainty": 1.32 },
+      { "band": 3, "value": 906.63, "expandedUncertainty": 0.36 },
+      { "band": 4, "value": 1028.27, "expandedUncertainty": 0.33 },
+      { "band": 5, "value": 1069.22, "expandedUncertainty": 0.99 },
+      { "band": 6, "value": 1154.50, "expandedUncertainty": 0.20 },
+      { "band": 7, "value": 1582.98, "expandedUncertainty": 0.09 },
+      { "band": 8, "value": 1601.29, "expandedUncertainty": 0.10 },
+      { "band": 9, "value": 1942.97, "expandedUncertainty": 0.66 },
+      { "band": 10, "value": 2849.48, "expandedUncertainty": 0.49 },
+      { "band": 11, "value": 3001.20, "expandedUncertainty": 0.18 },
+      { "band": 12, "value": 3025.99, "expandedUncertainty": 0.46 },
+      { "band": 13, "value": 3060.16, "expandedUncertainty": 0.25 },
+      { "band": 14, "value": 3082.26, "expandedUncertainty": 0.16 }
+    ]
+  }
+}

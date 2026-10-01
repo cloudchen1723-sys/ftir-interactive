@@ -8,8 +8,12 @@
   <title>FTIR · 从信号到光谱</title>
   <link rel="stylesheet" href="./lesson.css?v=model2">
   <link rel="stylesheet" href="./instrument-ui.css?v=detail1">
-  <link rel="stylesheet" href="./story.css?v=simple2">
-  <link rel="stylesheet" href="./home.css?v=journey1">
+  <link rel="stylesheet" href="./story.css?v=deck3">
+  <link rel="stylesheet" href="./home.css?v=demo01">
+  <link rel="stylesheet" href="./n3.css?v=1">
+  <link rel="stylesheet" href="./presentation-pass1.css?v=1">
+  <link rel="stylesheet" href="./presentation-optics.css?v=1">
+  <link rel="stylesheet" href="./presentation-instrument-bridge.css?v=1">
 </head>
 <body data-view="home">
   <a class="skip" href="#content">跳到教学内容</a>
@@ -45,18 +49,26 @@
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
   <noscript><p class="notice">本页需要 JavaScript 执行交互计算。FTIR 的基本链路：光程差编码 → 干涉图 → 单光束谱 → 样品／背景取比 → 透射率与吸光度。</p></noscript>
   <script src="./physics.js?v=round1-3"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/three@0.128.0/build/three.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js" onload="window.dispatchEvent(new Event('ftir-3d-ready'))"></script>
+  <script src="./vendor/three.min.js"></script>
+  <script src="./vendor/OrbitControls.js" onload="window.dispatchEvent(new Event('ftir-3d-ready'))"></script>
   <script src="./optics.js?v=model2"></script>
   <script src="./part-detail.js?v=1"></script>
   <script src="./instrument.js?v=detail1"></script>
   <script src="./absorption.js?v=1"></script>
   <script src="./story-model.js?v=1"></script>
-  <script src="./story.js?v=simple2"></script>
-  <script src="./home-signal.js?v=journey1"></script>
-  <script src="./home-lab.js?v=journey1"></script>
-  <script src="./home-transition.js?v=journey1"></script>
-  <script src="./home.js?v=journey1"></script>
-  <script src="./lesson.js?v=journey1"></script>
+  <script src="./n3.js?v=1"></script>
+  <script src="./presentation-optics-model.js?v=1"></script>
+  <script src="./presentation-interferogram-model.js?v=1"></script>
+  <script src="./vendor/gsap.min.js?v=3.13.0"></script>
+  <script src="./sharedtimeline.js?v=pass1"></script>
+  <script src="./presentation-pass1.js?v=1"></script>
+  <script src="./presentation-optics.js?v=1"></script>
+  <script src="./presentation-instrument-bridge.js?v=1"></script>
+  <script src="./story.js?v=deck3"></script>
+  <script src="./home-signal.js?v=demo01"></script>
+  <script src="./home-lab.js?v=demo01"></script>
+  <script src="./home-transition.js?v=demo01"></script>
+  <script src="./home.js?v=demo01"></script>
+  <script src="./lesson.js?v=demo01"></script>
 </body>
 </html>

@@ -79,3 +79,39 @@ body[data-view=home] .home-header nav button[aria-current=page]:after{background
 .home-continuity{position:absolute;left:0;right:0;top:78%;height:1px;z-index:3;pointer-events:none;opacity:var(--thread-opacity);background:linear-gradient(90deg,transparent 2%,#668fbc 30%,#c7a274 48%,#82b8c5 66%,transparent 98%)}
 @media(max-width:580px){body[data-view=home] .home-stage{top:80px;height:calc(100svh - 80px)}.home-journey{height:185svh}.home-lab-core{inset:10% 0 18%}.home-lab-fallback{width:96vw;height:47%;top:44%}.home-lab-next{bottom:9%;padding:0 20px;font-size:14px}.home-continuity{top:72%}}
 @media(prefers-reduced-motion:reduce){body[data-view=home] .home-lab{transition:opacity .22s linear!important}body[data-view=home] .home-stage .home-copy,body[data-view=home] .home-stage .home-signal{transition:opacity .22s linear!important}}
+
+/* Homepage Demo 01: approved editorial scientific cover. */
+body[data-view=home]{background:#f3efe4;color:#172a3b;font-family:Georgia,"Songti SC",serif}
+body[data-view=home] .home-header,
+body[data-view=home] .site-header,
+body[data-view=home] .sidebar,
+body[data-view=home] footer{display:none!important}
+body[data-view=home] .shell{display:block;max-width:none;margin:0}
+body[data-view=home] main{padding:0;max-width:none;min-height:100svh}
+body[data-view=home] .home-demo01{position:relative;width:100%;height:100svh;min-height:560px;overflow:hidden;background:#f3efe4;color:#172a3b}
+.demo01-index{position:absolute;top:5.5%;right:5%;font:700 .68rem Arial,sans-serif;letter-spacing:.2em}
+.demo01-rule{position:absolute;left:5%;top:5%;height:16%;border-left:1px solid #8fa0aa;transform-origin:top;animation:demo01line 1.3s ease both}
+.demo01-copy{position:absolute;left:9%;top:11%;z-index:1}
+.demo01-copy h1{font:italic 400 clamp(7rem,19vw,18rem)/.66 Georgia,"Times New Roman",serif;margin:0;letter-spacing:-.09em;white-space:nowrap;animation:demo01reveal 1.1s cubic-bezier(.22,.8,.2,1) both}
+.demo01-copy p{margin:42px 0 0 18%;font-size:clamp(1.25rem,2.1vw,2rem);line-height:1.45}
+.demo01-visual{position:absolute;left:0;right:0;bottom:13%;width:100%;height:38%;fill:none;stroke:#517896;stroke-width:1.15;stroke-dasharray:1600;stroke-dashoffset:1600;animation:demo01draw 2.8s .35s ease forwards}
+.demo01-visual .fine{stroke:#c08a43;opacity:.45;stroke-width:.65}
+.demo01-sub{position:absolute;right:5%;top:45%;writing-mode:vertical-rl;font:italic .72rem Georgia,"Times New Roman",serif;letter-spacing:.14em}
+.demo01-cta{position:absolute;right:8%;bottom:15%;font:700 .85rem Arial,sans-serif;letter-spacing:.14em;border:0;border-bottom:1px solid;padding:0 0 8px;background:transparent;color:inherit;cursor:pointer}
+.demo01-cta:after{content:"";position:absolute;left:0;bottom:-1px;width:0;border-bottom:3px solid;transition:width .35s}.demo01-cta:hover:after,.demo01-cta:focus-visible:after{width:100%}.demo01-cta span{margin-left:1em}
+.demo01-foot{position:absolute;left:5%;right:5%;bottom:4%;display:flex;justify-content:space-between;font:700 .62rem Arial,sans-serif;letter-spacing:.16em;color:#617487}
+@keyframes demo01reveal{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes demo01draw{to{stroke-dashoffset:0}}
+@keyframes demo01line{from{transform:scaleY(0)}to{transform:scaleY(1)}}
+@media(max-width:600px){body[data-view=home] .home-demo01{min-height:560px}.demo01-index{top:4%;right:6%;font-size:.55rem}.demo01-rule{left:7%;top:4%;height:13%}.demo01-copy{left:8%;top:14%}.demo01-copy h1{font-size:clamp(6rem,27vw,10rem)}.demo01-copy p{margin:34px 0 0 0;font-size:1.15rem}.demo01-visual{bottom:17%;height:32%}.demo01-sub{right:7%;top:51%;font-size:.58rem}.demo01-cta{right:8%;bottom:10%;font-size:.72rem}.demo01-foot{left:8%;right:8%;bottom:3%;font-size:.48rem;letter-spacing:.1em}}
+@media(prefers-reduced-motion:reduce){.demo01-copy h1,.demo01-rule,.demo01-visual{animation:none;opacity:1;transform:none;stroke-dashoffset:0}}
+
+/* Refinement #01 exact composition: Transform Threshold. */
+body[data-view=home] .home-ref01{position:relative;width:100%;height:100svh;min-height:650px;overflow:hidden;background:#f2eee5;color:#142b3a;font-family:Georgia,"Songti SC",serif}
+body[data-view=home] .home-ref01-head{position:absolute;left:4%;right:4%;top:4%;z-index:4;display:flex;justify-content:space-between;font:700 .56rem Arial,sans-serif;letter-spacing:.16em}
+.home-ref01-title{position:absolute;left:6%;top:11%;z-index:3}.home-ref01-title h1{font:italic 400 clamp(7rem,18vw,17rem)/.76 Georgia,"Songti SC",serif;margin:0;letter-spacing:-.07em;animation:ref01title 1.4s cubic-bezier(.2,.8,.2,1) both}.home-ref01-title p{margin:35px 0 0 24%;font-size:clamp(1rem,1.8vw,1.55rem);line-height:1.4}.home-ref01-title small{display:block;margin:18px 0 0 24%;font:.55rem Arial,sans-serif;letter-spacing:.14em}
+.home-ref01-canvas{position:absolute;left:0;top:24%;width:100%;height:64%;z-index:2;display:block}
+.home-ref01-labels{position:absolute;left:4%;right:4%;bottom:7%;display:flex;justify-content:space-between;align-items:center;font:700 .52rem Arial,sans-serif;letter-spacing:.15em}.home-ref01-labels i{font-style:normal;color:#d9bb79}.home-ref01-cta{position:absolute;right:6%;top:17%;z-index:6;border:0;border-bottom:1px solid;padding:0 0 7px;background:transparent;color:inherit;font-size:.74rem;font-weight:700;letter-spacing:.08em;cursor:pointer}.home-ref01-cta span{margin-left:.8em;transition:transform .3s}.home-ref01-cta:hover span,.home-ref01-cta:focus-visible span{transform:translateX(9px)}body[data-view=home] .home-ref01:after{content:"";position:absolute;left:58%;top:18%;bottom:10%;border-left:1px solid #a8775944;opacity:.75}
+@keyframes ref01title{from{opacity:0;transform:translateY(18px);letter-spacing:.02em}}
+@media(max-width:620px){body[data-view=home] .home-ref01{min-height:560px}.home-ref01-title{top:13%}.home-ref01-title h1{font-size:27vw}.home-ref01-title p,.home-ref01-title small{margin-left:0}.home-ref01-canvas{top:31%;height:55%}.home-ref01-cta{right:6%;top:21%;font-size:.68rem}.home-ref01-labels{bottom:5%;font-size:.44rem;letter-spacing:.1em}}
+@media(prefers-reduced-motion:reduce){.home-ref01-title h1{animation:none}.home-ref01-canvas{image-rendering:auto}}

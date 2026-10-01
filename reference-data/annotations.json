@@ -1,0 +1,96 @@
+{
+  "schemaVersion": "1.0.0",
+  "note": "Annotations are separate from measured arrays. observedCm1 values are read from local maxima of the frozen k datasets without smoothing; assignments come from the cited literature and are not additional measured channels.",
+  "samples": {
+    "acetone-pnnl-2025": {
+      "teachingPeaks": [
+        {
+          "display": "~1715 cm^-1",
+          "observedCm1": 1715.427229,
+          "assignment": "strong C=O stretching",
+          "assignmentSource": "NIST Chemistry WebBook vibrational levels for acetone (Shimanouchi compilation; liquid C=O listed near 1710.5 cm^-1)",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=3FF0",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        }
+      ],
+      "referenceDetails": [
+        { "observedCm1": 1420.364906, "assignment": "CH3 asymmetric deformation region", "mainSceneDefault": false },
+        { "observedCm1": 1362.991677, "assignment": "CH3 symmetric deformation region", "mainSceneDefault": false },
+        { "observedCm1": 1222.210307, "assignment": "C-C stretching / carbonyl-adjacent skeletal region", "mainSceneDefault": false },
+        { "observedCm1": 1092.517881, "assignment": "CH3 rocking / skeletal region", "mainSceneDefault": false }
+      ]
+    },
+    "ethanol-pnnl-2025": {
+      "teachingPeaks": [
+        {
+          "display": "3200-3600 cm^-1 (maximum ~3338 cm^-1)",
+          "observedCm1": 3338.26435,
+          "assignment": "broad hydrogen-bonded O-H stretching envelope",
+          "assignmentSource": "Frozen PNNL liquid dataset and SDBS No. 1300 liquid-film reference",
+          "assignmentUrl": "https://sdbs.db.aist.go.jp/CompoundLanding.aspx?sdbsno=1300",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        },
+        {
+          "display": "~1050 cm^-1",
+          "observedCm1": 1050.081254,
+          "assignment": "mainly C-O stretching, with coupled C-C/O-H contributions in liquid ethanol",
+          "assignmentSource": "Frozen PNNL liquid dataset and SDBS No. 1300 liquid-film reference (reported peak near 1048 cm^-1)",
+          "assignmentUrl": "https://sdbs.db.aist.go.jp/CompoundLanding.aspx?sdbsno=1300",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        }
+      ],
+      "referenceDetails": [
+        { "observedCm1": 2974.257136, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 2883.1348, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 1455.551542, "assignment": "CH3/CH2 deformation region", "mainSceneDefault": false },
+        { "observedCm1": 1380.339455, "assignment": "CH3 deformation region", "mainSceneDefault": false },
+        { "observedCm1": 1090.58007, "assignment": "C-O/C-C coupled fingerprint feature", "mainSceneDefault": false },
+        { "observedCm1": 881.336188, "assignment": "fingerprint-region vibration; keep assignment qualified", "mainSceneDefault": false }
+      ]
+    },
+    "polystyrene-pnnl-2017": {
+      "teachingPeaks": [
+        {
+          "display": "~3026 cm^-1",
+          "observedCm1": 3025.850876,
+          "assignment": "aromatic C-H stretching",
+          "assignmentSource": "PCCP polystyrene band assignment and frozen PNNL dataset",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        },
+        {
+          "display": "1602 / 1493 cm^-1",
+          "observedCm1": [1601.639269, 1493.160051],
+          "assignment": "aromatic ring skeletal features",
+          "assignmentSource": "PCCP polystyrene band assignment and frozen PNNL dataset",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        },
+        {
+          "display": "757 / 699 cm^-1",
+          "observedCm1": [757.429884, 698.610041],
+          "assignment": "fingerprint evidence associated with monosubstituted aromatic C-H out-of-plane modes",
+          "assignmentSource": "Polystyrene literature assignments and frozen PNNL dataset",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": true
+        }
+      ],
+      "referenceDetails": [
+        { "observedCm1": 3082.742199, "assignment": "aromatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 3060.564225, "assignment": "aromatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 2924.603605, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 2850.837736, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
+        { "observedCm1": 1452.661142, "assignment": "ring/CH deformation region", "mainSceneDefault": false },
+        { "observedCm1": 1029.351125, "assignment": "aromatic in-plane/fingerprint feature", "mainSceneDefault": false },
+        { "observedCm1": 906.890141, "assignment": "fingerprint-region feature", "mainSceneDefault": false },
+        { "observedCm1": 841.80261, "assignment": "fingerprint-region feature", "mainSceneDefault": false }
+      ]
+    }
+  }
+}

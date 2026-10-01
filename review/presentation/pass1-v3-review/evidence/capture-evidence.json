@@ -1,0 +1,51 @@
+{
+  "viewport1280": {
+    "gsap": "3.13.0",
+    "beat": "2",
+    "progress": "2 / 09",
+    "total": "2.0",
+    "values": [
+      "0.2",
+      "1.6",
+      "0.2"
+    ],
+    "stage": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 720,
+      "top": 0,
+      "right": 1280,
+      "bottom": 720,
+      "left": 0
+    }
+  },
+  "viewport1024": {
+    "gsap": "3.13.0",
+    "beat": "2",
+    "progress": "2 / 09",
+    "total": "2.0",
+    "values": [
+      "0.2",
+      "1.6",
+      "0.2"
+    ],
+    "stage": {
+      "x": 0,
+      "y": 96,
+      "width": 1024,
+      "height": 576,
+      "top": 96,
+      "right": 1024,
+      "bottom": 672,
+      "left": 0
+    }
+  },
+  "errors": [
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: the server responded with a status of 404 (Not Found)",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+    "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+  ]
+}

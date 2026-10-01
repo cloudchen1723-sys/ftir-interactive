@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "frozenAt": "2026-09-29",
+  "collectionTitle": "代表性 FTIR 样品与参考光谱",
+  "scope": "Reference Data only. Teaching Model data is not stored here.",
+  "datasets": [
+    {
+      "sample": "Acetone",
+      "cas": "67-64-1",
+      "datasetId": "acetone-pnnl-2025",
+      "source": "PNNL Liquids Refractive Index (n/k) Dataset, 2025",
+      "sourceUrl": "https://doi.org/10.25584/2997107",
+      "phase": "liquid",
+      "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Vertex 70 FTIR for MIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
+      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [400.182104, 9997.903769], "order": "descending" },
+      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "original": {
+        "format": "three-column ASCII: wavenumber, n, k",
+        "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+        "metadata": "source/META.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.pdf",
+        "sha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9"
+      },
+      "local": { "format": "JSON arrays", "file": "processed/acetone.json", "pointCount": 19908, "sha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a" },
+      "license": "CC0-1.0",
+      "redistribution": "Allowed; attribution requested by PNNL",
+      "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; sample PNNL543226, Alfa Aesar 99+%, lot U07E003"
+    },
+    {
+      "sample": "Ethanol",
+      "cas": "64-17-5",
+      "datasetId": "ethanol-pnnl-2025",
+      "source": "PNNL Liquids Refractive Index (n/k) Dataset, 2025",
+      "sourceUrl": "https://doi.org/10.25584/2997107",
+      "phase": "liquid",
+      "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Tensor 27 FTIR for MIR and Vertex 70 for NIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
+      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [399.689557, 9996.944655], "order": "descending" },
+      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "original": {
+        "format": "three-column ASCII: wavenumber, n, k",
+        "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+        "metadata": "source/META.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.pdf",
+        "sha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467"
+      },
+      "local": { "format": "JSON arrays", "file": "processed/ethanol.json", "pointCount": 19907, "sha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b" },
+      "license": "CC0-1.0",
+      "redistribution": "Allowed; attribution requested by PNNL",
+      "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; MIR sample Acros 99.5+%, lot B0530617; NIR sample Sigma-Aldrich >=99.5%, lot SHBL6083"
+    },
+    {
+      "sample": "Polystyrene",
+      "sourceRecordName": "Styrene, oligomers",
+      "cas": "9003-53-6",
+      "datasetId": "polystyrene-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, PNNL513043, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C9003536&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": "Composite optical-constant spectrum; Bruker Tensor 27 FTIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction",
+      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [399.68952816, 7797.4901], "order": "descending" },
+      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound file containing separate n and k blocks",
+        "file": "source/polystyrene-pnnl.jdx",
+        "sha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f"
+      },
+      "local": { "format": "JSON arrays", "file": "processed/polystyrene.json", "pointCount": 15345, "sha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1" },
+      "license": "Public domain as explicitly declared by the source record and JCAMP OWNER field",
+      "redistribution": "Allowed for this PNNL record; retain provenance. This does not waive copyright in unrelated NIST WebBook compilations.",
+      "provenance": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra; Sigma-Aldrich sample PNNL513043. This is the ordinary measured reference curve and is not SRM 1921b."
+    }
+  ],
+  "calibrationReference": "srm-1921b.json"
+}
