@@ -1,0 +1,420 @@
+1
+00:00:00,800 --> 00:00:04,000
+我们怎样读懂一个分子？
+How can we read a molecule?
+
+2
+00:00:04,500 --> 00:00:08,500
+分子并不是静止的。
+Molecules are not motionless.
+
+3
+00:00:09,500 --> 00:00:14,500
+某些振动，会和红外光发生耦合。
+Some vibrations can couple to infrared light.
+
+4
+00:00:15,500 --> 00:00:19,800
+这意味着，分子会在红外光里留下自己的线索。
+Molecules leave their own clues in infrared light.
+
+5
+00:00:28,000 --> 00:00:30,000
+怎样读出这些线索？
+How can we read those clues?
+
+6
+00:00:30,000 --> 00:00:33,500
+不同振动，会吸收不同频率的红外光。
+Different vibrations absorb infrared light at different frequencies.
+
+7
+00:00:33,500 --> 00:00:37,000
+剩余光的强弱，留下了样品的线索。
+The remaining component strengths carry clues about the sample.
+
+8
+00:00:37,000 --> 00:00:39,500
+探测器却只给出一个总响应。
+Yet the detector gives just one total response.
+
+9
+00:00:44,000 --> 00:00:47,000
+换个样品，吸收分布变了。
+Change the sample, and the absorption pattern changes.
+
+10
+00:00:47,000 --> 00:00:51,500
+剩余光的总量，却可以相同。
+The total amount of remaining light can still be the same.
+
+11
+00:00:51,500 --> 00:00:55,000
+只读总量，我们仍不知道哪些成分被吸收。
+The total alone cannot tell us which components were absorbed.
+
+12
+00:00:55,000 --> 00:00:58,000
+如果不只读一个值呢？
+What if we took more than one reading?
+
+13
+00:00:58,000 --> 00:01:01,000
+我们主动改变测量条件，
+We deliberately change the measurement conditions
+
+14
+00:01:01,000 --> 00:01:04,500
+看看这个总响应会怎样变化。
+and observe how the total response changes.
+
+15
+00:01:07,000 --> 00:01:12,000
+让光分成两路，分别反射回来，再次相遇。
+Split the light into two paths, reflect it back, and let it meet again.
+
+16
+00:01:14,000 --> 00:01:17,500
+两路都带着原来的宽带成分。
+Both paths contain the original broadband components.
+
+17
+00:01:17,500 --> 00:01:21,000
+这套装置叫迈克尔逊干涉仪。
+This arrangement is a Michelson interferometer.
+
+18
+00:01:21,000 --> 00:01:24,000
+现在，让其中一面镜子移动。
+Now move one of the mirrors.
+
+19
+00:01:28,000 --> 00:01:32,000
+镜子移动一段，光要多走一个来回。
+When the mirror moves, light travels the extra distance twice.
+
+20
+00:01:32,000 --> 00:01:36,000
+多出来的路程，是镜子位移的两倍。
+The added path is twice the mirror displacement.
+
+21
+00:01:36,000 --> 00:01:40,000
+两路光的路程差，叫作光程差。
+The difference between the two paths is the optical path difference.
+
+22
+00:01:40,000 --> 00:01:44,000
+再相遇时，光波的对齐关系也变了。
+When the waves meet again, their alignment has changed.
+
+23
+00:01:48,000 --> 00:01:52,500
+对齐时相互增强，错开时可以相互抵消。
+Aligned waves reinforce each other; displaced waves can cancel.
+
+24
+00:01:52,500 --> 00:01:56,000
+这种相对错开，叫作相位差。
+This relative offset is called a phase difference.
+
+25
+00:01:56,000 --> 00:01:59,000
+镜子不停地移动，输出光强也跟着变化。
+As the mirror moves continuously, the output intensity varies.
+
+26
+00:02:01,000 --> 00:02:05,000
+不同波数的成分，变化也一样吗？
+Do different wavenumbers vary in the same way?
+
+27
+00:02:05,000 --> 00:02:08,000
+让镜子以同样的方式继续移动。
+Continue moving the mirror with the same scan.
+
+28
+00:02:14,000 --> 00:02:17,000
+一个已经亮暗了三轮，另一个才一轮。
+One has completed three bright–dark cycles; the other, only one.
+
+29
+00:02:17,000 --> 00:02:20,000
+同一次扫描，不同波数留下了不同的节奏。
+In one scan, different wavenumbers leave different rhythms.
+
+30
+00:02:20,000 --> 00:02:24,000
+镜子改变的是光程差，成分的波数始终没变。
+The mirror changes the path difference, not the component wavenumbers.
+
+31
+00:02:24,000 --> 00:02:28,000
+用同样的扫描，再比较刚才的两个样品。
+Use the same scan to compare the two samples again.
+
+32
+00:02:40,000 --> 00:02:44,000
+刚才读数相同，现在的扫描记录却不同。
+The samples gave the same single reading, but their scan records differ.
+
+33
+00:02:47,000 --> 00:02:51,000
+多种节奏叠在一起，仍然影响着总信号的形状。
+The combined rhythms still shape the total signal.
+
+34
+00:02:51,000 --> 00:02:53,767
+沿合束后的光，再看样品 A。
+Follow the recombined light and look at sample A again.
+
+35
+00:02:53,767 --> 00:02:57,633
+先盯住其中一个成分，看看它有什么变化。
+Follow one component and observe what changes.
+
+36
+00:03:01,233 --> 00:03:03,033
+起伏变小了。
+Its variation becomes smaller.
+
+37
+00:03:03,033 --> 00:03:05,367
+它的波数和节奏没有变。
+Its wavenumber and rhythm remain unchanged.
+
+38
+00:03:05,367 --> 00:03:08,767
+样品削弱的，是它在总信号里的贡献。
+The sample reduces its contribution to the total signal.
+
+39
+00:03:08,767 --> 00:03:11,267
+样品保持不变，完整扫一遍。
+Keep the sample unchanged and complete a scan.
+
+40
+00:03:11,267 --> 00:03:15,133
+每个扫描位置，探测器只记下一个总响应。
+At each scan position, the detector records one total response.
+
+41
+00:03:18,733 --> 00:03:21,233
+这条扫描记录，叫作干涉图。
+This scan record is called an interferogram.
+
+42
+00:03:21,233 --> 00:03:24,400
+它记录总响应怎样随光程差变化。
+It records how the total response varies with path difference.
+
+43
+00:03:24,400 --> 00:03:27,800
+为了只看变化，先把稳定的底值拿掉。
+To isolate the variation, subtract the constant baseline.
+
+44
+00:03:29,600 --> 00:03:32,567
+零线上下，表示相对底值的增减。
+Above and below zero mean changes relative to that baseline.
+
+45
+00:03:32,567 --> 00:03:36,133
+各种节奏都混在这里了，每一种有多强？
+All the rhythms are mixed here. How strong is each one?
+
+46
+00:03:37,933 --> 00:03:41,800
+用一条已知节奏的曲线，来试探这份记录。
+Test the record with a curve of known rhythm.
+
+47
+00:03:41,800 --> 00:03:43,667
+我们把它叫作探针。
+We call it a probe.
+
+48
+00:03:43,667 --> 00:03:47,100
+把同一位置的记录值和探针值相乘。
+Multiply the record and probe at the same positions.
+
+49
+00:03:47,100 --> 00:03:50,233
+同号得到正贡献，异号得到负贡献。
+Matching signs give positive contributions; opposite signs give negative ones.
+
+50
+00:03:50,233 --> 00:03:52,733
+再把这些贡献一路加起来。
+Accumulate these contributions along the scan.
+
+51
+00:03:55,433 --> 00:03:57,767
+这次，正负贡献来回抵消。
+Here, positive and negative contributions cancel repeatedly.
+
+52
+00:03:57,767 --> 00:04:00,267
+扫完整段，累积几乎回到零。
+By the end, the accumulated result is nearly zero.
+
+53
+00:04:00,267 --> 00:04:03,433
+把探针调到另一个节奏，再试一次。
+Tune the probe to another rhythm and try again.
+
+54
+00:04:07,000 --> 00:04:11,067
+和探针同节奏的那部分，一起向上、一起向下。
+The matching component rises and falls together with the probe.
+
+55
+00:04:11,067 --> 00:04:13,833
+相乘后，这部分都给出正贡献。
+Their product therefore gives positive contributions.
+
+56
+00:04:13,833 --> 00:04:16,967
+其他节奏的贡献，更容易互相抵消。
+Contributions from other rhythms tend to cancel.
+
+57
+00:04:16,967 --> 00:04:20,567
+总累积仍有起伏，却留下了明显的净值。
+The accumulation still fluctuates, but leaves a clear net result.
+
+58
+00:04:22,367 --> 00:04:24,500
+累积到最后还剩多少，
+How much remains at the end
+
+59
+00:04:24,500 --> 00:04:27,667
+就反映这种节奏在记录里有多强。
+reflects the strength of that rhythm in the record.
+
+60
+00:04:27,667 --> 00:04:30,800
+把这个结果，放在对应的波数位置。
+Place the result at its corresponding wavenumber.
+
+61
+00:04:33,500 --> 00:04:36,000
+换不同的节奏，重复这件事。
+Repeat with different rhythms.
+
+62
+00:04:36,000 --> 00:04:39,600
+各个波数成分的强弱，就逐渐显现出来。
+The strength of each wavenumber component gradually appears.
+
+63
+00:04:39,600 --> 00:04:43,167
+刚才被样品削弱的成分，在这里也更低。
+The component weakened by the sample is also lower here.
+
+64
+00:04:45,867 --> 00:04:49,000
+这就是傅里叶变换在这里做的事。
+This is what the Fourier transform does here.
+
+65
+00:04:49,000 --> 00:04:51,800
+但这个成分，本来应该有多强？
+But how strong should this component have been?
+
+66
+00:04:51,800 --> 00:04:56,267
+它变弱，是样品造成的，
+还是光源和仪器原本如此？
+Was it weakened by the sample, or by the source and instrument?
+
+67
+00:04:56,267 --> 00:04:59,067
+先不放样品，扫描并记录背景。
+First scan and record the background without the sample.
+
+68
+00:05:00,867 --> 00:05:03,833
+再放入样品，在相同条件下扫描。
+Then insert the sample and scan under the same conditions.
+
+69
+00:05:03,833 --> 00:05:06,600
+两份记录，分别做傅里叶变换。
+Fourier-transform the two records separately.
+
+70
+00:05:06,600 --> 00:05:08,933
+得到背景和样品的光谱。
+This gives the background and sample spectra.
+
+71
+00:05:10,733 --> 00:05:14,133
+同一波数的样品结果，除以背景结果。
+At each wavenumber, divide the sample result by the background.
+
+72
+00:05:14,133 --> 00:05:17,733
+这个比值，告诉我们相对背景还剩多少。
+The ratio tells us how much remains relative to the background.
+
+73
+00:05:17,733 --> 00:05:19,533
+它叫透过率。
+It is called transmittance.
+
+74
+00:05:19,533 --> 00:05:23,100
+透过率越低，这一带的光被削弱得越多。
+Lower transmittance means more light was attenuated in that region.
+
+75
+00:05:24,900 --> 00:05:27,233
+也可以把它换成吸光度。
+We can also convert it to absorbance.
+
+76
+00:05:27,233 --> 00:05:30,033
+在这张图里，吸收越强，峰越高。
+Here, stronger absorption gives a higher peak.
+
+77
+00:05:30,033 --> 00:05:31,833
+前面是合成成分。
+The earlier components were synthetic.
+
+78
+00:05:31,833 --> 00:05:34,600
+这里换一个化学吸收的示意。
+Now we switch to an illustrative chemical absorption example.
+
+79
+00:05:36,400 --> 00:05:40,433
+比如这处吸收，提供了碳氧双键伸缩的线索。
+This band, for example, suggests carbon–oxygen double-bond stretching.
+
+80
+00:05:40,433 --> 00:05:42,767
+峰位还受分子环境影响。
+The molecular environment also affects the band position.
+
+81
+00:05:42,767 --> 00:05:45,267
+一个峰，还不足以认出分子。
+One peak is not enough to identify a molecule.
+
+82
+00:05:45,267 --> 00:05:48,233
+要结合其他吸收特征一起判断。
+Other absorption features must be considered together.
+
+83
+00:05:50,933 --> 00:05:54,800
+从总响应的变化，我们找回了样品的光谱。
+From changes in total response, we recover the sample spectrum.
+
+84
+00:05:54,800 --> 00:05:58,200
+分子的运动，也留下了可辨认的线索。
+Molecular motion has left recognizable clues.

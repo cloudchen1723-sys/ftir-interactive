@@ -1,0 +1,857 @@
+{
+  "schemaVersion": "1.0.0",
+  "checkedAt": "2026-10-10",
+  "note": "Checks read original arrays without smoothing, interpolation, baseline correction, normalization or synthesizing peaks.",
+  "existingSourceHashChecks": [
+    {
+      "id": "acetone-pnnl-2025",
+      "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+      "declaredSha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9",
+      "actualSha256": "b32b2794f86c3323d352b5ce98c300a2b3ca611649af633e6f721a80ece7f2ee",
+      "matchesDeclaredHash": false,
+      "note": "Pre-existing source hash discrepancy discovered during this extension; source and existing metadata are preserved. Raw x/k values are checked against preserved processed arrays below.",
+      "rawXKMatchesPreservedProcessedExactly": true
+    },
+    {
+      "id": "ethanol-pnnl-2025",
+      "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+      "declaredSha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467",
+      "actualSha256": "c91970018c8e8ff0e48f7371e2b928a65c1924c2aff4ffc7d07a0fb28f9e50b3",
+      "matchesDeclaredHash": false,
+      "note": "Pre-existing source hash discrepancy discovered during this extension; source and existing metadata are preserved. Raw x/k values are checked against preserved processed arrays below.",
+      "rawXKMatchesPreservedProcessedExactly": true
+    },
+    {
+      "id": "polystyrene-pnnl-2017",
+      "file": "source/polystyrene-pnnl.jdx",
+      "declaredSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+      "actualSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+      "matchesDeclaredHash": true,
+      "note": "",
+      "rawXKMatchesPreservedProcessedExactly": true
+    }
+  ],
+  "datasets": [
+    {
+      "id": "acetone-pnnl-2025",
+      "pointCount": 19908,
+      "sourceDeclaredPointCount": null,
+      "sourceSha256": "b32b2794f86c3323d352b5ce98c300a2b3ca611649af633e6f721a80ece7f2ee",
+      "outputSha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a",
+      "xRangeCm1": [
+        400.182104,
+        9997.903769
+      ],
+      "yRange": [
+        7.542e-7,
+        0.4668434262
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "carbonyl",
+          "rangeCm1": [
+            1680,
+            1750
+          ],
+          "observedCm1": 1715.427229,
+          "observedK": 0.4668434262,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "observedCm1": 3004.637443,
+          "observedK": 0.0157752857,
+          "broad": false
+        },
+        {
+          "id": "ch3-asym-bend",
+          "rangeCm1": [
+            1390,
+            1460
+          ],
+          "observedCm1": 1420.364906,
+          "observedK": 0.0652885959,
+          "broad": false
+        },
+        {
+          "id": "ch3-sym-bend",
+          "rangeCm1": [
+            1340,
+            1390
+          ],
+          "observedCm1": 1362.991677,
+          "observedK": 0.2525934577,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "ethanol-pnnl-2025",
+      "pointCount": 19907,
+      "sourceDeclaredPointCount": null,
+      "sourceSha256": "c91970018c8e8ff0e48f7371e2b928a65c1924c2aff4ffc7d07a0fb28f9e50b3",
+      "outputSha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b",
+      "xRangeCm1": [
+        399.689557,
+        9996.944655
+      ],
+      "yRange": [
+        2.6406847e-7,
+        0.4199425
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "oh-envelope",
+          "rangeCm1": [
+            3200,
+            3600
+          ],
+          "observedCm1": 3338.26435,
+          "observedK": 0.087796532,
+          "broad": true
+        },
+        {
+          "id": "co-region",
+          "rangeCm1": [
+            1020,
+            1080
+          ],
+          "observedCm1": 1050.081254,
+          "observedK": 0.4199425,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2850,
+            3000
+          ],
+          "observedCm1": 2974.257136,
+          "observedK": 0.10802076,
+          "broad": false
+        },
+        {
+          "id": "ch-bend",
+          "rangeCm1": [
+            1430,
+            1480
+          ],
+          "observedCm1": 1455.551542,
+          "observedK": 0.046428993,
+          "broad": false
+        },
+        {
+          "id": "ch3-bend",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "observedCm1": 1380.339455,
+          "observedK": 0.061386701,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "polystyrene-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": null,
+      "sourceSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+      "outputSha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1",
+      "xRangeCm1": [
+        399.68952816,
+        7797.4901
+      ],
+      "yRange": [
+        0.00004419990460032,
+        0.5429999844302982
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "aromatic-ch",
+          "rangeCm1": [
+            3000,
+            3050
+          ],
+          "observedCm1": 3025.8508755799994,
+          "observedK": 0.03310000140072768,
+          "broad": false
+        },
+        {
+          "id": "ring-high",
+          "rangeCm1": [
+            1585,
+            1615
+          ],
+          "observedCm1": 1601.6392691399997,
+          "observedK": 0.02789999908908928,
+          "broad": false
+        },
+        {
+          "id": "ring-low",
+          "rangeCm1": [
+            1475,
+            1510
+          ],
+          "observedCm1": 1493.16005064,
+          "observedK": 0.08410000079054016,
+          "broad": false
+        },
+        {
+          "id": "oop-high",
+          "rangeCm1": [
+            735,
+            770
+          ],
+          "observedCm1": 757.4298842799999,
+          "observedK": 0.10700000109960575,
+          "broad": false
+        },
+        {
+          "id": "oop-low",
+          "rangeCm1": [
+            680,
+            715
+          ],
+          "observedCm1": 698.6100413599997,
+          "observedK": 0.5429999844302982,
+          "broad": false
+        },
+        {
+          "id": "alkyl-ch",
+          "rangeCm1": [
+            2850,
+            2970
+          ],
+          "observedCm1": 2924.6036049799995,
+          "observedK": 0.04729999979700096,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "octanoic-acid-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": 15345,
+      "sourceSha256": "71d9e1eb6c3dd08895e6aa16556319a988e99e58f4e3c07b310d8bac332a404d",
+      "outputSha256": "3bc4788158449224896b8d9c8bddfebc91342dad8ff1770a505e863a0b65853c",
+      "xRangeCm1": [
+        399.68952816,
+        7797.4901
+      ],
+      "yRange": [
+        0.0000184001029072,
+        0.38800001232851183
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "carbonyl",
+          "rangeCm1": [
+            1680,
+            1740
+          ],
+          "observedCm1": 1711.5648772199993,
+          "observedK": 0.38800001232851183,
+          "broad": false
+        },
+        {
+          "id": "acid-oh-envelope",
+          "rangeCm1": [
+            2500,
+            3300
+          ],
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "broad": true
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2850,
+            3000
+          ],
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "broad": false
+        },
+        {
+          "id": "co-region",
+          "rangeCm1": [
+            1200,
+            1320
+          ],
+          "observedCm1": 1276.2016136399998,
+          "observedK": 0.07750000086949764,
+          "broad": false
+        },
+        {
+          "id": "ch-bend",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "observedCm1": 1457.96457086,
+          "observedK": 0.059000000435803,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "methyl-acetate-pnnl-2017",
+      "pointCount": 15347,
+      "sourceDeclaredPointCount": 15347,
+      "sourceSha256": "7847ad518de3d895dc85d66b1372b75549acca29e285fd2589b60710464c9c03",
+      "outputSha256": "02ead6745034eed795b903e6101ac92ae2de9fbd8258e7714d5f688b705d7548",
+      "xRangeCm1": [
+        399.7769859400005,
+        7797.7937
+      ],
+      "yRange": [
+        0.00001909978133043,
+        0.7179999955130422
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "carbonyl",
+          "rangeCm1": [
+            1710,
+            1770
+          ],
+          "observedCm1": 1747.1936883900007,
+          "observedK": 0.6560000190028832,
+          "broad": false
+        },
+        {
+          "id": "co-acetate",
+          "rangeCm1": [
+            1190,
+            1280
+          ],
+          "observedCm1": 1246.7934962100007,
+          "observedK": 0.7179999955130422,
+          "broad": false
+        },
+        {
+          "id": "co-fingerprint",
+          "rangeCm1": [
+            1000,
+            1080
+          ],
+          "observedCm1": 1047.6939977800002,
+          "observedK": 0.3039999908005232,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "observedCm1": 2956.73519338,
+          "observedK": 0.02940000058275068,
+          "broad": false
+        },
+        {
+          "id": "ch3-bend",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "observedCm1": 1371.1704225900003,
+          "observedK": 0.23199999387679848,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "acetonitrile-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": 15345,
+      "sourceSha256": "29ca2f3e90a25794ec72817a59b9389e50c5bed5aea7ae61f071fc27b405e871",
+      "outputSha256": "5131b24d51b194eafc0cb99014ac6d8ae2691548e0ce67261ecff05529253426",
+      "xRangeCm1": [
+        399.68952816,
+        7797.4901
+      ],
+      "yRange": [
+        0.000003929996147842,
+        0.06120000075048692
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "nitrile",
+          "rangeCm1": [
+            2220,
+            2280
+          ],
+          "observedCm1": 2253.4788398599994,
+          "observedK": 0.06120000075048692,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2900,
+            3040
+          ],
+          "observedCm1": 2944.37092924,
+          "observedK": 0.007019999976952884,
+          "broad": false
+        },
+        {
+          "id": "ch3-bend",
+          "rangeCm1": [
+            1350,
+            1410
+          ],
+          "observedCm1": 1375.5203647999997,
+          "observedK": 0.047699999400575406,
+          "broad": false
+        },
+        {
+          "id": "cc-region",
+          "rangeCm1": [
+            890,
+            945
+          ],
+          "observedCm1": 917.9791276599999,
+          "observedK": 0.031199999346597937,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "tert-butylamine-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": 15345,
+      "sourceSha256": "751d8037172d6d0c43072d7932729592fdbc0bf6e4c700ece2a6b78d978efa0b",
+      "outputSha256": "3a1f1353ccf1447c849a79acb9aec287130c0ea10652b6a4cf5f5031f62053c3",
+      "xRangeCm1": [
+        399.6750119999997,
+        7797.6235
+      ],
+      "yRange": [
+        0.00001009994147253,
+        0.1299999901105231
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "nh-high",
+          "rangeCm1": [
+            3330,
+            3450
+          ],
+          "observedCm1": 3350.8508914999993,
+          "observedK": 0.005549999623243949,
+          "broad": false
+        },
+        {
+          "id": "nh-low",
+          "rangeCm1": [
+            3200,
+            3330
+          ],
+          "observedCm1": 3280.4585245,
+          "observedK": 0.005519999936140829,
+          "broad": false
+        },
+        {
+          "id": "nh-bend",
+          "rangeCm1": [
+            1550,
+            1650
+          ],
+          "observedCm1": 1601.1666459999997,
+          "observedK": 0.01679999875811061,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "observedCm1": 2960.3178964999997,
+          "observedK": 0.1299999901105231,
+          "broad": false
+        },
+        {
+          "id": "ch3-bend",
+          "rangeCm1": [
+            1340,
+            1405
+          ],
+          "observedCm1": 1364.4361515,
+          "observedK": 0.10699999649073545,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "octane-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": 15345,
+      "sourceSha256": "c86535480f3d53280c51a1f9e951cbc79b0c0330280279ef91d35327677d1cae",
+      "outputSha256": "1c2e824b1baa3c0a8c2aac150a1b7c2c49507883cac862569cb2269ef263c2e3",
+      "xRangeCm1": [
+        399.68952816,
+        7797.4901
+      ],
+      "yRange": [
+        0.00000105994287905,
+        0.16699999553171166
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "ch-stretch-high",
+          "rangeCm1": [
+            2900,
+            3000
+          ],
+          "observedCm1": 2925.5678646999995,
+          "observedK": 0.16699999553171166,
+          "broad": false
+        },
+        {
+          "id": "ch-stretch-low",
+          "rangeCm1": [
+            2835,
+            2900
+          ],
+          "observedCm1": 2856.1411648599997,
+          "observedK": 0.08039999744740008,
+          "broad": false
+        },
+        {
+          "id": "ch2-bend",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "observedCm1": 1467.6071680599998,
+          "observedK": 0.05290000139299931,
+          "broad": false
+        },
+        {
+          "id": "ch3-bend",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "observedCm1": 1378.4131439599996,
+          "observedK": 0.02969999980744038,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "styrene-pnnl-2017",
+      "pointCount": 15345,
+      "sourceDeclaredPointCount": 15345,
+      "sourceSha256": "1395e92de00cfdbfc5e53032d4fa4c8fc81082ebcc7902fc84de151197dda2a7",
+      "outputSha256": "37bf98d58d5a0014580020be387371afe78bf6282fec2ca7886bb10e34f676d4",
+      "xRangeCm1": [
+        399.6750119999997,
+        7797.6235
+      ],
+      "yRange": [
+        1.1315103595e-7,
+        0.5170000181041873
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true
+      },
+      "features": [
+        {
+          "id": "vinyl-cc",
+          "rangeCm1": [
+            1615,
+            1650
+          ],
+          "observedCm1": 1630.0950159999993,
+          "observedK": 0.03730000162448889,
+          "broad": false
+        },
+        {
+          "id": "vinyl-oop-high",
+          "rangeCm1": [
+            975,
+            1010
+          ],
+          "observedCm1": 991.2601784999997,
+          "observedK": 0.11200000294410158,
+          "broad": false
+        },
+        {
+          "id": "vinyl-oop-low",
+          "rangeCm1": [
+            890,
+            935
+          ],
+          "observedCm1": 908.8143239999999,
+          "observedK": 0.18399999954030685,
+          "broad": false
+        },
+        {
+          "id": "sp2-ch",
+          "rangeCm1": [
+            3000,
+            3120
+          ],
+          "observedCm1": 3027.335287,
+          "observedK": 0.01909999935250809,
+          "broad": false
+        },
+        {
+          "id": "aromatic-ring",
+          "rangeCm1": [
+            1475,
+            1510
+          ],
+          "observedCm1": 1494.6138164999993,
+          "observedK": 0.10700000022463946,
+          "broad": false
+        }
+      ]
+    },
+    {
+      "id": "propyne-nasa-2021-8k",
+      "pointCount": 74670,
+      "sourceDeclaredPointCount": 74670,
+      "sourceSha256": "88bdfb1d07546fc7344e02553907ea81403566fd53b4813a1e51d247d57b1edc",
+      "outputSha256": "1f843956650b30c74055d365f009ced13fcece9e9aad19e47b6e20381fd88d09",
+      "xRangeCm1": [
+        500.0234912,
+        4999.993763
+      ],
+      "yRange": [
+        -0.0532603528099999,
+        0.268752962583333
+      ],
+      "checks": {
+        "finite": true,
+        "xStrictlyDescending": true,
+        "pointCountMatchesSource": true,
+        "jsonRoundTripExact": true,
+        "yIsK": true,
+        "sharpFeaturesAreActualLocalMaxima": true,
+        "workbookColumnsReadExactly": true,
+        "originalWorkbookSha256Matches": true
+      },
+      "features": [
+        {
+          "id": "terminal-ch",
+          "rangeCm1": [
+            3233,
+            3333
+          ],
+          "observedCm1": 3280.73741999999,
+          "observedK": 0.165468521416666,
+          "broad": false
+        },
+        {
+          "id": "triple-stretch",
+          "rangeCm1": [
+            2112,
+            2136
+          ],
+          "observedCm1": 2123.99996,
+          "observedK": 0.02221093362,
+          "broad": false
+        },
+        {
+          "id": "ch-bend",
+          "rangeCm1": [
+            1414,
+            1462
+          ],
+          "observedCm1": 1438.05717699999,
+          "observedK": 0.0935465302466666,
+          "broad": false
+        },
+        {
+          "id": "terminal-bend",
+          "rangeCm1": [
+            590,
+            720
+          ],
+          "observedCm1": 646.8906991,
+          "observedK": 0.268752962583333,
+          "broad": false
+        }
+      ],
+      "workbookSelection": {
+        "file": "source/C3Hx_optical_constants_2020-05-29.xlsx",
+        "sheet": "C3H4 - propyne",
+        "columns": {
+          "x": "C",
+          "k": "E"
+        },
+        "firstDataRow": 2,
+        "lastDataRow": 74671,
+        "temperatureK": 8,
+        "phaseDetail": "amorphous ice"
+      },
+      "negativeKCount": 20158,
+      "minimumKAtCm1": 515.813072,
+      "note": "Negative baseline/numerical-processing values are preserved; no non-negativity assumption is imposed on the published source column."
+    }
+  ],
+  "protectedExistingFiles": [
+    {
+      "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+      "sha256": "b32b2794f86c3323d352b5ce98c300a2b3ca611649af633e6f721a80ece7f2ee",
+      "unchanged": true
+    },
+    {
+      "file": "processed/acetone.json",
+      "sha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a",
+      "unchanged": true
+    },
+    {
+      "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+      "sha256": "c91970018c8e8ff0e48f7371e2b928a65c1924c2aff4ffc7d07a0fb28f9e50b3",
+      "unchanged": true
+    },
+    {
+      "file": "processed/ethanol.json",
+      "sha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b",
+      "unchanged": true
+    },
+    {
+      "file": "source/polystyrene-pnnl.jdx",
+      "sha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+      "unchanged": true
+    },
+    {
+      "file": "processed/polystyrene.json",
+      "sha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1",
+      "unchanged": true
+    },
+    {
+      "file": "source/octanoic-acid-pnnl.jdx",
+      "sha256": "71d9e1eb6c3dd08895e6aa16556319a988e99e58f4e3c07b310d8bac332a404d",
+      "unchanged": true
+    },
+    {
+      "file": "processed/octanoic-acid.json",
+      "sha256": "3bc4788158449224896b8d9c8bddfebc91342dad8ff1770a505e863a0b65853c",
+      "unchanged": true
+    },
+    {
+      "file": "source/methyl-acetate-pnnl.jdx",
+      "sha256": "7847ad518de3d895dc85d66b1372b75549acca29e285fd2589b60710464c9c03",
+      "unchanged": true
+    },
+    {
+      "file": "processed/methyl-acetate.json",
+      "sha256": "02ead6745034eed795b903e6101ac92ae2de9fbd8258e7714d5f688b705d7548",
+      "unchanged": true
+    },
+    {
+      "file": "source/acetonitrile-pnnl.jdx",
+      "sha256": "29ca2f3e90a25794ec72817a59b9389e50c5bed5aea7ae61f071fc27b405e871",
+      "unchanged": true
+    },
+    {
+      "file": "processed/acetonitrile.json",
+      "sha256": "5131b24d51b194eafc0cb99014ac6d8ae2691548e0ce67261ecff05529253426",
+      "unchanged": true
+    },
+    {
+      "file": "source/tert-butylamine-pnnl.jdx",
+      "sha256": "751d8037172d6d0c43072d7932729592fdbc0bf6e4c700ece2a6b78d978efa0b",
+      "unchanged": true
+    },
+    {
+      "file": "processed/tert-butylamine.json",
+      "sha256": "3a1f1353ccf1447c849a79acb9aec287130c0ea10652b6a4cf5f5031f62053c3",
+      "unchanged": true
+    },
+    {
+      "file": "source/octane-pnnl.jdx",
+      "sha256": "c86535480f3d53280c51a1f9e951cbc79b0c0330280279ef91d35327677d1cae",
+      "unchanged": true
+    },
+    {
+      "file": "processed/octane.json",
+      "sha256": "1c2e824b1baa3c0a8c2aac150a1b7c2c49507883cac862569cb2269ef263c2e3",
+      "unchanged": true
+    }
+  ],
+  "sampleCount": 10,
+  "featureCount": 47
+}

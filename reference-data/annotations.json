@@ -15,10 +15,26 @@
         }
       ],
       "referenceDetails": [
-        { "observedCm1": 1420.364906, "assignment": "CH3 asymmetric deformation region", "mainSceneDefault": false },
-        { "observedCm1": 1362.991677, "assignment": "CH3 symmetric deformation region", "mainSceneDefault": false },
-        { "observedCm1": 1222.210307, "assignment": "C-C stretching / carbonyl-adjacent skeletal region", "mainSceneDefault": false },
-        { "observedCm1": 1092.517881, "assignment": "CH3 rocking / skeletal region", "mainSceneDefault": false }
+        {
+          "observedCm1": 1420.364906,
+          "assignment": "CH3 asymmetric deformation region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1362.991677,
+          "assignment": "CH3 symmetric deformation region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1222.210307,
+          "assignment": "C-C stretching / carbonyl-adjacent skeletal region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1092.517881,
+          "assignment": "CH3 rocking / skeletal region",
+          "mainSceneDefault": false
+        }
       ]
     },
     "ethanol-pnnl-2025": {
@@ -43,12 +59,36 @@
         }
       ],
       "referenceDetails": [
-        { "observedCm1": 2974.257136, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 2883.1348, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 1455.551542, "assignment": "CH3/CH2 deformation region", "mainSceneDefault": false },
-        { "observedCm1": 1380.339455, "assignment": "CH3 deformation region", "mainSceneDefault": false },
-        { "observedCm1": 1090.58007, "assignment": "C-O/C-C coupled fingerprint feature", "mainSceneDefault": false },
-        { "observedCm1": 881.336188, "assignment": "fingerprint-region vibration; keep assignment qualified", "mainSceneDefault": false }
+        {
+          "observedCm1": 2974.257136,
+          "assignment": "aliphatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 2883.1348,
+          "assignment": "aliphatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1455.551542,
+          "assignment": "CH3/CH2 deformation region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1380.339455,
+          "assignment": "CH3 deformation region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1090.58007,
+          "assignment": "C-O/C-C coupled fingerprint feature",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 881.336188,
+          "assignment": "fingerprint-region vibration; keep assignment qualified",
+          "mainSceneDefault": false
+        }
       ]
     },
     "polystyrene-pnnl-2017": {
@@ -64,7 +104,10 @@
         },
         {
           "display": "1602 / 1493 cm^-1",
-          "observedCm1": [1601.639269, 1493.160051],
+          "observedCm1": [
+            1601.639269,
+            1493.160051
+          ],
           "assignment": "aromatic ring skeletal features",
           "assignmentSource": "PCCP polystyrene band assignment and frozen PNNL dataset",
           "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
@@ -73,7 +116,10 @@
         },
         {
           "display": "757 / 699 cm^-1",
-          "observedCm1": [757.429884, 698.610041],
+          "observedCm1": [
+            757.429884,
+            698.610041
+          ],
           "assignment": "fingerprint evidence associated with monosubstituted aromatic C-H out-of-plane modes",
           "assignmentSource": "Polystyrene literature assignments and frozen PNNL dataset",
           "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
@@ -82,15 +128,633 @@
         }
       ],
       "referenceDetails": [
-        { "observedCm1": 3082.742199, "assignment": "aromatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 3060.564225, "assignment": "aromatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 2924.603605, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 2850.837736, "assignment": "aliphatic C-H stretching region", "mainSceneDefault": false },
-        { "observedCm1": 1452.661142, "assignment": "ring/CH deformation region", "mainSceneDefault": false },
-        { "observedCm1": 1029.351125, "assignment": "aromatic in-plane/fingerprint feature", "mainSceneDefault": false },
-        { "observedCm1": 906.890141, "assignment": "fingerprint-region feature", "mainSceneDefault": false },
-        { "observedCm1": 841.80261, "assignment": "fingerprint-region feature", "mainSceneDefault": false }
+        {
+          "observedCm1": 3082.742199,
+          "assignment": "aromatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 3060.564225,
+          "assignment": "aromatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 2924.603605,
+          "assignment": "aliphatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 2850.837736,
+          "assignment": "aliphatic C-H stretching region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1452.661142,
+          "assignment": "ring/CH deformation region",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 1029.351125,
+          "assignment": "aromatic in-plane/fingerprint feature",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 906.890141,
+          "assignment": "fingerprint-region feature",
+          "mainSceneDefault": false
+        },
+        {
+          "observedCm1": 841.80261,
+          "assignment": "fingerprint-region feature",
+          "mainSceneDefault": false
+        }
       ]
+    },
+    "octanoic-acid-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "carbonyl",
+          "labelZh": "羧酸 C=O 伸缩",
+          "rangeCm1": [
+            1680,
+            1740
+          ],
+          "broad": false,
+          "explanationZh": "先看强羰基带：这一区域符合羧酸 C=O 伸缩。再找宽 O–H 包络；羰基位置也随氢键和结构改变，不能单峰区分所有羧酸。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1711.5648772199993,
+          "observedK": 0.38800001232851183,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "acid-oh-envelope",
+          "labelZh": "羧酸 O–H 宽包络（重叠）",
+          "rangeCm1": [
+            2500,
+            3300
+          ],
+          "broad": true,
+          "explanationZh": "观察宽包络而非单一尖峰：羧酸 O–H 与 C–H 伸缩重叠；区间最大值不等于纯 O–H 峰位。结合羰基带判断，不能把最大值直接命名为 O–H 模式。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "observedKind": "maximum of overlapping/broad envelope within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "长链 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3000
+          ],
+          "broad": false,
+          "explanationZh": "宽背景上的窄峰主要支持烷基 C–H 伸缩。辛酸同时有长碳链和羧酸；窄峰与宽 O–H 包络可能重叠。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "co-region",
+          "labelZh": "C–O 相关指纹区",
+          "rangeCm1": [
+            1200,
+            1320
+          ],
+          "broad": false,
+          "explanationZh": "这一指纹区可含羧酸 C–O 伸缩及其他耦合贡献。先用羰基与宽 O–H 建立线索，再把这里作为辅助证据。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1276.2016136399998,
+          "observedK": 0.07750000086949764,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-bend",
+          "labelZh": "烷基 CH₂/CH₃ 变形区",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "broad": false,
+          "explanationZh": "这处峰可含长链 CH₂ 和甲基变形。与 C–H 伸缩一起支持烷基骨架，不能据此区分羧酸与酯。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1457.96457086,
+          "observedK": 0.059000000435803,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "methyl-acetate-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "carbonyl",
+          "labelZh": "酯 C=O 伸缩",
+          "rangeCm1": [
+            1710,
+            1770
+          ],
+          "broad": false,
+          "explanationZh": "这处强带支持酯羰基伸缩。酯与酮的常见区间有所不同，但会受结构影响；再用 C–O 区验证，不能只看一个峰。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1747.1936883900007,
+          "observedK": 0.6560000190028832,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "co-acetate",
+          "labelZh": "乙酸酯 C–O 相关强带",
+          "rangeCm1": [
+            1190,
+            1280
+          ],
+          "broad": false,
+          "explanationZh": "这里的强带与乙酸酯 C–O 相关振动相符，可能混有骨架耦合。与羰基联合读谱，比只按羰基峰位命名更稳妥。",
+          "assignmentUrl": "https://www.athabascau.ca/science-and-technology/_documents/centre-for-science-files/labs/organic-chemistry/exp/6_ir_tutorial.pdf",
+          "observedCm1": 1246.7934962100007,
+          "observedK": 0.7179999955130422,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "co-fingerprint",
+          "labelZh": "C–O 相关指纹辅助区",
+          "rangeCm1": [
+            1000,
+            1080
+          ],
+          "broad": false,
+          "explanationZh": "这一低波数区可能含 C–O 与其他骨架耦合贡献。把它视为辅助指纹，联合较高波数 C–O 带和羰基，不作一峰一键归属。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1047.6939977800002,
+          "observedK": 0.3039999908005232,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "甲基 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "broad": false,
+          "explanationZh": "观察几处窄峰，支持甲基 C–H 伸缩。很多有机物都出现这些峰；酯的线索还需羰基和 C–O 一起给出。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2956.73519338,
+          "observedK": 0.02940000058275068,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可支持甲基变形。与甲基伸缩和羰基比较，指纹区中的振动常有耦合，不能据单峰认定乙酸甲酯。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1371.1704225900003,
+          "observedK": 0.23199999387679848,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "acetonitrile-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "nitrile",
+          "labelZh": "C≡N 伸缩",
+          "rangeCm1": [
+            2220,
+            2280
+          ],
+          "broad": false,
+          "explanationZh": "先看这处窄带：它支持腈基 C≡N 伸缩。NIST 模式表支持此归属，但气态频率不能直接代替这里的液态实测位置。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 2253.4788398599994,
+          "observedK": 0.06120000075048692,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "甲基 C–H 伸缩",
+          "rangeCm1": [
+            2900,
+            3040
+          ],
+          "broad": false,
+          "explanationZh": "这里的峰支持甲基伸缩；腈旁的甲基环境会影响位置。与 C≡N 带一起看，不按是否超过 3000 cm⁻¹ 单独认定芳香族。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 2944.37092924,
+          "observedK": 0.007019999976952884,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "甲基变形区",
+          "rangeCm1": [
+            1350,
+            1410
+          ],
+          "broad": false,
+          "explanationZh": "这一区域可含甲基对称变形以及组合带影响。联合甲基伸缩和腈带；NIST 对部分模式注明耦合，不能给每峰绝对单一归属。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 1375.5203647999997,
+          "observedK": 0.047699999400575406,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "cc-region",
+          "labelZh": "C–C 相关骨架振动",
+          "rangeCm1": [
+            890,
+            945
+          ],
+          "broad": false,
+          "explanationZh": "指纹区这处带与 C–C 伸缩相关模式相符。它只补充骨架证据；先用腈带建立官能团线索，不能仅凭这里鉴定乙腈。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 917.9791276599999,
+          "observedK": 0.031199999346597937,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "tert-butylamine-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "nh-high",
+          "labelZh": "NH₂ 伸缩：较高波数带",
+          "rangeCm1": [
+            3330,
+            3450
+          ],
+          "broad": false,
+          "explanationZh": "观察 N–H 区较高波数的一处带。伯胺 NH₂ 常有两条伸缩带；再与较低波数 N–H 带联合观察，别被“叔丁”名称误认为叔胺。",
+          "assignmentUrl": "https://webspectra.chem.ucla.edu/irtable.html",
+          "observedCm1": 3350.8508914999993,
+          "observedK": 0.005549999623243949,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "nh-low",
+          "labelZh": "NH₂ 伸缩：较低波数带",
+          "rangeCm1": [
+            3200,
+            3330
+          ],
+          "broad": false,
+          "explanationZh": "与较高波数的 N–H 带配对阅读，支持 NH₂ 伸缩。液态氢键可改变位置与带宽；双带也要结合 N–H 弯曲区验证。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 3280.4585245,
+          "observedK": 0.005519999936140829,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "nh-bend",
+          "labelZh": "NH₂ 弯曲相关区",
+          "rangeCm1": [
+            1550,
+            1650
+          ],
+          "broad": false,
+          "explanationZh": "这处指纹带可含 NH₂ 弯曲，模式可能耦合。与高波数 N–H 双带一起支持伯胺线索，不单凭它区分所有含氮化合物。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1601.1666459999997,
+          "observedK": 0.01679999875811061,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "烷基 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "broad": false,
+          "explanationZh": "一组窄峰支持叔丁基的 C–H 伸缩。先与上方 N–H 区分，再把两者结合，理解同一分子可含不同官能团证据。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2960.3178964999997,
+          "observedK": 0.1299999901105231,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1340,
+            1405
+          ],
+          "broad": false,
+          "explanationZh": "这里可含叔丁基甲基变形。它为烷基骨架提供辅助信息，不能代替 N–H 双带来判断胺的类型。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1364.4361515,
+          "observedK": 0.10699999649073545,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "octane-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "ch-stretch-high",
+          "labelZh": "C–H 伸缩峰群：高波数侧",
+          "rangeCm1": [
+            2900,
+            3000
+          ],
+          "broad": false,
+          "explanationZh": "这组窄峰主要支持烷基 C–H 伸缩。和较低波数侧一起看，先认识峰群，再用变形区补充骨架信息。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2925.5678646999995,
+          "observedK": 0.16699999553171166,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-stretch-low",
+          "labelZh": "C–H 伸缩峰群：低波数侧",
+          "rangeCm1": [
+            2835,
+            2900
+          ],
+          "broad": false,
+          "explanationZh": "低波数侧也有 C–H 伸缩贡献，不能把整组峰只命名为一个模式。结合 CH₂/CH₃ 变形，并与含羰基样本比较。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2856.1411648599997,
+          "observedK": 0.08039999744740008,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch2-bend",
+          "labelZh": "CH₂/CH₃ 变形区",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "broad": false,
+          "explanationZh": "这一区域可含 CH₂ 剪式及甲基变形。与伸缩峰群联合支持烷基骨架；这些振动并非正辛烷独有。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1467.6071680599998,
+          "observedK": 0.05290000139299931,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可支持链端甲基变形。把它作为辅助线索，完整指纹和多处比较才能提高结构判断的可信度。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1378.4131439599996,
+          "observedK": 0.02969999980744038,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "styrene-pnnl-2017": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "vinyl-cc",
+          "labelZh": "乙烯基 C=C 伸缩区",
+          "rangeCm1": [
+            1615,
+            1650
+          ],
+          "broad": false,
+          "explanationZh": "这里的带支持与苯环共轭的乙烯基 C=C 伸缩。位置会受共轭影响；先与末端 =CH₂ 面外带联合，不单凭这一带认定烯烃。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1630.0950159999993,
+          "observedK": 0.03730000162448889,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "vinyl-oop-high",
+          "labelZh": "末端 =CH₂ 面外带：高波数侧",
+          "rangeCm1": [
+            975,
+            1010
+          ],
+          "broad": false,
+          "explanationZh": "约 990 cm⁻¹ 的带可与约 910 cm⁻¹ 的带成对支持末端乙烯基。指纹区可能耦合；要联合 C=C 和 =C–H 区域读谱。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 991.2601784999997,
+          "observedK": 0.11200000294410158,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "vinyl-oop-low",
+          "labelZh": "末端 =CH₂ 面外带：低波数侧",
+          "rangeCm1": [
+            890,
+            935
+          ],
+          "broad": false,
+          "explanationZh": "与约 990 cm⁻¹ 的带一起观察，支持 R–CH=CH₂ 的面外振动组合。不能把一个低波数指纹峰当作唯一物质鉴定。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 908.8143239999999,
+          "observedK": 0.18399999954030685,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "sp2-ch",
+          "labelZh": "sp² C–H 伸缩区（烯基 / 芳香重叠）",
+          "rangeCm1": [
+            3000,
+            3120
+          ],
+          "broad": false,
+          "explanationZh": "一组峰支持 sp² C–H 伸缩；苯乙烯同时含烯基和芳环，二者可重叠。不要把本区最大值全部归给烯基，需再看低波数组合。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 3027.335287,
+          "observedK": 0.01909999935250809,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "aromatic-ring",
+          "labelZh": "芳环骨架辅助带",
+          "rangeCm1": [
+            1475,
+            1510
+          ],
+          "broad": false,
+          "explanationZh": "这里的芳环骨架带说明同一单体还有苯环。与乙烯基特征分开联合观察，不能把苯乙烯与聚苯乙烯低聚物视作同一个样品。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 1494.6138164999993,
+          "observedK": 0.10700000022463946,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
+    },
+    "propyne-nasa-2021-8k": {
+      "note": "独立教学解释层；实际位置读取原始 k 数组。宽包络最大值不是纯单模式峰位。",
+      "teachingPeaks": [
+        {
+          "id": "terminal-ch",
+          "labelZh": "端炔 ≡C–H 伸缩",
+          "rangeCm1": [
+            3233,
+            3333
+          ],
+          "broad": false,
+          "explanationZh": "先看约 3280 cm⁻¹ 的端炔 C–H 带。这里是 8 K 非晶固体，位置和宽度不代表室温气体或液体；再结合 C≡C 与弯曲区。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 3280.73741999999,
+          "observedK": 0.165468521416666,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "triple-stretch",
+          "labelZh": "C≡C 伸缩（较弱）",
+          "rangeCm1": [
+            2112,
+            2136
+          ],
+          "broad": false,
+          "explanationZh": "这处较弱带与论文给出的 C≡C 伸缩相符。三键伸缩可因对称性而很弱或不活跃，不能从缺少强峰否定炔键；本样本须与端炔 C–H 联合判断。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 2123.99996,
+          "observedK": 0.02221093362,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "ch-bend",
+          "labelZh": "C–H 弯曲相关区",
+          "rangeCm1": [
+            1414,
+            1462
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可含丙炔 C–H 弯曲贡献，论文归属为近似模式描述。与端炔伸缩和 C≡C 一起读，指纹区通常包含耦合。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 1438.05717699999,
+          "observedK": 0.0935465302466666,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        },
+        {
+          "id": "terminal-bend",
+          "labelZh": "端炔 H–C≡C 弯曲区",
+          "rangeCm1": [
+            590,
+            720
+          ],
+          "broad": false,
+          "explanationZh": "低波数这一带支持端炔 C–H 弯曲。先对照高波数 ≡C–H 伸缩，再联合较弱 C≡C；非晶固体的带形不可套成所有端炔的固定规则。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 646.8906991,
+          "observedK": 0.268752962583333,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array",
+          "fromFinalReferenceDataset": true,
+          "mainSceneDefault": false
+        }
+      ],
+      "referenceDetails": []
     }
   }
 }

@@ -1,0 +1,9 @@
+{
+  "recordUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C124072&Index=0&Type=IR-SPEC",
+  "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C124072&Index=3&Type=IR",
+  "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+  "owner": "Public domain",
+  "ownerEvidence": "Official PNNL record OWNER field and NIST record Owner row",
+  "jcampFile": "octanoic-acid-pnnl.jdx",
+  "metadataFile": "META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf"
+}

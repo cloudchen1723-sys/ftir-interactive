@@ -12,15 +12,32 @@
       "sourceUrl": "https://doi.org/10.25584/2997107",
       "phase": "liquid",
       "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Vertex 70 FTIR for MIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
-      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [400.182104, 9997.903769], "order": "descending" },
-      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          400.182104,
+          9997.903769
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless"
+      },
       "original": {
         "format": "three-column ASCII: wavenumber, n, k",
         "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
         "metadata": "source/META.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.pdf",
         "sha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9"
       },
-      "local": { "format": "JSON arrays", "file": "processed/acetone.json", "pointCount": 19908, "sha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a" },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/acetone.json",
+        "pointCount": 19908,
+        "sha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a"
+      },
       "license": "CC0-1.0",
       "redistribution": "Allowed; attribution requested by PNNL",
       "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; sample PNNL543226, Alfa Aesar 99+%, lot U07E003"
@@ -33,15 +50,32 @@
       "sourceUrl": "https://doi.org/10.25584/2997107",
       "phase": "liquid",
       "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Tensor 27 FTIR for MIR and Vertex 70 for NIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
-      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [399.689557, 9996.944655], "order": "descending" },
-      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.689557,
+          9996.944655
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless"
+      },
       "original": {
         "format": "three-column ASCII: wavenumber, n, k",
         "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
         "metadata": "source/META.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.pdf",
         "sha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467"
       },
-      "local": { "format": "JSON arrays", "file": "processed/ethanol.json", "pointCount": 19907, "sha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b" },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/ethanol.json",
+        "pointCount": 19907,
+        "sha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b"
+      },
       "license": "CC0-1.0",
       "redistribution": "Allowed; attribution requested by PNNL",
       "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; MIR sample Acros 99.5+%, lot B0530617; NIR sample Sigma-Aldrich >=99.5%, lot SHBL6083"
@@ -55,17 +89,581 @@
       "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C9003536&Index=0&Type=IR-SPEC",
       "phase": "liquid",
       "measurement": "Composite optical-constant spectrum; Bruker Tensor 27 FTIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction",
-      "x": { "quantity": "wavenumber", "unit": "cm^-1", "range": [399.68952816, 7797.4901], "order": "descending" },
-      "y": { "quantity": "imaginary refractive index", "symbol": "k", "unit": "dimensionless" },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.68952816,
+          7797.4901
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless"
+      },
       "original": {
         "format": "JCAMP-DX 4.24 compound file containing separate n and k blocks",
         "file": "source/polystyrene-pnnl.jdx",
         "sha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f"
       },
-      "local": { "format": "JSON arrays", "file": "processed/polystyrene.json", "pointCount": 15345, "sha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1" },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/polystyrene.json",
+        "pointCount": 15345,
+        "sha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1"
+      },
       "license": "Public domain as explicitly declared by the source record and JCAMP OWNER field",
       "redistribution": "Allowed for this PNNL record; retain provenance. This does not waive copyright in unrelated NIST WebBook compilations.",
       "provenance": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra; Sigma-Aldrich sample PNNL513043. This is the ordinary measured reference curve and is not SRM 1921b."
+    },
+    {
+      "sample": "Octanoic acid",
+      "cas": "124-07-2",
+      "datasetId": "octanoic-acid-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C124072&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 27 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          1.1,
+          4.8,
+          5.1,
+          15.4,
+          36.4,
+          97,
+          201,
+          502,
+          1058
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "None",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.48212986,
+        "sourceRangeCm1": [
+          399.68952816,
+          7797.4901
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "3 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.68952816,
+          7797.4901
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/octanoic-acid-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+        "sha256": "71d9e1eb6c3dd08895e6aa16556319a988e99e58f4e3c07b310d8bac332a404d",
+        "metadataSha256": "f7dbe22cd3e4fb4ec76e2b0c649745cd0a0386a30fd0c4f58b4748187c445279",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C124072&Index=3&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/octanoic-acid.json",
+        "pointCount": 15345,
+        "sha256": "3bc4788158449224896b8d9c8bddfebc91342dad8ff1770a505e863a0b65853c"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL514789; Sigma, ≥99%, lot MKBV8509V; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "Methyl acetate",
+      "cas": "79-20-9",
+      "datasetId": "methyl-acetate-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C79209&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 37 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          2.6,
+          4,
+          11.9,
+          14.5,
+          36.1,
+          51.5,
+          99.6,
+          200,
+          503,
+          1037
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "None",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.48208111,
+        "sourceRangeCm1": [
+          399.7769859400005,
+          7797.7937
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "4 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.7769859400005,
+          7797.7937
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/methyl-acetate-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+        "sha256": "7847ad518de3d895dc85d66b1372b75549acca29e285fd2589b60710464c9c03",
+        "metadataSha256": "3bf606394938c5272bda0d8dab4baabe482ea77fec01a608338e4b166ced6de4",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C79209&Index=5&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/methyl-acetate.json",
+        "pointCount": 15347,
+        "sha256": "02ead6745034eed795b903e6101ac92ae2de9fbd8258e7714d5f688b705d7548"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL514676; Sigma-Aldrich, 99.5%, lot SHBG4345V; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "Acetonitrile",
+      "cas": "75-05-8",
+      "datasetId": "acetonitrile-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75058&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 27 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          1.8,
+          3.3,
+          15.7,
+          35.9,
+          39.9,
+          108,
+          197,
+          509,
+          522,
+          1211
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "None",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.48212986,
+        "sourceRangeCm1": [
+          399.68952816,
+          7797.4901
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "3 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.68952816,
+          7797.4901
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/acetonitrile-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+        "sha256": "29ca2f3e90a25794ec72817a59b9389e50c5bed5aea7ae61f071fc27b405e871",
+        "metadataSha256": "954b890cf6fe2f5164e47c4d90c75e6ce700681951699869b9d8ac04fad14617",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75058&Index=28&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/acetonitrile.json",
+        "pointCount": 15345,
+        "sha256": "5131b24d51b194eafc0cb99014ac6d8ae2691548e0ce67261ecff05529253426"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL325466; Sigma-Aldrich, 98%, lot 73496JM; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "tert-Butylamine",
+      "cas": "75-64-9",
+      "datasetId": "tert-butylamine-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75649&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 27 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          0.748,
+          0.951,
+          3.81,
+          11.3,
+          15.9,
+          38.7,
+          55.5,
+          107,
+          206,
+          508,
+          1042
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "None",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.4821395,
+        "sourceRangeCm1": [
+          399.6750119999997,
+          7797.6235
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "3 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.6750119999997,
+          7797.6235
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/tert-butylamine-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+        "sha256": "751d8037172d6d0c43072d7932729592fdbc0bf6e4c700ece2a6b78d978efa0b",
+        "metadataSha256": "6aad33b3ca0811f41ac66f95aecd4b50aeec5af5e3dce016b1591c94d0a095c4",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75649&Index=2&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/tert-butylamine.json",
+        "pointCount": 15345,
+        "sha256": "3a1f1353ccf1447c849a79acb9aec287130c0ea10652b6a4cf5f5031f62053c3"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL520004; Aldrich, ≥99.5%, lot SHBG8066V; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "Octane",
+      "cas": "111-65-9",
+      "datasetId": "octane-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C111659&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 27 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          1.8,
+          7.6,
+          15,
+          40,
+          110,
+          197,
+          505,
+          1009
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "None",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.48212986,
+        "sourceRangeCm1": [
+          399.68952816,
+          7797.4901
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "3 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.68952816,
+          7797.4901
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/octane-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+        "sha256": "c86535480f3d53280c51a1f9e951cbc79b0c0330280279ef91d35327677d1cae",
+        "metadataSha256": "3104ff6fe9de59ed7a4b662b85b800ab69bd6db4f9da6c351094b1070355ad75",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C111659&Index=1&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/octane.json",
+        "pointCount": 15345,
+        "sha256": "1c2e824b1baa3c0a8c2aac150a1b7c2c49507883cac862569cb2269ef263c2e3"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL511797; Sigma-Aldrich, ≥99%, lot SHBF6475V; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "Styrene",
+      "cas": "100-42-5",
+      "datasetId": "styrene-pnnl-2017",
+      "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+      "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C100425&Index=0&Type=IR-SPEC",
+      "phase": "liquid",
+      "measurement": {
+        "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+        "instrument": "Bruker Tensor 27 FTIR",
+        "resolutionCm1": 2,
+        "sampleTemperatureC": 26,
+        "sampleTemperatureUncertaintyC": 1,
+        "pathLengthsUm": [
+          3.95,
+          8.71,
+          15.1,
+          29.9,
+          35.5,
+          54,
+          98.2,
+          202,
+          537,
+          1017
+        ],
+        "cellWindowMaterial": "KBr",
+        "preparation": "Vendor added 4-tert-butylcatechol as stabilizer.",
+        "purge": "UHP nitrogen",
+        "scansPerSingleChannel": 128,
+        "apodization": "Norton-Beer, Medium",
+        "phaseCorrection": "Mertz",
+        "zeroFill": "4x",
+        "spectralIntervalCm1": 0.4821395,
+        "sourceRangeCm1": [
+          399.6750119999997,
+          7797.6235
+        ],
+        "scannerVelocity": "10 kHz",
+        "aperture": "3 mm",
+        "detector": "DLTGS at room temperature",
+        "beamSplitter": "Broadband potassium bromide (KBr)",
+        "irSource": "Silicon carbide glow bar",
+        "foldingLimits": "15802 to 0 cm-1",
+        "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+        "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          399.6750119999997,
+          7797.6235
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "JCAMP-DX 4.24 compound n/k blocks",
+        "file": "source/styrene-pnnl.jdx",
+        "metadata": "source/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+        "sha256": "1395e92de00cfdbfc5e53032d4fa4c8fc81082ebcc7902fc84de151197dda2a7",
+        "metadataSha256": "9d8e9672f1c24eb9498f54c0bd78634ac1a9cbf9f8850dd2f86589cf508147b1",
+        "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C100425&Index=4&Type=IR",
+        "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf"
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/styrene.json",
+        "pointCount": 15345,
+        "sha256": "37bf98d58d5a0014580020be387371afe78bf6282fec2ca7886bb10e34f676d4"
+      },
+      "license": "Public domain (explicit source OWNER declaration)",
+      "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+      "provenance": "PNNL PNNL518689; Sigma-Aldrich, ≥99%, lot MKBV4061V; measured 26 ± 1 C; original metadata PDF retained in full."
+    },
+    {
+      "sample": "Propyne",
+      "cas": "74-99-7",
+      "datasetId": "propyne-nasa-2021-8k",
+      "source": "NASA Goddard Cosmic Ice Laboratory, C3 hydrocarbon optical constants (2021 publication)",
+      "sourceUrl": "https://science.gsfc.nasa.gov/691/cosmicice/constants.html",
+      "phase": "solid",
+      "phaseDetail": "amorphous ice",
+      "measurement": {
+        "mode": "Imaginary refractive index derived by publisher from normal-incidence transmission FTIR measurements and optical-constants analysis",
+        "instrument": "FTIR; paper identifies Thermo iS50 for phase checks; selected workbook does not separately name the optical-constants acquisition instrument",
+        "resolutionCm1": 0.5,
+        "scansPerSpectrum": 200,
+        "sampleTemperatureK": 8,
+        "phaseDetail": "amorphous ice",
+        "conditionsZh": "8 K 非晶固体；气相沉积在预冷 CsI 或 KBr 基底，正入射透射 FTIR 后由作者计算光学常数。不是室温液体谱。",
+        "substrate": "CsI or KBr; selected workbook block does not specify which substrate",
+        "sampleThicknessUm": null,
+        "thicknessNote": "Paper reports multiple ice thicknesses ~0.25–2 µm for intensity measurements. No unique thickness assigned to this optical-constants workbook block.",
+        "sourceRangeCm1": [
+          500.0234912,
+          4999.993763
+        ],
+        "spectralIntervalCm1": 0.06026500000007218,
+        "resolutionNote": "~0.0603 cm^-1 source grid spacing is not the 0.5 cm^-1 instrumental resolution.",
+        "supplier": "Sigma Aldrich",
+        "statedPurity": "≥99%",
+        "publisherProcessing": "Optical constants derived by publisher from measured transmission spectra using updated iterative optical-constants analysis with substrate effects and refractive-index measurements. Source contains negative baseline/numerical-processing values, which are retained and do not represent physical negative absorption.",
+        "knownContaminants": "Paper reports small features from ~0.1% CO2 at 2338 cm^-1 and ~1% allene at 1948 cm^-1 in amorphous propyne; no peaks are removed here."
+      },
+      "x": {
+        "quantity": "wavenumber",
+        "unit": "cm^-1",
+        "range": [
+          500.0234912,
+          4999.993763
+        ],
+        "order": "descending"
+      },
+      "y": {
+        "quantity": "imaginary refractive index",
+        "symbol": "k",
+        "unit": "dimensionless",
+        "absorptionDirection": "up"
+      },
+      "original": {
+        "format": "XLSX optical-constants workbook",
+        "file": "source/C3Hx_optical_constants_2020-05-29.xlsx",
+        "sha256": "88bdfb1d07546fc7344e02553907ea81403566fd53b4813a1e51d247d57b1edc",
+        "downloadUrl": "https://science.gsfc.nasa.gov/691/cosmicice/constants/C3_hydrocarbons/C3Hx_optical_constants_2020-05-29.xlsx",
+        "sheet": "C3H4 - propyne",
+        "columns": {
+          "x": "C",
+          "k": "E"
+        },
+        "firstDataRow": 2,
+        "lastDataRow": 74671
+      },
+      "local": {
+        "format": "JSON arrays",
+        "file": "processed/propyne.json",
+        "pointCount": 74670,
+        "sha256": "1f843956650b30c74055d365f009ced13fcece9e9aad19e47b6e20381fd88d09"
+      },
+      "license": "NASA Open Access Data Policy (OCdb Data Redistribution terms); attribution requested",
+      "licenseUrl": "https://ocdb.smce.nasa.gov/page/toc",
+      "redistribution": "Retain attribution to the NASA Cosmic Ice Laboratory and Hudson et al. Data redistribution is described by NASA OCdb policy; this is not a CC0 declaration and does not license reproduction of the publisher article.",
+      "provenance": "Hudson, Gerakines, Yarnall and Coones (2021), Infrared spectra and optical constants of astronomical ices: III. Propane, propylene, and propyne, Icarus 354, 114033, DOI 10.1016/j.icarus.2020.114033. Data: NASA Goddard Cosmic Ice Laboratory."
     }
   ],
   "calibrationReference": "srm-1921b.json"

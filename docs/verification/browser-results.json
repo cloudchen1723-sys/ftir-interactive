@@ -1,0 +1,1314 @@
+{
+  "checkedAt": "2026-10-10T16:05:53.669Z",
+  "browser": "Chrome headless (existing local runtime)",
+  "isolatedDirectory": "Temporary directory containing only the bundled HTML",
+  "results": [
+    {
+      "name": "source-1280x720: complete keyboard classroom to final beat",
+      "pass": true,
+      "detail": {
+        "advances": 38
+      }
+    },
+    {
+      "name": "source-1280x720: final CTA has button semantics and keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: 3D instrument available",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: instrument top control",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: all ten catalog choices",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.542E-07
+      }
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 269,
+        "actualPoints": 269,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0067819142
+      }
+    },
+    {
+      "name": "source-1280x720/acetone-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.8027E-06
+      }
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 1161,
+        "actualPoints": 1161,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00022157136
+      }
+    },
+    {
+      "name": "source-1280x720/ethanol-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00012400014654016
+      }
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 228,
+        "actualPoints": 228,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0032799998631846397
+      }
+    },
+    {
+      "name": "source-1280x720/polystyrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00042800005277092
+      }
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01400000051376108
+      }
+    },
+    {
+      "name": "source-1280x720/octanoic-acid-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7468,
+        "actualPoints": 7468,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.60999679485E-05
+      }
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01009999954060487
+      }
+    },
+    {
+      "name": "source-1280x720/methyl-acetate-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.229982400978E-06
+      }
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00035099999314795
+      }
+    },
+    {
+      "name": "source-1280x720/acetonitrile-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.789998012866999E-05
+      }
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 373,
+        "actualPoints": 373,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00037099998866741996
+      }
+    },
+    {
+      "name": "source-1280x720/tert-butylamine-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.579996576077E-05
+      }
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 332,
+        "actualPoints": 332,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0021299999305761
+      }
+    },
+    {
+      "name": "source-1280x720/octane-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 1.1315103595E-07
+      }
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 197,
+        "actualPoints": 197,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00114000005765264
+      }
+    },
+    {
+      "name": "source-1280x720/styrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 58076,
+        "actualPoints": 58076,
+        "maxPixelError": 0,
+        "yBottom": -0.07902141804146653,
+        "yMin": -0.0532603528099999
+      }
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: propyne 8 K amorphous conditions visible",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: propyne negative source baseline retained",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 2655,
+        "actualPoints": 2655,
+        "maxPixelError": 0,
+        "yBottom": -0.01378712324958728,
+        "yMin": -0.000508927348383333
+      }
+    },
+    {
+      "name": "source-1280x720/propyne-nasa-2021-8k: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: modal Space isolation",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: modal Tab trap",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: Escape restores CTA focus",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: reentry works",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: backward stable beat",
+      "pass": true
+    },
+    {
+      "name": "source-1280x720: reset current classroom state",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: final CTA has button semantics and keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: 3D instrument available",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: instrument top control",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: all ten catalog choices",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.542E-07
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 269,
+        "actualPoints": 269,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0067819142
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/acetone-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.8027E-06
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 1161,
+        "actualPoints": 1161,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00022157136
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/ethanol-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00012400014654016
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 228,
+        "actualPoints": 228,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0032799998631846397
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/polystyrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00042800005277092
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01400000051376108
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/octanoic-acid-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7468,
+        "actualPoints": 7468,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.60999679485E-05
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01009999954060487
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/methyl-acetate-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.229982400978E-06
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00035099999314795
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/acetonitrile-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.789998012866999E-05
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 373,
+        "actualPoints": 373,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00037099998866741996
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/tert-butylamine-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.579996576077E-05
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 332,
+        "actualPoints": 332,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0021299999305761
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/octane-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 1.1315103595E-07
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 197,
+        "actualPoints": 197,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00114000005765264
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/styrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 58076,
+        "actualPoints": 58076,
+        "maxPixelError": 0,
+        "yBottom": -0.07902141804146653,
+        "yMin": -0.0532603528099999
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: feature count",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: propyne 8 K amorphous conditions visible",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: propyne negative source baseline retained",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 2655,
+        "actualPoints": 2655,
+        "maxPixelError": 0,
+        "yBottom": -0.01378712324958728,
+        "yMin": -0.000508927348383333
+      }
+    },
+    {
+      "name": "source-1024x768-reduced/propyne-nasa-2021-8k: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: modal Space isolation",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: modal Tab trap",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: Escape restores CTA focus",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: reentry works",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: backward stable beat",
+      "pass": true
+    },
+    {
+      "name": "source-1024x768-reduced: reset current classroom state",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: final CTA has button semantics and keyboard focus",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: 3D instrument available",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: instrument top control",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: all ten catalog choices",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.542E-07
+      }
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 269,
+        "actualPoints": 269,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0067819142
+      }
+    },
+    {
+      "name": "isolated-file-offline/acetone-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.8027E-06
+      }
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 1161,
+        "actualPoints": 1161,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00022157136
+      }
+    },
+    {
+      "name": "isolated-file-offline/ethanol-pnnl-2025: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00012400014654016
+      }
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 228,
+        "actualPoints": 228,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0032799998631846397
+      }
+    },
+    {
+      "name": "isolated-file-offline/polystyrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00042800005277092
+      }
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01400000051376108
+      }
+    },
+    {
+      "name": "isolated-file-offline/octanoic-acid-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7468,
+        "actualPoints": 7468,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 6.60999679485E-05
+      }
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.01009999954060487
+      }
+    },
+    {
+      "name": "isolated-file-offline/methyl-acetate-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.229982400978E-06
+      }
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 249,
+        "actualPoints": 249,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00035099999314795
+      }
+    },
+    {
+      "name": "isolated-file-offline/acetonitrile-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 7.789998012866999E-05
+      }
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 373,
+        "actualPoints": 373,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00037099998866741996
+      }
+    },
+    {
+      "name": "isolated-file-offline/tert-butylamine-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 5.579996576077E-05
+      }
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 332,
+        "actualPoints": 332,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.0021299999305761
+      }
+    },
+    {
+      "name": "isolated-file-offline/octane-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 7467,
+        "actualPoints": 7467,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 1.1315103595E-07
+      }
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 197,
+        "actualPoints": 197,
+        "maxPixelError": 0,
+        "yBottom": 0,
+        "yMin": 0.00114000005765264
+      }
+    },
+    {
+      "name": "isolated-file-offline/styrene-pnnl-2017: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: full raw curve exact",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 58076,
+        "actualPoints": 58076,
+        "maxPixelError": 0,
+        "yBottom": -0.07902141804146653,
+        "yMin": -0.0532603528099999
+      }
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: k axis and source",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: feature count",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: propyne 8 K amorphous conditions visible",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: propyne negative source baseline retained",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: first guide reads actual maximum",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: zoom preserves original points",
+      "pass": true,
+      "detail": {
+        "expectedPoints": 2655,
+        "actualPoints": 2655,
+        "maxPixelError": 0,
+        "yBottom": -0.01378712324958728,
+        "yMin": -0.000508927348383333
+      }
+    },
+    {
+      "name": "isolated-file-offline/propyne-nasa-2021-8k: next follows reading order",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: modal Space isolation",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: modal Tab trap",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: Escape restores CTA focus",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: reentry works",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: backward stable beat",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: reset current classroom state",
+      "pass": true
+    },
+    {
+      "name": "isolated-file-offline: no external or sidecar requests",
+      "pass": true,
+      "detail": {
+        "requestCount": 1,
+        "onlyIsolatedHtml": true
+      }
+    },
+    {
+      "name": "No console or page errors",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "errors": [],
+  "passed": 219,
+  "failed": 0
+}

@@ -155,6 +155,97 @@
     beamObjects.detect=beam(O.parts.collector,O.parts.detector,0x9ae0e5,.028);
     const selection=mesh(new T.TorusGeometry(.75,.014,8,64),mat(0x83f3df,{emissive:0x4dc8b7,emissiveIntensity:.8}),assembly);
     selection.rotation.x=-Math.PI/2;selection.visible=false;selection.castShadow=false;
+    // Optical path replay with glowing amber traveling pulses
+    const pulseMat=new T.MeshBasicMaterial({color:0xffa834,transparent:true,opacity:0.95,depthWrite:false});
+    materials.add(pulseMat);
+    const pulseGeo=new T.SphereGeometry(0.14,16,16);
+    geometries.add(pulseGeo);
+    const pulseA=mesh(pulseGeo,pulseMat,assembly);
+    const pulseB=mesh(pulseGeo,pulseMat,assembly);
+    pulseA.visible=false;pulseB.visible=false;pulseA.castShadow=false;pulseB.castShadow=false;
+    let replayAnimId=null;
+
+    function stopReplay(){
+      if(replayAnimId){cancelAnimationFrame(replayAnimId);replayAnimId=null;}
+      pulseA.visible=false;pulseB.visible=false;pulseA.scale.set(1,1,1);pulseB.scale.set(1,1,1);
+      Object.entries(beamObjects).forEach(([_,o])=>{o.material.opacity=0.6;});
+      requestDraw();
+    }
+
+    function replayOpticalPath(onStep,onComplete){
+      stopReplay();
+      const P=O.parts;
+      const src=new T.Vector3(...P.source);
+      const bs=new T.Vector3(...P.splitter);
+      const fix=new T.Vector3(...P.fixed);
+      const mov=new T.Vector3(O.mirrorX(mm),P.moving[1],P.moving[2]);
+      const det=new T.Vector3(...P.detector);
+
+      const stages=[
+        {d:850,name:'① 光源出发：红外光经准直光阑射向分束器',step:1},
+        {d:900,name:'② 50:50 分光：两路光脉冲分别奔向固定镜（上方）与动镜（左侧）',step:2},
+        {d:900,name:'③ 原路反射：分别从定镜与动镜表面完全反射回分束器',step:3},
+        {d:600,name:'④ 重合干涉：两束光在分束器表面重新汇合发生干涉',step:4},
+        {d:1000,name:'⑤ 出射探测：穿过样品室，抵达底部探测器输出电信号',step:5}
+      ];
+
+      let currentStage=0;
+      let stageStart=performance.now();
+      onStep?.(stages[0].step,stages[0].name);
+
+      function tick(now){
+        if(disposed)return;
+        const s=stages[currentStage];
+        const elapsed=now-stageStart;
+        const t=Math.min(1,elapsed/s.d);
+
+        if(currentStage===0){
+          pulseA.visible=true;pulseB.visible=false;
+          pulseA.position.lerpVectors(src,bs,t);
+          Object.entries(beamObjects).forEach(([id,o])=>{o.material.opacity=id==='input'?0.95:0.08;});
+        }else if(currentStage===1){
+          pulseA.visible=true;pulseB.visible=true;
+          pulseA.position.lerpVectors(bs,fix,t);
+          pulseB.position.lerpVectors(bs,mov,t);
+          Object.entries(beamObjects).forEach(([id,o])=>{o.material.opacity=(id==='fixed'||id==='moving')?0.95:0.08;});
+        }else if(currentStage===2){
+          pulseA.visible=true;pulseB.visible=true;
+          pulseA.position.lerpVectors(fix,bs,t);
+          pulseB.position.lerpVectors(mov,bs,t);
+          Object.entries(beamObjects).forEach(([id,o])=>{o.material.opacity=(id==='fixed'||id==='moving')?0.95:0.08;});
+        }else if(currentStage===3){
+          pulseA.visible=true;pulseB.visible=false;
+          pulseA.position.copy(bs);
+          const sc=1+0.7*Math.sin(t*Math.PI);
+          pulseA.scale.set(sc,sc,sc);
+          Object.entries(beamObjects).forEach(([id,o])=>{o.material.opacity=id==='output'?0.95:0.2;});
+        }else if(currentStage===4){
+          pulseA.visible=true;pulseB.visible=false;
+          pulseA.scale.set(1,1,1);
+          pulseA.position.lerpVectors(bs,det,t);
+          Object.entries(beamObjects).forEach(([id,o])=>{o.material.opacity=(id==='output'||id==='detect')?0.95:0.08;});
+        }
+        requestDraw();
+
+        if(t<1){
+          replayAnimId=requestAnimationFrame(tick);
+        }else{
+          currentStage++;
+          if(currentStage<stages.length){
+            stageStart=performance.now();
+            onStep?.(stages[currentStage].step,stages[currentStage].name);
+            replayAnimId=requestAnimationFrame(tick);
+          }else{
+            pulseA.visible=false;pulseB.visible=false;
+            Object.entries(beamObjects).forEach(([_,o])=>{o.material.opacity=0.6;});
+            requestDraw();
+            replayAnimId=null;
+            onComplete?.();
+          }
+        }
+      }
+      replayAnimId=requestAnimationFrame(tick);
+    }
     // Non-occluding DOM hotspots are keyboard/touch alternatives to mesh picking.
     const names={source:'红外光源',collimator:'准直组件',splitter:'分束器',fixed:'固定镜',moving:'移动镜',sample:'样品仓',collector:'收集光学',detector:'探测器',laser:'参考激光',electronics:'信号采集'};
     let selected='',closed=false,mode='inside',disposed=false,mm=0,drag=null,down=null,raf=0,detail=null,hotspotWhitelist=null,hotspotOffsets={};
@@ -180,7 +271,7 @@
       for(const {id,el} of labels){
         const g=objects[id],p=new T.Vector3();g.getWorldPosition(p);p.y=O.Y+.74;p.project(camera);
         const rawX=(p.x*.5+.5)*w,rawY=(-p.y*.5+.5)*h,offset=hotspotOffsets[id]||[0,0],x=rawX+offset[0],y=rawY+offset[1];
-        const outside=closed||!g.visible||!!hotspotWhitelist&&!hotspotWhitelist.has(id)||p.z>1||x<35||x>w-35||y<45||y>h-90;
+        const outside=closed||!g.visible||!!hotspotWhitelist&&!hotspotWhitelist.has(id)||p.z>1||x<25||x>w-25||y<30||y>h-40;
         el.hidden=outside;el.style.left=x+'px';el.style.top=y+'px';el.classList.toggle('selected',selected===id);
         const collision=used.some(a=>Math.abs(a.x-x)<90&&Math.abs(a.y-y)<27);
         el.classList.toggle('compact',collision&&selected!==id);if(!outside&&!collision)used.push({x,y});
@@ -210,10 +301,16 @@
         const p=objects[id].position;controls.target.set(p.x,.9,p.z);
         camera.position.set(p.x-3.3,.9+3.1,p.z-4.5);
       }else{
-        controls.target.set(0,.7,-.55);
         const distance=Math.max(1.12,1.1/aspect);
-        camera.position.set(-8*distance,11*distance,-12*distance);
-        if(kind==='top')camera.position.set(-.01,22*distance,-.56);
+        if(kind==='top'){
+          controls.target.set(0,.7,-.55);
+          camera.up.set(0,0,1);
+          camera.position.set(0.001,17*distance,-.5501);
+        }else{
+          controls.target.set(0,.7,-.55);
+          camera.up.set(0,1,0);
+          camera.position.set(-8*distance,11*distance,-12*distance);
+        }
       }
       camera.updateProjectionMatrix();controls.update();requestDraw();
     }
@@ -251,11 +348,13 @@
     controls.addEventListener('change',requestDraw);
     const observer=new ResizeObserver(resize);observer.observe(host);resize();view();
     return {
-      setMirror,focus:id=>select(id,false),inspect:id=>{select(id,false);inspect(id);},setMode,view,getPartAnchors,getCameraPose(){return {position:camera.position.toArray(),target:controls.target.toArray()};},setCameraPose(pose={}){if(Array.isArray(pose.position))camera.position.fromArray(pose.position);if(Array.isArray(pose.target))controls.target.fromArray(pose.target);camera.updateProjectionMatrix();controls.update();requestDraw();},setHotspotsVisible(ids){hotspotWhitelist=ids===undefined?null:new Set(ids||[]);labels.forEach(l=>{l.el.hidden=!!hotspotWhitelist&&!hotspotWhitelist.has(l.id);});requestDraw();},setHotspotLabels(map={}){labels.forEach(l=>{const name=map[l.id];if(name){l.el.innerHTML='<i></i><span>'+name.zh+'<small>'+(name.en||'')+'</small></span>';}});requestDraw();},setHotspotOffsets(map={}){hotspotOffsets=map||{};requestDraw();},
+      getOpticalAnchors(ids){const out={},w=host.clientWidth,h=host.clientHeight;camera.updateMatrixWorld();for(const id of ids){const a=O.parts[id];if(!a)continue;const v=new T.Vector3(...a);if(id==='moving')v.x=O.mirrorX(mm);v.project(camera);out[id]={x:(v.x*.5+.5)*w,y:(-v.y*.5+.5)*h};}return out;},
+      setMirror,focus:id=>select(id,false),inspect:id=>{select(id,false);inspect(id);},setMode,view,getPartAnchors,projectPart(id){return getPartAnchors([id])[id]||null;},getCameraPose(){return {position:camera.position.toArray(),target:controls.target.toArray(),up:camera.up.toArray()};},setCameraPose(pose={}){if(Array.isArray(pose.up))camera.up.fromArray(pose.up);if(Array.isArray(pose.position))camera.position.fromArray(pose.position);if(Array.isArray(pose.target))controls.target.fromArray(pose.target);camera.updateProjectionMatrix();controls.update();requestDraw();},setHotspotsVisible(ids){hotspotWhitelist=ids===undefined?null:new Set(ids||[]);labels.forEach(l=>{l.el.hidden=!!hotspotWhitelist&&!hotspotWhitelist.has(l.id);});requestDraw();},setHotspotLabels(map={}){labels.forEach(l=>{const name=map[l.id];if(name){l.el.innerHTML='<i></i><span>'+name.zh+'<small>'+(name.en||'')+'</small></span>';}});requestDraw();},setHotspotOffsets(map={}){hotspotOffsets=map||{};requestDraw();},
       setSample(visible){sampleInsert.visible=visible;requestDraw();},
       trace(step){Object.entries(beamObjects).forEach(([id,o])=>{const groups=[['input'],['fixed','moving'],['output','detect']];o.material.opacity=(step<0||groups[step]?.includes(id)) ? .7 : .07;});requestDraw();},
-      reset(){selected='';selection.visible=false;view();callbacks.onSelect?.('');},
-      dispose(){detail?.dispose();disposed=true;cancelAnimationFrame(raf);observer.disconnect();controls.dispose();geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();labels.forEach(l=>l.el.remove());canvas.remove();}
+      replayOpticalPath,stopReplay,
+      reset(){stopReplay();selected='';selection.visible=false;view();callbacks.onSelect?.('');},
+      dispose(){stopReplay();detail?.dispose();disposed=true;cancelAnimationFrame(raf);observer.disconnect();controls.dispose();geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());renderer.dispose();labels.forEach(l=>l.el.remove());canvas.remove();}
     };
   };
 })();

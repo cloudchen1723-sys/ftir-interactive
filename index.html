@@ -3,17 +3,25 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#080f19">
+  <meta name="theme-color" content="#eae6dc">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23142b3a'/%3E%3Cpath d='M10 34c8-22 14 22 22 0s14 22 22 0' fill='none' stroke='%23f0ede5' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
   <meta name="description" content="大学仪器分析课程：从光程差、干涉图到背景与样品的 FTIR 交互教学实验。">
+  <meta property="og:title" content="FTIR · 从信号到光谱">
+  <meta property="og:description" content="大学仪器分析课程：从光程差、干涉图到背景与样品的 FTIR 交互教学实验。">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
   <title>FTIR · 从信号到光谱</title>
   <link rel="stylesheet" href="./lesson.css?v=model2">
   <link rel="stylesheet" href="./instrument-ui.css?v=detail1">
-  <link rel="stylesheet" href="./story.css?v=deck3">
+  <link rel="stylesheet" href="./story.css?v=qa6">
   <link rel="stylesheet" href="./home.css?v=demo01">
   <link rel="stylesheet" href="./n3.css?v=1">
   <link rel="stylesheet" href="./presentation-pass1.css?v=1">
   <link rel="stylesheet" href="./presentation-optics.css?v=1">
   <link rel="stylesheet" href="./presentation-instrument-bridge.css?v=1">
+  <link rel="stylesheet" href="./optical-sequence.css?v=p1p4">
+  <link rel="stylesheet" href="./scientific-stage.css?v=motion6">
+  <link rel="stylesheet" href="./simulation-lab.css?v=features3">
 </head>
 <body data-view="home">
   <a class="skip" href="#content">跳到教学内容</a>
@@ -60,11 +68,40 @@
   <script src="./presentation-optics-model.js?v=1"></script>
   <script src="./presentation-interferogram-model.js?v=1"></script>
   <script src="./vendor/gsap.min.js?v=3.13.0"></script>
+  <!-- GSAP 3.13 plugins are vendored for deterministic offline playback. -->
+  <script src="./vendor/Flip.min.js?v=3.13.0"></script>
+  <script src="./vendor/MotionPathPlugin.min.js?v=3.13.0"></script>
+  <script src="./vendor/CustomEase.min.js?v=3.13.0"></script>
+  <script src="./vendor/DrawSVGPlugin.min.js?v=3.13.0"></script>
+  <script src="./vendor/MorphSVGPlugin.min.js?v=3.13.0"></script>
+  <script>
+    if (window.gsap) {
+      window.gsap.registerPlugin(
+        window.Flip,
+        window.MotionPathPlugin,
+        window.CustomEase,
+        window.DrawSVGPlugin,
+        window.MorphSVGPlugin
+      );
+      if (window.CustomEase) {
+        window.CustomEase.create('ftirScientific', 'M0,0 C0.16,0.82 0.24,1 1,1');
+      }
+      window.FTIR_GSAP_PLUGINS = Object.freeze({
+        Flip: !!window.Flip,
+        MotionPathPlugin: !!window.MotionPathPlugin,
+        CustomEase: !!window.CustomEase,
+        DrawSVGPlugin: !!window.DrawSVGPlugin,
+        MorphSVGPlugin: !!window.MorphSVGPlugin
+      });
+    }
+  </script>
   <script src="./sharedtimeline.js?v=pass1"></script>
   <script src="./presentation-pass1.js?v=1"></script>
   <script src="./presentation-optics.js?v=1"></script>
   <script src="./presentation-instrument-bridge.js?v=1"></script>
-  <script src="./story.js?v=deck3"></script>
+  <script src="./scientific-stage.js?v=motion6"></script>
+  <script src="./simulation-lab.js?v=features3"></script>
+  <script src="./story.js?v=qa7"></script>
   <script src="./home-signal.js?v=demo01"></script>
   <script src="./home-lab.js?v=demo01"></script>
   <script src="./home-transition.js?v=demo01"></script>

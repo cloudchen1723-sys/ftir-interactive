@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-10T16:20:54.387Z",
+  "samples": 10,
+  "features": 47,
+  "datasets": [
+    {
+      "id": "acetone-pnnl-2025",
+      "points": 19908,
+      "features": 4,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "ethanol-pnnl-2025",
+      "points": 19907,
+      "features": 5,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "polystyrene-pnnl-2017",
+      "points": 15345,
+      "features": 6,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "octanoic-acid-pnnl-2017",
+      "points": 15345,
+      "features": 5,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "methyl-acetate-pnnl-2017",
+      "points": 15347,
+      "features": 5,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "acetonitrile-pnnl-2017",
+      "points": 15345,
+      "features": 4,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "tert-butylamine-pnnl-2017",
+      "points": 15345,
+      "features": 5,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "octane-pnnl-2017",
+      "points": 15345,
+      "features": 4,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "styrene-pnnl-2017",
+      "points": 15345,
+      "features": 5,
+      "phase": "liquid",
+      "negativeKCount": 0
+    },
+    {
+      "id": "propyne-nasa-2021-8k",
+      "points": 74670,
+      "features": 4,
+      "phase": "solid",
+      "negativeKCount": 20158
+    }
+  ],
+  "localAssets": 40,
+  "inlineScriptsParsed": 32,
+  "embeddedJson": 15,
+  "allBundledTextEqualsSource": true,
+  "offlineBytes": 9060509,
+  "offlineSha256": "608f7dbf358c1f03cda79cce461aa3f7c52a555ca1196263f0bb561c55144979",
+  "note": "Read-only structural, numeric and packaging checks. Source decoding and browser interaction are separately documented."
+}

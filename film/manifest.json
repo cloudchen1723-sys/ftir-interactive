@@ -1,0 +1,913 @@
+{
+  "schemaVersion": 1,
+  "snapshotDateLocal": "2026-10-11",
+  "snapshotTimeZone": "Asia/Shanghai",
+  "packagedAtUtc": "2026-10-10T16:18:48.2669844Z",
+  "targetRepository": "cloudchen1723-sys/ftir-interactive",
+  "targetBranch": "main",
+  "sourceProjectDirectoryName": "ftir-—-listening-to-the-vibrations-of-matter",
+  "sourceSnapshot": "Current complete src tree plus required configs, narration, timeline, meaningful production documents and reproduction helpers; no code rewritten",
+  "media": {
+    "path": "video/FTIR_final_bilingual.mp4",
+    "bytes": 120308318,
+    "sha256": "CE9926DAEC055EFFA6B18C3F8EF13737A4BFA33A006FA77214E3E21FA9FAF1DA",
+    "durationSeconds": 360,
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "frames": 10800,
+    "videoCodec": "H.264",
+    "audioCodec": "AAC",
+    "subtitles": "Burned-in Chinese and English; no sidecar in video directory",
+    "renderSourceExportDate": "2026-10-03",
+    "renderSourceExportDateEvidence": "source/docs/causal-continuity-full-delivery.md",
+    "isolatedFinalDeliveryDate": "2026-10-07",
+    "isolatedFinalDeliveryDateEvidence": "source/docs/subtitle-delivery-fix.md",
+    "originalFileCreationTimeUtc": "2026-10-07T14:44:55.1503783Z",
+    "originalFileLastWriteTimeUtc": "2026-10-07T14:44:55.3287078Z",
+    "datesNote": "Documented media export and later isolated-delivery dates are distinct from this packaging date; file timestamps are observed filesystem metadata"
+  },
+  "fidelityChecks": {
+    "copiedFilesComparedBySha256": 105,
+    "sourceCodeRewritten": false,
+    "originalMusicFilesCompared": 3
+  },
+  "manifestCoverage": "Every packed file except manifest.json itself; generated checks/readmes included",
+  "excluded": [
+    "node_modules",
+    "dist",
+    "out directories",
+    "browser profiles/caches",
+    "WAVs",
+    "obsolete previews and mixes",
+    "environment files/secrets",
+    "unneeded public audio assets"
+  ],
+  "totalManifestedBytes": 139671530.0,
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2672,
+      "sha256": "02337E0FA63C1809D83F2A658FB35CC71753D8872486700CEE254F549B0118EA",
+      "provenance": "packaging-created"
+    },
+    {
+      "path": "source/.gitignore",
+      "bytes": 73,
+      "sha256": "DB691F14FCF678985362A42C6AEDB581E42CD6BB99962CE1B44AEA460FB2A4DF",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": ".gitignore",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4754842Z"
+    },
+    {
+      "path": "source/AGENTS.md",
+      "bytes": 9032,
+      "sha256": "BE19C363A0BBF4C9B03E0709F09471C8F72224E0FB5047D6E61B1BECB111447D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "AGENTS.md",
+      "originalLastWriteTimeUtc": "2026-10-02T09:41:46.5772394Z"
+    },
+    {
+      "path": "source/docs/absorption-to-reading-review.md",
+      "bytes": 3770,
+      "sha256": "29F96BEC7B400D86F599480F20E57A4C98913B03C8B67E360C172047FC1BBAE6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/absorption-to-reading-review.md",
+      "originalLastWriteTimeUtc": "2026-10-03T11:14:50.9627727Z"
+    },
+    {
+      "path": "source/docs/astra-visual-direction.md",
+      "bytes": 10652,
+      "sha256": "BF0FB8AB941098B073C863DD66180F832000E20ECAC47A0D7CE439035FAA0596",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/astra-visual-direction.md",
+      "originalLastWriteTimeUtc": "2026-10-02T06:01:36.2333317Z"
+    },
+    {
+      "path": "source/docs/before-opening-revision-narration_draft.srt",
+      "bytes": 6939,
+      "sha256": "E367626F74D46936262ABF26085025416E587F81FBB5EA1483FA0CAA51E80317",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/before-opening-revision-narration_draft.srt",
+      "originalLastWriteTimeUtc": "2026-10-02T11:12:58.6387834Z"
+    },
+    {
+      "path": "source/docs/before-opening-revision-narration_master.txt",
+      "bytes": 4195,
+      "sha256": "50151CE88997CB8B702A92F5509B9B23CCED5EF3F371A1808F9766F65A3762CA",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/before-opening-revision-narration_master.txt",
+      "originalLastWriteTimeUtc": "2026-10-02T11:12:58.1642290Z"
+    },
+    {
+      "path": "source/docs/before-opening-revision-narration_review.md",
+      "bytes": 27402,
+      "sha256": "1E19BD2DF83CE187DD449F1AA0F974FEB0AA3ABF78682949738DF78AC4E15C1D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/before-opening-revision-narration_review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T11:12:59.1608773Z"
+    },
+    {
+      "path": "source/docs/causal-continuity-full-delivery.md",
+      "bytes": 3631,
+      "sha256": "EDE507326ADB670A752D1D2AFEC34A745831FFB5A29BC12C9EBC778ABF0D91E7",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/causal-continuity-full-delivery.md",
+      "originalLastWriteTimeUtc": "2026-10-07T14:46:01.5348210Z"
+    },
+    {
+      "path": "source/docs/full-preview-bilingual.srt",
+      "bytes": 11118,
+      "sha256": "7BA8A4DC6A08481F5E4FAC3E0746F9C730D6CEFD7677EB42AB0D9CEF0658E0E8",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/full-preview-bilingual.srt",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.9476420Z"
+    },
+    {
+      "path": "source/docs/full-preview-continuous-music-audit.json",
+      "bytes": 3376,
+      "sha256": "17F4E9078D8A5E32772FB570F83007207E630AE99C8D1ADC3B2986918543B470",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/full-preview-continuous-music-audit.json",
+      "originalLastWriteTimeUtc": "2026-10-02T23:23:52.1649852Z"
+    },
+    {
+      "path": "source/docs/full-preview-delivery.md",
+      "bytes": 6537,
+      "sha256": "C71EA1ADC675D4FB786E4B0C4E0F3DB396D95AEC0C912179156BB293C7FBD9F1",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/full-preview-delivery.md",
+      "originalLastWriteTimeUtc": "2026-10-03T05:00:44.7838170Z"
+    },
+    {
+      "path": "source/docs/full-preview-music-audit.json",
+      "bytes": 2268,
+      "sha256": "F00D45FFB5433CC33C801AE117371E5E91A39C4889E520F722E3F7A5794D7440",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/full-preview-music-audit.json",
+      "originalLastWriteTimeUtc": "2026-10-02T15:56:49.8287101Z"
+    },
+    {
+      "path": "source/docs/narration_draft.srt",
+      "bytes": 6692,
+      "sha256": "A9AE1EF8CFA9AD318DA6B3EE98E38FBEB90F79C379AF1E768F43C0ADDCB60803",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narration_draft.srt",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.8897576Z"
+    },
+    {
+      "path": "source/docs/narration_en.json",
+      "bytes": 4849,
+      "sha256": "6BCDAEA9E6A76B94ED30167FC2EE80996FBB05C7D0B8DD227848F452BC271A80",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narration_en.json",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.8992667Z"
+    },
+    {
+      "path": "source/docs/narration_master.txt",
+      "bytes": 4066,
+      "sha256": "1BAE07A6D7C4EC33A8300B05B6BEE7B03D66F95BF458663BE9D131DA4451F1E0",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narration_master.txt",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.8897576Z"
+    },
+    {
+      "path": "source/docs/narration_review.md",
+      "bytes": 29283,
+      "sha256": "3ACC046C5B64B8BEC8AD071B9A21FA505627493011C54CD91D29357E9AE47772",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narration_review.md",
+      "originalLastWriteTimeUtc": "2026-10-03T11:04:31.2335255Z"
+    },
+    {
+      "path": "source/docs/narrative-slice-contract.md",
+      "bytes": 9751,
+      "sha256": "9ED3BC89BEF87DEC5C14BE63C3E7BF7125D223B33E4BC3DC9573F01BB0B72F6D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narrative-slice-contract.md",
+      "originalLastWriteTimeUtc": "2026-10-02T04:51:35.6221961Z"
+    },
+    {
+      "path": "source/docs/narrative-slice-review.md",
+      "bytes": 5707,
+      "sha256": "174B6D5972B62C0672CD8B069A0AAA53F953434F43FBB68DBE46BC028D0B0FEA",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/narrative-slice-review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T06:53:47.0545477Z"
+    },
+    {
+      "path": "source/docs/phase1-fourier-contract.md",
+      "bytes": 5456,
+      "sha256": "B1EB2A0A8EDCDD575701A5B4E5BBAEE372F3BE6E40FA4373B4363668E8F0F0E4",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/phase1-fourier-contract.md",
+      "originalLastWriteTimeUtc": "2026-10-01T19:12:32.3736165Z"
+    },
+    {
+      "path": "source/docs/phase1-review.md",
+      "bytes": 3654,
+      "sha256": "B9E8888B3CD141FE8CDCFCBC0A9E0D54CF152D25B4BECBC2AD991D53B5382F96",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/phase1-review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T03:45:41.6611940Z"
+    },
+    {
+      "path": "source/docs/phase2-michelson-contract.md",
+      "bytes": 7017,
+      "sha256": "EBA22437302EFD63E1D923D08B1A87D566E69F46CA697E08715272E744097C06",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/phase2-michelson-contract.md",
+      "originalLastWriteTimeUtc": "2026-10-02T04:10:43.9836477Z"
+    },
+    {
+      "path": "source/docs/quality-gate-baseline-visual-review.md",
+      "bytes": 3533,
+      "sha256": "8C9CFD1719D55704AC11C48136420F33C985EF27523C319E0B342160E2285D2F",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/quality-gate-baseline-visual-review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T15:09:23.3922882Z"
+    },
+    {
+      "path": "source/docs/quality-gate-plan.md",
+      "bytes": 2740,
+      "sha256": "4B36CA89AEB2F184F6DF13F9BE2E477FDD0E167B00075744768237345BDD0CA6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/quality-gate-plan.md",
+      "originalLastWriteTimeUtc": "2026-10-02T23:14:07.0752207Z"
+    },
+    {
+      "path": "source/docs/quality-gate-round-0.md",
+      "bytes": 3533,
+      "sha256": "8C9CFD1719D55704AC11C48136420F33C985EF27523C319E0B342160E2285D2F",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/quality-gate-round-0.md",
+      "originalLastWriteTimeUtc": "2026-10-02T15:09:23.3922882Z"
+    },
+    {
+      "path": "source/docs/quality-gate-round-1-science.md",
+      "bytes": 4384,
+      "sha256": "2F1AB856A17D60946512127313B7CADC6E6A324B2B6BB5D2B6171598C10462D8",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/quality-gate-round-1-science.md",
+      "originalLastWriteTimeUtc": "2026-10-02T15:23:57.0132504Z"
+    },
+    {
+      "path": "source/docs/quality-gate-round-1.md",
+      "bytes": 5916,
+      "sha256": "3318C4CA0672041A0CAC41C1F1C0A516082F9A4990ABB092259CA4ACAC59C21D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/quality-gate-round-1.md",
+      "originalLastWriteTimeUtc": "2026-10-02T15:27:42.7568245Z"
+    },
+    {
+      "path": "source/docs/reconstruction-01-05-review.md",
+      "bytes": 4919,
+      "sha256": "00F8303F2901D53B15A9A98C5D8054DCA6B3D54D87970BD6D7E3F927E74F1ADE",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/reconstruction-01-05-review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T23:14:07.5496829Z"
+    },
+    {
+      "path": "source/docs/reconstruction-01-05.srt",
+      "bytes": 2645,
+      "sha256": "06F535C32BCF0AD4E71325F1F556DAC2CC07AC03E5D951E663E0D145C4C5A38D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/reconstruction-01-05.srt",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.8897576Z"
+    },
+    {
+      "path": "source/docs/science-explainer-export-audit.json",
+      "bytes": 1931,
+      "sha256": "E669286BDF55DE873007134CA7ED452DF7F94291A78E6D31FCA6375E9FBCFC55",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/science-explainer-export-audit.json",
+      "originalLastWriteTimeUtc": "2026-10-03T04:56:27.7184842Z"
+    },
+    {
+      "path": "source/docs/science-explainer-upgrade.md",
+      "bytes": 5702,
+      "sha256": "815E2D365CB06FE41392D7156D8E120109C6DE5D609B306B0075769C316CB856",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/science-explainer-upgrade.md",
+      "originalLastWriteTimeUtc": "2026-10-03T05:00:44.2447053Z"
+    },
+    {
+      "path": "source/docs/subtitle-delivery-fix.md",
+      "bytes": 1478,
+      "sha256": "CF5A7D68E765DD0A674327E7657F3477C19CF66115A2B427B9EE7C6874267BB1",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/subtitle-delivery-fix.md",
+      "originalLastWriteTimeUtc": "2026-10-07T14:46:01.2149619Z"
+    },
+    {
+      "path": "source/docs/visual-direction-brief.md",
+      "bytes": 2793,
+      "sha256": "A338C351D7478F2D377D70B420203B1C6781E480B9BFDFC03B34C2D250F06FAF",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/visual-direction-brief.md",
+      "originalLastWriteTimeUtc": "2026-10-02T05:50:21.0880036Z"
+    },
+    {
+      "path": "source/docs/visual-implementation-review.md",
+      "bytes": 5860,
+      "sha256": "16D7F0AA7975517D861D763EF6E0C414C1437315E713954F2D35AE319675775D",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "docs/visual-implementation-review.md",
+      "originalLastWriteTimeUtc": "2026-10-02T07:00:10.6067829Z"
+    },
+    {
+      "path": "source/index.html",
+      "bytes": 1415,
+      "sha256": "F3F78CA6B667161B0F6FA497730BE8377FDB8C3CC5AC4706809A0FCEE510C590",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "index.html",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.2780293Z"
+    },
+    {
+      "path": "source/metadata.json",
+      "bytes": 348,
+      "sha256": "B3BE8A67DC442F98F4D4D79A9C076F99B82D945B4851466C67D1E10931A24617",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "metadata.json",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.2689848Z"
+    },
+    {
+      "path": "source/MUSIC_DIRECTION.md",
+      "bytes": 31117,
+      "sha256": "844F8BBCD986F18AA26EEA1DC6DFD388ED23C67CFD449280450DD54D92A3D57B",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "MUSIC_DIRECTION.md",
+      "originalLastWriteTimeUtc": "2026-10-02T11:34:36.6023870Z"
+    },
+    {
+      "path": "source/music/ftir-music-part-1.mp3",
+      "bytes": 3123843,
+      "sha256": "E327D92A821ACC50FB8718F12DF346249F3C9A61D649323C978A655AC9146718",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "music/ftir-music-part-1.mp3",
+      "originalLastWriteTimeUtc": "2026-10-02T14:20:45.1738656Z"
+    },
+    {
+      "path": "source/music/ftir-music-part-2.mp3",
+      "bytes": 3093123,
+      "sha256": "42FFB1598B6CD4524BE3956C6EA428FAD76AF2D5B7BCCCA77CFC94BA6C6E8F00",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "music/ftir-music-part-2.mp3",
+      "originalLastWriteTimeUtc": "2026-10-02T14:22:11.9010365Z"
+    },
+    {
+      "path": "source/music/ftir-music-part-3.mp3",
+      "bytes": 4842021,
+      "sha256": "822A81C6CFD5D2BBDFD0E663A286F335E6BC7D52ED73439314360689CA51E034",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "music/ftir-music-part-3.mp3",
+      "originalLastWriteTimeUtc": "2026-10-02T14:23:59.3087053Z"
+    },
+    {
+      "path": "source/package-lock.json",
+      "bytes": 260060,
+      "sha256": "3E691D481F5004B99400C417463BAB59979B0B9130526F541E7113F18B10700E",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "package-lock.json",
+      "originalLastWriteTimeUtc": "2026-10-01T18:29:30.2128374Z"
+    },
+    {
+      "path": "source/package.json",
+      "bytes": 1147,
+      "sha256": "57FB2965D342D78E519DBD7D7A5042374D5675DD7106BB0F6AA8370C3E819C79",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "package.json",
+      "originalLastWriteTimeUtc": "2026-10-02T15:11:56.1933743Z"
+    },
+    {
+      "path": "source/public/audio/music/ftir-preview-continuous.m4a",
+      "bytes": 7388183,
+      "sha256": "8A909620A4738E812DCD0F526A7F27E75BA6747ABA2966E5BFF8E2B865F92CE2",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "public/audio/music/ftir-preview-continuous.m4a",
+      "originalLastWriteTimeUtc": "2026-10-02T23:22:58.7469093Z"
+    },
+    {
+      "path": "source/README.md",
+      "bytes": 4229,
+      "sha256": "94D0ADECDEAEF0B8DFB52F4CDDB0783A00C6CF46FD04462965645FA22C641FB3",
+      "provenance": "packaging-created"
+    },
+    {
+      "path": "source/review/absorption-render.config.ts",
+      "bytes": 425,
+      "sha256": "5B167D035BD32D08345FB22B79D188F95D4C85F67D484A7AA7D27B2ECDFD941A",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "review/absorption-render.config.ts",
+      "originalLastWriteTimeUtc": "2026-10-03T09:51:02.5056794Z"
+    },
+    {
+      "path": "source/review/style-upgrade/causal-continuity-v2-playback-audit.json",
+      "bytes": 4361,
+      "sha256": "B31BBBD4296BE223026745D1BD23B48E6EB4094B9780520A078AA44E8C422DF0",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "review/style-upgrade/causal-continuity-v2-playback-audit.json",
+      "originalLastWriteTimeUtc": "2026-10-03T11:16:13.5169663Z"
+    },
+    {
+      "path": "source/scripts/build-full-preview.mjs",
+      "bytes": 3557,
+      "sha256": "5D64B3524E4B86A0174AF8BB7F7F218399594EEB80CD453017FE0F4423DFA36E",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "scripts/build-full-preview.mjs",
+      "originalLastWriteTimeUtc": "2026-10-03T04:58:40.0468073Z"
+    },
+    {
+      "path": "source/scripts/validate-fourier-teaching.ts",
+      "bytes": 3227,
+      "sha256": "83AAF73456507D28BE2C10D23C4414C7B3D5AFF97E9D101EBF607527CE8F8D79",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "scripts/validate-fourier-teaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T19:39:46.7484234Z"
+    },
+    {
+      "path": "source/scripts/validate-michelson-teaching.ts",
+      "bytes": 2311,
+      "sha256": "0CBCE45B463BB69818561C60B252AFC0E0FF951EF2410FA4D4E4356C5B98D6A6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "scripts/validate-michelson-teaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T03:51:01.6434177Z"
+    },
+    {
+      "path": "source/scripts/validate-narrative-teaching.ts",
+      "bytes": 4161,
+      "sha256": "B31378C465B4DD4ABC15C797F75573003B1DAC1C32D92E72604C31328FF3D7C2",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "scripts/validate-narrative-teaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T05:01:05.2294644Z"
+    },
+    {
+      "path": "source/scripts/validate-opening-reconstruction.ts",
+      "bytes": 2297,
+      "sha256": "8F54A938C76D876119D23C9E5522451533ADCACFBD88617E2993748978A15AA6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "scripts/validate-opening-reconstruction.ts",
+      "originalLastWriteTimeUtc": "2026-10-03T05:18:02.8338143Z"
+    },
+    {
+      "path": "source/src/App.tsx",
+      "bytes": 22061,
+      "sha256": "0D956FD11048AFAF9ADB5CEAB667D641344A95934C95F3B4342D184A7E14102E",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/App.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T15:11:56.1943743Z"
+    },
+    {
+      "path": "source/src/audio/soundEngine.ts",
+      "bytes": 9961,
+      "sha256": "E047F761DB6B6A1BDA93467E78EDA5A2B65DB95C8D062790B9853B26E9946189",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/audio/soundEngine.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3419837Z"
+    },
+    {
+      "path": "source/src/components/cinematic/AbsorptionToReading.tsx",
+      "bytes": 6645,
+      "sha256": "0320EF02EFCF593E6A333A60F48722A0EB21E5D9164E854AA58BA342178844E3",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/AbsorptionToReading.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T09:40:15.4296273Z"
+    },
+    {
+      "path": "source/src/components/cinematic/FourierExplainer.tsx",
+      "bytes": 7891,
+      "sha256": "E156FF742B3246F6D3E8585458AB8317978186F0E26652C0605CFD77B3EE3297",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/FourierExplainer.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T23:56:17.7971788Z"
+    },
+    {
+      "path": "source/src/components/cinematic/OpticalAssets.tsx",
+      "bytes": 2754,
+      "sha256": "B3C828A2A2C092DA033CA4CB7591BDC526B13CD3282BECDE04B39C63B1F5BCAA",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/OpticalAssets.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T14:45:09.9447690Z"
+    },
+    {
+      "path": "source/src/components/cinematic/SampleRecordExplainer.tsx",
+      "bytes": 6213,
+      "sha256": "A7CA7414CB5A0C65ED2185FC4CC3A682636D87E34892D213D476D09593C8BD66",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/SampleRecordExplainer.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:05.2403299Z"
+    },
+    {
+      "path": "source/src/components/cinematic/SubtitleOverlay.tsx",
+      "bytes": 2657,
+      "sha256": "B10F5F71345195F5A8DE224DD25A7095456215FE3B83573133F762DA06EC3058",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/SubtitleOverlay.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T15:55:17.9422348Z"
+    },
+    {
+      "path": "source/src/components/cinematic/TitleCard.tsx",
+      "bytes": 3834,
+      "sha256": "3BA37BD23736BC5A3A35F8AA0BD100AFA6973D9AF391BF4A14940FF14361566C",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/cinematic/TitleCard.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3526413Z"
+    },
+    {
+      "path": "source/src/components/fourier/FourierDecomposition3D.tsx",
+      "bytes": 16098,
+      "sha256": "A5CF5C388682774496801AE1DD059092AD77ACAEAB97ABFF8009F2ED6EFE7268",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/fourier/FourierDecomposition3D.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3848254Z"
+    },
+    {
+      "path": "source/src/components/instrument/MichelsonInterferometer.tsx",
+      "bytes": 24123,
+      "sha256": "E812F658ECE20756D51A90FDD4277F02DC8182970DC046FAE7116E1E91B246A3",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/instrument/MichelsonInterferometer.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3692394Z"
+    },
+    {
+      "path": "source/src/components/interferogram/InterferogramPlot.tsx",
+      "bytes": 10695,
+      "sha256": "8DE36F9F711213FCEAC88313628BF9350FB6D9AEFCDC2969DF6266F008698B5E",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/interferogram/InterferogramPlot.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3777434Z"
+    },
+    {
+      "path": "source/src/components/molecules/DiatomicVibration.tsx",
+      "bytes": 6457,
+      "sha256": "020E973081AA5190B1FDF74C62CEF34AA5A6DA91570C81EA6F2B116BF570967C",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/molecules/DiatomicVibration.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3601575Z"
+    },
+    {
+      "path": "source/src/components/molecules/PolyatomicModes.tsx",
+      "bytes": 9383,
+      "sha256": "648ED678B800C98FE17A0131304B29354379D4627D461DF59E272E4D183CEC24",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/molecules/PolyatomicModes.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3631688Z"
+    },
+    {
+      "path": "source/src/components/spectrum/SpectrumPlot.tsx",
+      "bytes": 11420,
+      "sha256": "0E62DC6267644E3DDF56246C5921E2AA4FC2CE887311656E54F684BBB35A9A7A",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/components/spectrum/SpectrumPlot.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3908944Z"
+    },
+    {
+      "path": "source/src/index.css",
+      "bytes": 23,
+      "sha256": "42070E0B45BB201B2B838A52AAAA6E965F964E0B542D97F1FE517FE59C4B75A8",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/index.css",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.2917665Z"
+    },
+    {
+      "path": "source/src/main.tsx",
+      "bytes": 159,
+      "sha256": "30D02EE59CB6576973DEA4368093B2DCAE692A40668F288FDBC66A114873FCD3",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/main.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.2949776Z"
+    },
+    {
+      "path": "source/src/math/fourier.ts",
+      "bytes": 3428,
+      "sha256": "689B8EB3BB63E8BB7534B8EF26CE6BF38949F87A0DFB7C45F6100C5267E7D829",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/fourier.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3182461Z"
+    },
+    {
+      "path": "source/src/math/fourierTeaching.ts",
+      "bytes": 4422,
+      "sha256": "8EB5CA7DEACDA0965B1BC92374EDC340FD8CA4C34462901619162A0B606AE1F3",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/fourierTeaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T19:17:44.7856137Z"
+    },
+    {
+      "path": "source/src/math/interferogram.ts",
+      "bytes": 3899,
+      "sha256": "B7FFC73ADB67C4DE448489FB0FA6812C6011EC265213E3EADFB1B6E5026C27A4",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/interferogram.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3138877Z"
+    },
+    {
+      "path": "source/src/math/measurementAmbiguity.ts",
+      "bytes": 595,
+      "sha256": "B110BDE9F5C457D767012712ADD699D14C10BBF8E11CD65CC1AC61F96A2BB5C7",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/measurementAmbiguity.ts",
+      "originalLastWriteTimeUtc": "2026-10-03T05:14:29.6657164Z"
+    },
+    {
+      "path": "source/src/math/michelsonTeaching.ts",
+      "bytes": 2756,
+      "sha256": "994CD661655D5C13D4F9BD7DFD5006C37F6D5BB07668EB172DE18BFA1BC396CE",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/michelsonTeaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T03:46:46.3582450Z"
+    },
+    {
+      "path": "source/src/math/narrativeTeaching.ts",
+      "bytes": 5273,
+      "sha256": "90E668B55E28959ED96A2BD0367312CB0CFCDC4199A6E616FDBE5CC5379A3FBD",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/narrativeTeaching.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T05:19:43.8557224Z"
+    },
+    {
+      "path": "source/src/math/spectroscopy.ts",
+      "bytes": 2595,
+      "sha256": "E46EEAC15E1C3019C22C20244A3DA12E071A7561A8C522CFD452291A2CB013DD",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/spectroscopy.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3222471Z"
+    },
+    {
+      "path": "source/src/math/waves.ts",
+      "bytes": 1883,
+      "sha256": "32B00D3B6017459B9490410D0EB74F2B2A6B8C902169A100EAC8463D999056CD",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/math/waves.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3098881Z"
+    },
+    {
+      "path": "source/src/remotion/FTIRFilm.tsx",
+      "bytes": 384,
+      "sha256": "B32C22BF5E48D0C2C3F407226EE3FD79FF31FFD630444F8A78D437FB24988AEB",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/remotion/FTIRFilm.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T14:38:08.2534646Z"
+    },
+    {
+      "path": "source/src/remotion/FTIRFullPreview.tsx",
+      "bytes": 3922,
+      "sha256": "2113A3FF2B07D5E2C9008C865AA98FAC143AD6A670D88EC7CF6B992FDA057F15",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/remotion/FTIRFullPreview.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T00:00:07.2252684Z"
+    },
+    {
+      "path": "source/src/remotion/index.ts",
+      "bytes": 104,
+      "sha256": "F9BC4E836A064ACA9C58A681E1DC779B62A4D82894450E8E15D5CDD05840E36E",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/remotion/index.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T15:11:54.8647979Z"
+    },
+    {
+      "path": "source/src/remotion/OriginalFTIRFilm.tsx",
+      "bytes": 3441,
+      "sha256": "0FA1824A929DD97EE99CDC76B65C1BFDC61C26513258CDB046366A4374ECC6C6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/remotion/OriginalFTIRFilm.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T14:33:40.2601305Z"
+    },
+    {
+      "path": "source/src/remotion/Root.tsx",
+      "bytes": 1038,
+      "sha256": "56DDE2AF575510D9B7C9996A73023A2B97DBB2681FBB8E2B70B1D626C13FD664",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/remotion/Root.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T15:55:19.4844403Z"
+    },
+    {
+      "path": "source/src/scenes/Act10Epilogue.tsx",
+      "bytes": 3866,
+      "sha256": "C2F84813C6D14C0F12564705FF47CDA787CF3E45A7FFF259287FCE04D2704592",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act10Epilogue.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4528902Z"
+    },
+    {
+      "path": "source/src/scenes/Act1MatterMoves.tsx",
+      "bytes": 2350,
+      "sha256": "4FD1227904D28D81B68F056B343397218F99AF0A65304661E9EC96219A62B631",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act1MatterMoves.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3973878Z"
+    },
+    {
+      "path": "source/src/scenes/Act1MoleculesMove.tsx",
+      "bytes": 1554,
+      "sha256": "DA3AA221BCE2E5CC58C09DBBE2F49EF2F8746E32E645E91837DF3A20E07A8ADE",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act1MoleculesMove.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4237316Z"
+    },
+    {
+      "path": "source/src/scenes/Act2MolecularVibrations.tsx",
+      "bytes": 762,
+      "sha256": "A6222DB69BBC777C2207BE2D0B75103ECB7D828103E001C841D1CD3B6C7A37F6",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act2MolecularVibrations.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4006931Z"
+    },
+    {
+      "path": "source/src/scenes/Act2VibrationalModes.tsx",
+      "bytes": 12587,
+      "sha256": "E53C55315C9320BA0A14203E6055311E567A60E67D67FE47DDC26DF6740A79B7",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act2VibrationalModes.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T23:58:49.2541261Z"
+    },
+    {
+      "path": "source/src/scenes/Act3EnterInstrument.tsx",
+      "bytes": 2343,
+      "sha256": "0F11EDC0D193538D305117E7044A455D4DF932D6822AE6486205F83111B24280",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act3EnterInstrument.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4039119Z"
+    },
+    {
+      "path": "source/src/scenes/Act3WholeSystemOverview.tsx",
+      "bytes": 5049,
+      "sha256": "C6B56C24FAC80D3ABAD1F1533440B23AB85918984331C63201CCE6C389C3A4AD",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act3WholeSystemOverview.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4308051Z"
+    },
+    {
+      "path": "source/src/scenes/Act4Interferogram.tsx",
+      "bytes": 1833,
+      "sha256": "7ACFC6882B39CE55FB716E243A372E2B109F507AA06A2FDFCF62E0FDD1CB6BFC",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act4Interferogram.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4073065Z"
+    },
+    {
+      "path": "source/src/scenes/Act4MichelsonCore.tsx",
+      "bytes": 27087,
+      "sha256": "8F43C33688EBB5270FF73C6729E78767BBDC7521831A1103194540C61A9C664F",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act4MichelsonCore.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T14:45:12.8353838Z"
+    },
+    {
+      "path": "source/src/scenes/Act5FourierMoment.tsx",
+      "bytes": 792,
+      "sha256": "5FED4C16CC9FB27E8939E227D8B16A4E1691CFB411ED444352B25ACA11742BD1",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act5FourierMoment.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4098960Z"
+    },
+    {
+      "path": "source/src/scenes/Act5SampleAndDetector.tsx",
+      "bytes": 7511,
+      "sha256": "7431A23A7451FA9BDBBFF7582BAC256428714A53472272E212472BD33DC0147B",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act5SampleAndDetector.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4367751Z"
+    },
+    {
+      "path": "source/src/scenes/Act6InterferogramZPD.tsx",
+      "bytes": 8277,
+      "sha256": "B557A73505134F65F9E0D02C285E664B6C601FAC1670EE48B6597FD580596A46",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act6InterferogramZPD.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T19:18:14.2447553Z"
+    },
+    {
+      "path": "source/src/scenes/Act6SampleSignature.tsx",
+      "bytes": 871,
+      "sha256": "5450577BAA0EF4E20C25612AF99A7F79D78E9100CBE5FD14AEE0D565B8C19B32",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act6SampleSignature.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4174717Z"
+    },
+    {
+      "path": "source/src/scenes/Act7Epilogue.tsx",
+      "bytes": 4259,
+      "sha256": "599F6768031C756C1707DD4F3219DCBAE3BD44EE1382B0BC92824C427FE834DA",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act7Epilogue.tsx",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4207324Z"
+    },
+    {
+      "path": "source/src/scenes/Act7FourierTransform.tsx",
+      "bytes": 17041,
+      "sha256": "38F99A638F6F6FC664214558DDD9C935C7D06F63CD06555D1670255D62D238CC",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act7FourierTransform.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T23:56:18.2532191Z"
+    },
+    {
+      "path": "source/src/scenes/Act8BackgroundAndSample.tsx",
+      "bytes": 9292,
+      "sha256": "F235BD9C28F1248B8ED6FEEB1DB1F6B14A84BBFB47764518F4B1799309EB1FB7",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act8BackgroundAndSample.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T00:00:06.6987610Z"
+    },
+    {
+      "path": "source/src/scenes/Act9SpectrumInterpretation.tsx",
+      "bytes": 7275,
+      "sha256": "2187570D7231E1C865619E05D94A249733ECD834771F8041B8C8DD50AFCEE79A",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/Act9SpectrumInterpretation.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T00:17:24.1038610Z"
+    },
+    {
+      "path": "source/src/scenes/CinematicIntro.tsx",
+      "bytes": 5707,
+      "sha256": "286997EBF7D259241560950DDA8EE04791DB008A5FF43A3F42C2B421CED8A7B8",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/CinematicIntro.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T05:16:02.1622446Z"
+    },
+    {
+      "path": "source/src/scenes/CinematicOpeningReconstruction.tsx",
+      "bytes": 13014,
+      "sha256": "CC7F5309323A0ED47FE8A00055FAB04BAA12E239A15500F5277CDD0EE093A20C",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/CinematicOpeningReconstruction.tsx",
+      "originalLastWriteTimeUtc": "2026-10-03T10:58:50.5666400Z"
+    },
+    {
+      "path": "source/src/scenes/NarrativeVerticalSlice.tsx",
+      "bytes": 27382,
+      "sha256": "0E43BC22B97B8868FFADCC40A6DB73563EC2F06A990E40CC7CF604D3B4FC8656",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/scenes/NarrativeVerticalSlice.tsx",
+      "originalLastWriteTimeUtc": "2026-10-02T23:57:20.9438959Z"
+    },
+    {
+      "path": "source/src/styles/visualSystem.ts",
+      "bytes": 1620,
+      "sha256": "DFA90BB95BD7FCE5B66E4A08662007E2D6CDD067766F5ECA90D61CD726D84C01",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/styles/visualSystem.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.3024247Z"
+    },
+    {
+      "path": "source/src/timeline/filmTimeline.ts",
+      "bytes": 7146,
+      "sha256": "1FC8074F28557C6A864BA9BF8391AAC0DC03316430D41033A9CC44420F979D37",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/timeline/filmTimeline.ts",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.8907599Z"
+    },
+    {
+      "path": "source/src/timeline/fullPreviewTimeline.ts",
+      "bytes": 18371,
+      "sha256": "2EA29A8BADFAF3D2062DC2A90B5D671C6955A70043AD01FC3C1062284D616814",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/timeline/fullPreviewTimeline.ts",
+      "originalLastWriteTimeUtc": "2026-10-03T10:40:06.9460894Z"
+    },
+    {
+      "path": "source/src/timeline/legacyFilmTimeline.ts",
+      "bytes": 16241,
+      "sha256": "DD92796D91C7B64811CC1DB0DC6285541F60B813889FA29A85692375A9C73DA7",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "src/timeline/legacyFilmTimeline.ts",
+      "originalLastWriteTimeUtc": "2026-10-02T04:15:20.2987327Z"
+    },
+    {
+      "path": "source/tsconfig.json",
+      "bytes": 538,
+      "sha256": "6624845B5855CB0C547DA44D56785371AAF4F77920440F93B685484456952468",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "tsconfig.json",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4827974Z"
+    },
+    {
+      "path": "source/vite.config.ts",
+      "bytes": 705,
+      "sha256": "A7AA711292E5AD7EB10F7A17F5F34FBBF75C7B7C24D59CB0212C60BC493C3208",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "vite.config.ts",
+      "originalLastWriteTimeUtc": "2026-10-01T18:25:59.4798151Z"
+    },
+    {
+      "path": "verification/packaging-checks.json",
+      "bytes": 1760,
+      "sha256": "B387AF322034DD7CBA5E79BFFF3BC37159463EE284594FD167D7EB485681623F",
+      "provenance": "packaging-created"
+    },
+    {
+      "path": "verification/verify-package.mjs",
+      "bytes": 4466,
+      "sha256": "DA63E8EBA7357689C17A861F2941D2A68296C34B02EB68475EF804BCE49A99E9",
+      "provenance": "packaging-created"
+    },
+    {
+      "path": "video/FTIR_final_bilingual.mp4",
+      "bytes": 120308318,
+      "sha256": "CE9926DAEC055EFFA6B18C3F8EF13737A4BFA33A006FA77214E3E21FA9FAF1DA",
+      "provenance": "byte-identical-copy",
+      "originalRelativePath": "out/final-delivery/FTIR_final_bilingual.mp4",
+      "originalLastWriteTimeUtc": "2026-10-07T14:44:55.3287078Z"
+    }
+  ]
+}

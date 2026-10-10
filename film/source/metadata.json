@@ -1,0 +1,6 @@
+{
+  "name": "FTIR — Listening to the Vibrations of Matter",
+  "description": "A cinematic, code-driven scientific film exploring Fourier Transform Infrared Spectroscopy (FTIR), molecular vibrations, interferometry, and Fourier decomposition.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,187 @@
+.simulation-lab[hidden] { display: none !important; }
+
+.simulation-lab {
+  --lab-ink: #142b36;
+  --lab-muted: #5c6c72;
+  --lab-line: rgba(20, 43, 54, .18);
+  --lab-accent: #075b73;
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  overflow: hidden;
+  color: var(--lab-ink);
+  background: #f0ede5;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+.simulation-lab button,
+.simulation-lab select { font: inherit; }
+.simulation-lab a { color: var(--lab-accent); text-underline-offset: 3px; }
+
+.simulation-lab button:focus-visible,
+.simulation-lab select:focus-visible,
+.simulation-lab a:focus-visible,
+.simulation-lab summary:focus-visible { outline: 3px solid #d27b36; outline-offset: 3px; }
+
+.simulation-lab__header {
+  min-height: 72px;
+  padding: 14px clamp(22px, 4vw, 64px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.simulation-lab__eyebrow,
+.simulation-lab__kicker {
+  margin: 0 0 4px;
+  color: var(--lab-accent);
+  font-size: 11px;
+  font-weight: 750;
+  letter-spacing: .17em;
+}
+
+.simulation-lab h1,
+.simulation-lab h2 { margin: 0; font-family: Georgia, "Noto Serif SC", serif; font-weight: 500; }
+.simulation-lab h1 { font-size: clamp(25px, 3vw, 38px); line-height: 1; }
+.simulation-lab h2 { font-size: clamp(22px, 2.4vw, 34px); }
+
+.simulation-lab__close,
+.simulation-lab__view-controls button {
+  border: 1px solid var(--lab-line);
+  border-radius: 999px;
+  color: var(--lab-ink);
+  background: transparent;
+  cursor: pointer;
+}
+
+.simulation-lab__close { padding: 10px 16px; }
+.simulation-lab__close:hover { border-color: var(--lab-accent); }
+
+.simulation-lab__modes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 clamp(22px, 4vw, 64px);
+  border-bottom: 1px solid var(--lab-line);
+}
+
+.simulation-lab__modes button {
+  padding: 14px 4px 12px;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  color: var(--lab-muted);
+  background: transparent;
+  cursor: pointer;
+  font-weight: 650;
+}
+
+.simulation-lab__modes button span { margin-right: 10px; font-size: 11px; letter-spacing: .12em; }
+.simulation-lab .simulation-lab__modes button[aria-pressed="true"] { border-bottom-color: var(--lab-accent); color: var(--lab-ink); background: transparent; }
+.simulation-lab .simulation-lab__modes button:hover { color: var(--lab-accent); background: transparent; }
+
+/* The home and teaching styles both target every main element. Scope this
+   override above those selectors so the modal owns its available grid height. */
+.simulation-lab .simulation-lab__main { width: auto; height: auto; min-height: 0; max-width: none; margin: 0; padding: 16px clamp(22px, 4vw, 64px) 18px; overflow: hidden; }
+.simulation-lab__panel { height: 100%; min-height: 0; }
+.simulation-lab__panel.is-active { display: grid; grid-template-rows: auto minmax(0, 1fr) auto auto; gap: 14px; }
+.simulation-lab__panel[data-lab-panel="spectrum"].is-active { grid-template-rows: auto auto minmax(320px, 1fr) auto auto; gap: 10px; overflow-y: auto; }
+.simulation-lab__panel-head { display: flex; align-items: end; justify-content: space-between; gap: 20px; }
+
+.simulation-lab__view-controls { display: flex; gap: 8px; }
+.simulation-lab__view-controls button { min-width: 68px; padding: 8px 13px; }
+.simulation-lab__view-controls button[aria-pressed="true"] { color: #fff; border-color: var(--lab-accent); background: var(--lab-accent); }
+
+.simulation-lab__instrument {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  border-top: 1px solid var(--lab-line);
+  border-bottom: 1px solid var(--lab-line);
+  background: radial-gradient(circle at 50% 44%, rgba(176, 205, 207, .2), transparent 58%);
+}
+
+.simulation-lab__instrument > canvas { width: 100%; height: 100%; display: block; }
+.simulation-lab__instrument .model-hotspot { z-index: 2; }
+.simulation-lab .simulation-lab__instrument .model-hotspot { font-size: 13px; line-height: 1.2; }
+.simulation-lab .simulation-lab__instrument .model-hotspot small { display: block; font-size: 10px; line-height: 1.3; }
+.simulation-lab__instrument.is-unavailable > canvas { display: none; }
+
+.simulation-lab__fallback {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  display: grid;
+  place-content: center;
+  padding: 30px;
+  text-align: center;
+}
+.simulation-lab__fallback[hidden] { display: none; }
+.simulation-lab__fallback p { margin: 8px 0 0; color: var(--lab-muted); }
+
+.simulation-lab__modules {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--lab-line);
+  border: 1px solid var(--lab-line);
+}
+.simulation-lab__modules li { display: flex; gap: 10px; padding: 11px 14px; background: #f0ede5; }
+.simulation-lab__modules b { color: var(--lab-accent); font-size: 11px; letter-spacing: .1em; }
+.simulation-lab__modules span { font-weight: 650; }
+.simulation-lab__hint { margin: 0; color: var(--lab-muted); font-size: 13px; }
+
+.simulation-lab__sample { display: grid; gap: 5px; color: var(--lab-muted); font-size: 12px; }
+.simulation-lab__library-summary { margin: 0 0 4px; color: var(--lab-accent); font-size: 14px; line-height: 1.4; }
+.simulation-lab__conditions { margin: 4px 0 0; color: var(--lab-muted); font-size: 14px; line-height: 1.4; }
+.simulation-lab__conditions[hidden] { display: none; }
+.simulation-lab__sample select { min-width: 220px; padding: 9px 34px 9px 12px; border: 1px solid var(--lab-line); color: var(--lab-ink); background: #f8f6f0; }
+
+.simulation-lab__feature-controls { display: flex; align-items: end; gap: 12px; }
+.simulation-lab__feature { display: flex; align-items: center; gap: 12px; font-size: 14px; color: var(--lab-muted); }
+.simulation-lab__feature select { max-width: 55vw; min-width: 300px; padding: 8px 30px 8px 10px; color: var(--lab-ink); background: #f8f6f0; border: 1px solid var(--lab-line); }
+.simulation-lab__feature-controls button,
+.simulation-lab__loading button { padding: 8px 14px; border: 1px solid var(--lab-line); color: var(--lab-ink); background: #f8f6f0; cursor: pointer; }
+.simulation-lab .simulation-lab__feature-controls button:hover:not(:disabled),
+.simulation-lab .simulation-lab__loading button:hover:not(:disabled) { color: var(--lab-ink); background: #e7e3d9; border-color: var(--lab-accent); }
+.simulation-lab button:disabled { opacity: .48; cursor: default; }
+.simulation-lab__feature-note { font-size: 16px; line-height: 1.5; }
+.simulation-lab__feature-note p { margin: 0; }
+.simulation-lab__caution { color: var(--lab-muted); font-size: 14px; }
+.simulation-lab__spectrum-wrap { position: relative; min-height: 320px; border-block: 1px solid var(--lab-line); }
+.simulation-lab__spectrum-wrap canvas { width: 100%; height: 100%; display: block; }
+.simulation-lab__loading { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 16px; padding: 20px; text-align: center; margin: 0; color: var(--lab-muted); background: rgba(240, 237, 229, .96); }
+.simulation-lab__loading[hidden] { display: none; }
+
+.simulation-lab__metadata { display: grid; grid-template-columns: .7fr 1.6fr .8fr 1.9fr; gap: 1px; margin: 0; background: var(--lab-line); border: 1px solid var(--lab-line); }
+.simulation-lab__metadata div { min-width: 0; padding: 10px 12px; background: #f0ede5; }
+.simulation-lab__metadata dt { margin-bottom: 4px; color: var(--lab-accent); font-size: 10px; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+.simulation-lab__metadata dd { margin: 0; overflow-wrap: anywhere; font-size: 14px; line-height: 1.45; }
+.simulation-lab__provenance { margin: 0; padding: 0; border: 0; color: var(--lab-muted); font-size: 12px; }
+.simulation-lab__provenance summary { cursor: pointer; width: fit-content; }
+.simulation-lab__provenance .simulation-lab__metadata { margin-top: 8px; }
+.simulation-lab__provenance p { max-width: 100%; overflow-wrap: anywhere; line-height: 1.6; margin: 6px 0 0; }
+
+@media (max-width: 760px) {
+  .simulation-lab { overflow: auto; }
+  .simulation-lab .simulation-lab__main { min-height: 620px; }
+  .simulation-lab__panel.is-active { height: auto; }
+  .simulation-lab__panel-head { align-items: start; }
+  .simulation-lab__modules { grid-template-columns: 1fr 1fr; }
+  .simulation-lab__metadata { grid-template-columns: 1fr 1fr; }
+  .simulation-lab__sample select { min-width: 150px; max-width: 44vw; }
+  .simulation-lab__feature-controls { flex-wrap: wrap; }
+  .simulation-lab__feature { flex-wrap: wrap; gap: 6px; }
+  .simulation-lab__feature select { min-width: 200px; max-width: 68vw; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .simulation-lab *,
+  .simulation-lab *::before,
+  .simulation-lab *::after { scroll-behavior: auto !important; transition: none !important; animation: none !important; }
+}

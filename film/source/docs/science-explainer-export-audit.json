@@ -1,0 +1,106 @@
+{
+  "technical": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1920,
+        "height": 1080,
+        "r_frame_rate": "30/1",
+        "duration": "360.000000",
+        "nb_frames": "10800",
+        "side_data_list": [
+          {}
+        ]
+      },
+      {
+        "codec_name": "aac",
+        "sample_rate": "48000",
+        "channels": 2,
+        "r_frame_rate": "0/0",
+        "duration": "360.000000",
+        "nb_frames": "16877"
+      }
+    ],
+    "format": {
+      "duration": "360.000000",
+      "size": "32288273"
+    }
+  },
+  "formerQuietWindows": [
+    {
+      "window": [
+        39.5,
+        44
+      ],
+      "rmsDb": -26.243586902676963
+    },
+    {
+      "window": [
+        64.5,
+        67
+      ],
+      "rmsDb": -30.449667301303755
+    },
+    {
+      "window": [
+        84,
+        88
+      ],
+      "rmsDb": -26.627096472727892
+    },
+    {
+      "window": [
+        104,
+        108
+      ],
+      "rmsDb": -24.618041787365105
+    },
+    {
+      "window": [
+        160,
+        167
+      ],
+      "rmsDb": -24.993663066822055
+    },
+    {
+      "window": [
+        235.4359,
+        240.2821
+      ],
+      "rmsDb": -25.004485300446614
+    },
+    {
+      "window": [
+        128,
+        134
+      ],
+      "rmsDb": -35.190798475008116
+    },
+    {
+      "window": [
+        152,
+        156
+      ],
+      "rmsDb": -25.463405827630755
+    },
+    {
+      "window": [
+        262.359,
+        270.795
+      ],
+      "rmsDb": -27.95380257796102
+    },
+    {
+      "window": [
+        334,
+        341
+      ],
+      "rmsDb": -27.802674808159068
+    }
+  ],
+  "originalMusicHashesUnchanged": true,
+  "decodedAudioPeakDb": -11.912798881530762,
+  "fullMovieSha256": "0e9f350b64eef3ec3e8395f5aa132de31773268f70b8a1bdd81dc5629afc5afc"
+}

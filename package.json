@@ -1,0 +1,14 @@
+{
+  "name": "ftir-interactive-classroom",
+  "private": true,
+  "version": "1.0.0",
+  "description": "FTIR 交互式科学课堂与真实参考光谱读谱实验室",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "serve": "node scripts/serve.mjs",
+    "dev": "node scripts/serve.mjs",
+    "build": "node scripts/package-single-html.mjs",
+    "validate": "node scripts/validate.mjs"
+  }
+}

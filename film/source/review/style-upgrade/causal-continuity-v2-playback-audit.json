@@ -1,0 +1,239 @@
+{
+  "duration": 360,
+  "width": 1920,
+  "height": 1080,
+  "checked": [
+    {
+      "name": "opening-to-michelson",
+      "start": 0,
+      "end": 82.5,
+      "decodedFrames": 2475,
+      "droppedFrames": 0
+    },
+    {
+      "name": "same-scan-to-sample-A",
+      "start": 120,
+      "end": 179,
+      "decodedFrames": 1774,
+      "droppedFrames": 0
+    },
+    {
+      "name": "opd-components-to-fourier",
+      "start": 188,
+      "end": 220,
+      "decodedFrames": 964,
+      "droppedFrames": 0
+    },
+    {
+      "name": "signed-fourier",
+      "start": 239,
+      "end": 275,
+      "decodedFrames": 1084,
+      "droppedFrames": 0
+    },
+    {
+      "name": "background-to-chemistry",
+      "start": 299,
+      "end": 341,
+      "decodedFrames": 1264,
+      "droppedFrames": 0
+    },
+    {
+      "name": "ending",
+      "start": 349,
+      "end": 359,
+      "decodedFrames": 304,
+      "droppedFrames": 0
+    }
+  ],
+  "captures": [
+    {
+      "section": "opening-to-michelson",
+      "time": 4
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 12
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 17
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 24
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 29
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 35
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 38
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 46
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 50
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 57.9
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 58.1
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 78.5
+    },
+    {
+      "section": "opening-to-michelson",
+      "time": 82.5
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 125
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 133
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 144
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 147
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 151
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 155
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 160
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 166
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 170.9
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 171.1
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 175
+    },
+    {
+      "section": "same-scan-to-sample-A",
+      "time": 179
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 194
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 195.5
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 199
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 201.5
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 204.5
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 209
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 217.8
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 218.2
+    },
+    {
+      "section": "opd-components-to-fourier",
+      "time": 220
+    },
+    {
+      "section": "signed-fourier",
+      "time": 244
+    },
+    {
+      "section": "signed-fourier",
+      "time": 253
+    },
+    {
+      "section": "signed-fourier",
+      "time": 263
+    },
+    {
+      "section": "signed-fourier",
+      "time": 275
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 304
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 313
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 317
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 329.9
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 330.2
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 334
+    },
+    {
+      "section": "background-to-chemistry",
+      "time": 341
+    },
+    {
+      "section": "ending",
+      "time": 354
+    },
+    {
+      "section": "ending",
+      "time": 359
+    }
+  ]
+}

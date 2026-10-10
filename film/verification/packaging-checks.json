@@ -1,0 +1,20 @@
+{
+  "snapshotDateLocal": "2026-10-11",
+  "scope": "Packaging only; production website and film scientific source unchanged",
+  "copiedSourceTypecheck": {
+    "command": "tsc --noEmit",
+    "exitCode": 0,
+    "environment": "Node.js 24.19.0 and original project's existing installed dependencies; temporary dependency junction removed after checking; no install or network used"
+  },
+  "copiedValidators": [
+    {"command": "tsx scripts/validate-fourier-teaching.ts", "exitCode": 0},
+    {"command": "tsx scripts/validate-michelson-teaching.ts", "exitCode": 0},
+    {"command": "tsx scripts/validate-narrative-teaching.ts", "exitCode": 0},
+    {"command": "tsx scripts/validate-opening-reconstruction.ts", "exitCode": 0}
+  ],
+  "sourceFidelity": "All 105 copied source/docs/config/music/media/audit files compared by SHA-256 with their originals; packaging READMEs and verification files are new",
+  "packageVerificationCommand": "node film/verification/verify-package.mjs",
+  "checks": ["Manifest hashes and sizes", "Exact media allowlist", "No video sidecars", "Local relative imports and staticFile assets", "Registered full composition and 10800-frame timeline", "Dependency lock metadata matches package.json", "No environment files, runtime directories, WAVs or logs", "Common GitHub/OpenAI/Google token and private-key signature scan"],
+  "notRepeated": ["Full render", "Browser or full website rebuild", "Final video manual playback", "Original music auditory review"],
+  "limits": "Source integrity and numerical checks do not prove perception, scientific pedagogy or visual pacing. Credential scan covers listed patterns and excluded environment files, not every conceivable secret. Final movie's previous self-review limits remain in source/docs."
+}

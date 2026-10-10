@@ -1,0 +1,9 @@
+{
+  "recordUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75649&Index=0&Type=IR-SPEC",
+  "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75649&Index=2&Type=IR",
+  "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+  "owner": "Public domain",
+  "ownerEvidence": "Official PNNL record OWNER field and NIST record Owner row",
+  "jcampFile": "tert-butylamine-pnnl.jdx",
+  "metadataFile": "META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf"
+}

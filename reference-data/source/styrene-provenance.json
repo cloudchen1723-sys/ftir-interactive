@@ -1,0 +1,9 @@
+{
+  "recordUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C100425&Index=0&Type=IR-SPEC",
+  "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C100425&Index=4&Type=IR",
+  "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+  "owner": "Public domain",
+  "ownerEvidence": "Official PNNL record OWNER field and NIST record Owner row",
+  "jcampFile": "styrene-pnnl.jdx",
+  "metadataFile": "META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf"
+}

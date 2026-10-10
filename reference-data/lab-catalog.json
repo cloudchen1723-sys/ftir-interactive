@@ -1,0 +1,2612 @@
+{
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-10",
+  "titleZh": "真实参考光谱 · 官能团读谱实验室",
+  "noteZh": "曲线是由实测光谱取得的光学常数 k（无量纲），不是吸光度 A 或透过率 T。请核对每个样本的相态与温度。标注是独立解释层；窄带位置取所选区间的原始 k 最大值，宽带只解释包络。不同样本峰高不能直接比较浓度。官能团区间不是唯一鉴定规则。",
+  "samples": [
+    {
+      "id": "acetone-pnnl-2025",
+      "labelZh": "丙酮",
+      "file": "processed/acetone.json",
+      "familyZh": "酮",
+      "readingIntroZh": "先找羰基强带，再观察甲基；用多处证据理解酮的谱形。",
+      "readingOrder": [
+        "carbonyl",
+        "ch-stretch",
+        "ch3-asym-bend",
+        "ch3-sym-bend"
+      ],
+      "features": [
+        {
+          "id": "carbonyl",
+          "labelZh": "C=O 伸缩",
+          "rangeCm1": [
+            1680,
+            1750
+          ],
+          "broad": false,
+          "explanationZh": "先看约 1700 cm⁻¹ 的强带：它支持羰基伸缩。再结合甲基区；仅凭这一带不能唯一认定丙酮。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=800",
+          "observedCm1": 1715.427229,
+          "observedK": 0.4668434262,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "脂肪族 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "broad": false,
+          "explanationZh": "这里的一组较高波数峰支持甲基 C–H 伸缩。与羰基带一起读；C–H 在许多有机物中都出现。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=800",
+          "observedCm1": 3004.637443,
+          "observedK": 0.0157752857,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "ch3-asym-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1390,
+            1460
+          ],
+          "broad": false,
+          "explanationZh": "观察约 1400 cm⁻¹ 的峰，可能主要含甲基非对称变形。再对照另一甲基变形区；真实振动可能含耦合。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=800",
+          "observedCm1": 1420.364906,
+          "observedK": 0.0652885959,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "ch3-sym-bend",
+          "labelZh": "CH₃ 对称变形区",
+          "rangeCm1": [
+            1340,
+            1390
+          ],
+          "broad": false,
+          "explanationZh": "这里的峰支持甲基对称变形。联合 C–H 伸缩和羰基读谱，不把一个指纹峰当作一种物质的身份证。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C67641&Mask=800",
+          "observedCm1": 1362.991677,
+          "observedK": 0.2525934577,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        }
+      ],
+      "metadata": {
+        "sample": "Acetone",
+        "cas": "67-64-1",
+        "datasetId": "acetone-pnnl-2025",
+        "source": "PNNL Liquids Refractive Index (n/k) Dataset, 2025",
+        "sourceUrl": "https://doi.org/10.25584/2997107",
+        "phase": "liquid",
+        "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Vertex 70 FTIR for MIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            400.182104,
+            9997.903769
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless"
+        },
+        "original": {
+          "format": "three-column ASCII: wavenumber, n, k",
+          "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+          "metadata": "source/META.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.pdf",
+          "sha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/acetone.json",
+          "pointCount": 19908,
+          "sha256": "d347c7218d98b30a32008cb299db9c169c72775c8aa06e7fed0125010916a86a"
+        },
+        "license": "CC0-1.0",
+        "redistribution": "Allowed; attribution requested by PNNL",
+        "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; sample PNNL543226, Alfa Aesar 99+%, lot U07E003",
+        "measurementDetails": {
+          "instrument": "Bruker Vertex 70 FTIR (MIR); composite NIR/MIR spectrum",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "sourceRangeCm1": [
+            400.182104,
+            9997.903769
+          ]
+        },
+        "sourceDetails": {
+          "citation": "Baker et al., PNNL Liquids Refractive Index (n/k) Dataset, 2025, DOI 10.25584/2997107",
+          "url": "https://doi.org/10.25584/2997107",
+          "license": "CC0-1.0",
+          "originalFile": "NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+          "originalFormat": "PNNL three-column ASCII (wavenumber, n, k)",
+          "sha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9"
+        },
+        "processing": {
+          "operation": "Selected columns 1 (wavenumber) and 3 (k) from the source ASCII file.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        },
+        "sourceHashValidation": {
+          "id": "acetone-pnnl-2025",
+          "file": "source/NK.MIR.PUR.Acetone.LIQ.AlfaAesar.PNNL543226.txt",
+          "declaredSha256": "7d26fec1a142136e65308bb257b180111a1777ea6e6400891d2a6da042c5e8b9",
+          "actualSha256": "b32b2794f86c3323d352b5ce98c300a2b3ca611649af633e6f721a80ece7f2ee",
+          "matchesDeclaredHash": false,
+          "note": "Pre-existing source hash discrepancy discovered during this extension; source and existing metadata are preserved. Raw x/k values are checked against preserved processed arrays below.",
+          "rawXKMatchesPreservedProcessedExactly": true
+        }
+      }
+    },
+    {
+      "id": "ethanol-pnnl-2025",
+      "labelZh": "乙醇",
+      "file": "processed/ethanol.json",
+      "familyZh": "醇",
+      "readingIntroZh": "先看宽 O–H 包络，再寻找 C–O 与烷基的辅助证据。",
+      "readingOrder": [
+        "oh-envelope",
+        "co-region",
+        "ch-stretch",
+        "ch-bend",
+        "ch3-bend"
+      ],
+      "features": [
+        {
+          "id": "oh-envelope",
+          "labelZh": "氢键 O–H 宽带",
+          "rangeCm1": [
+            3200,
+            3600
+          ],
+          "broad": true,
+          "explanationZh": "先看连续宽包络：液体中的氢键使 O–H 伸缩展宽。区间最大值只是包络位置；再看 C–O 区支持醇的判断。",
+          "assignmentUrl": "https://webspectra.chem.ucla.edu/irtable.html",
+          "observedCm1": 3338.26435,
+          "observedK": 0.087796532,
+          "observedKind": "maximum of overlapping/broad envelope within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "co-region",
+          "labelZh": "以 C–O 为主的指纹区",
+          "rangeCm1": [
+            1020,
+            1080
+          ],
+          "broad": false,
+          "explanationZh": "这里的强带主要与 C–O 伸缩有关，也可能包含 C–C/O–H 耦合。与宽 O–H 联合观察，不能把它理解成完全孤立的一根键。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1050.081254,
+          "observedK": 0.4199425,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "脂肪族 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3000
+          ],
+          "broad": false,
+          "explanationZh": "一组较窄峰支持烷基 C–H 伸缩。它们说明碳氢骨架；是否含醇还需宽 O–H 与 C–O 共同支持。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2974.257136,
+          "observedK": 0.10802076,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-bend",
+          "labelZh": "CH₂/CH₃ 变形区",
+          "rangeCm1": [
+            1430,
+            1480
+          ],
+          "broad": false,
+          "explanationZh": "观察约 1450 cm⁻¹ 的峰：可能含 CH₂/CH₃ 变形，液体中有模式耦合。用它补充烷基证据，不单峰定结构。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1455.551542,
+          "observedK": 0.046428993,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "broad": false,
+          "explanationZh": "这一带可作为甲基变形的辅助线索。与 C–H 伸缩及相邻变形带一起比较，指纹区通常不是一峰对应一根键。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1380.339455,
+          "observedK": 0.061386701,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Ethanol",
+        "cas": "64-17-5",
+        "datasetId": "ethanol-pnnl-2025",
+        "source": "PNNL Liquids Refractive Index (n/k) Dataset, 2025",
+        "sourceUrl": "https://doi.org/10.25584/2997107",
+        "phase": "liquid",
+        "measurement": "Composite of multiple transmission absorbance measurements at different path lengths; Bruker Tensor 27 FTIR for MIR and Vertex 70 for NIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction, sample 26 +/- 1 C",
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.689557,
+            9996.944655
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless"
+        },
+        "original": {
+          "format": "three-column ASCII: wavenumber, n, k",
+          "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+          "metadata": "source/META.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.pdf",
+          "sha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/ethanol.json",
+          "pointCount": 19907,
+          "sha256": "1f286b3fb0fbe5013c9f4cb116aed50e796486b428eb718a6339226faa9d5e4b"
+        },
+        "license": "CC0-1.0",
+        "redistribution": "Allowed; attribution requested by PNNL",
+        "provenance": "Baker, Bradley, Johnson, Myers, Primera-Pedrozo and Tonkyn (2025), DOI 10.25584/2997107; MIR sample Acros 99.5+%, lot B0530617; NIR sample Sigma-Aldrich >=99.5%, lot SHBL6083",
+        "measurementDetails": {
+          "instrument": "Bruker Tensor 27 FTIR (MIR) and Bruker Vertex 70 (NIR); composite spectrum",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "sourceRangeCm1": [
+            399.857941,
+            9996.944655
+          ]
+        },
+        "sourceDetails": {
+          "citation": "Baker et al., PNNL Liquids Refractive Index (n/k) Dataset, 2025, DOI 10.25584/2997107",
+          "url": "https://doi.org/10.25584/2997107",
+          "license": "CC0-1.0",
+          "originalFile": "NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+          "originalFormat": "PNNL three-column ASCII (wavenumber, n, k)",
+          "sha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467"
+        },
+        "processing": {
+          "operation": "Selected columns 1 (wavenumber) and 3 (k) from the source ASCII file.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        },
+        "sourceHashValidation": {
+          "id": "ethanol-pnnl-2025",
+          "file": "source/NK.MIR.PUR.Ethanol.LIQ.SigmaAldrich.PNNL559831.txt",
+          "declaredSha256": "d44de7102b1e4055d85953d2253f729566e186579edfbe8caee8d7e263a0e467",
+          "actualSha256": "c91970018c8e8ff0e48f7371e2b928a65c1924c2aff4ffc7d07a0fb28f9e50b3",
+          "matchesDeclaredHash": false,
+          "note": "Pre-existing source hash discrepancy discovered during this extension; source and existing metadata are preserved. Raw x/k values are checked against preserved processed arrays below.",
+          "rawXKMatchesPreservedProcessedExactly": true
+        }
+      }
+    },
+    {
+      "id": "polystyrene-pnnl-2017",
+      "labelZh": "苯乙烯低聚物（液态）",
+      "file": "processed/polystyrene.json",
+      "familyZh": "芳香族",
+      "readingIntroZh": "样品是液态苯乙烯低聚物；先看芳香 C–H，再看环骨架和低波数指纹。",
+      "readingOrder": [
+        "aromatic-ch",
+        "ring-high",
+        "ring-low",
+        "oop-high",
+        "oop-low",
+        "alkyl-ch"
+      ],
+      "features": [
+        {
+          "id": "aromatic-ch",
+          "labelZh": "芳香 C–H 伸缩",
+          "rangeCm1": [
+            3000,
+            3050
+          ],
+          "broad": false,
+          "explanationZh": "观察略高于 3000 cm⁻¹ 的峰：支持芳香 C–H 伸缩。再找环骨架和面外振动，不凭它判断所有芳香结构。",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "observedCm1": 3025.8508755799994,
+          "observedK": 0.03310000140072768,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Published polystyrene vibrational assignment; qualified fingerprint interpretation"
+        },
+        {
+          "id": "ring-high",
+          "labelZh": "芳环骨架振动",
+          "rangeCm1": [
+            1585,
+            1615
+          ],
+          "broad": false,
+          "explanationZh": "这处峰支持芳环骨架振动。与约 1490 cm⁻¹ 的另一环带一起看，形成比单峰更有力的芳香族线索。",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "observedCm1": 1601.6392691399997,
+          "observedK": 0.02789999908908928,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Published polystyrene vibrational assignment; qualified fingerprint interpretation"
+        },
+        {
+          "id": "ring-low",
+          "labelZh": "芳环骨架辅助带",
+          "rangeCm1": [
+            1475,
+            1510
+          ],
+          "broad": false,
+          "explanationZh": "观察这处环骨架特征，并与约 1600 cm⁻¹ 的峰配对。环振动有耦合，不宜简单描述为一条独立 C=C 键。",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "observedCm1": 1493.16005064,
+          "observedK": 0.08410000079054016,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Published polystyrene vibrational assignment; qualified fingerprint interpretation"
+        },
+        {
+          "id": "oop-high",
+          "labelZh": "芳香 C–H 面外区",
+          "rangeCm1": [
+            735,
+            770
+          ],
+          "broad": false,
+          "explanationZh": "低波数强峰可为单取代芳环的 C–H 面外振动提供指纹线索。要与约 700 cm⁻¹ 及上方环带联合验证。",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "observedCm1": 757.4298842799999,
+          "observedK": 0.10700000109960575,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Published polystyrene vibrational assignment; qualified fingerprint interpretation"
+        },
+        {
+          "id": "oop-low",
+          "labelZh": "芳香面外指纹辅助带",
+          "rangeCm1": [
+            680,
+            715
+          ],
+          "broad": false,
+          "explanationZh": "与约 750 cm⁻¹ 的带一起读：这组面外振动支持单取代芳环指纹。液态低聚物谱不能当作固态薄膜的校准证书。",
+          "assignmentUrl": "https://pubs.rsc.org/en/content/getauthorversionpdf/C4CP03516J",
+          "observedCm1": 698.6100413599997,
+          "observedK": 0.5429999844302982,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Published polystyrene vibrational assignment; qualified fingerprint interpretation"
+        },
+        {
+          "id": "alkyl-ch",
+          "labelZh": "骨架 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            2970
+          ],
+          "broad": false,
+          "explanationZh": "这里还可见脂肪族 C–H 伸缩，反映低聚物的碳氢骨架。与芳香 C–H 对比，认识一个样品可同时有多类振动。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2924.6036049799995,
+          "observedK": 0.04729999979700096,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Polystyrene",
+        "sourceRecordName": "Styrene, oligomers",
+        "cas": "9003-53-6",
+        "datasetId": "polystyrene-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, PNNL513043, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C9003536&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": "Composite optical-constant spectrum; Bruker Tensor 27 FTIR, 128 interferograms per single-channel spectrum, 2.0 cm^-1 instrument resolution, Norton-Beer Medium apodization, Mertz phase correction",
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.68952816,
+            7797.4901
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound file containing separate n and k blocks",
+          "file": "source/polystyrene-pnnl.jdx",
+          "sha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/polystyrene.json",
+          "pointCount": 15345,
+          "sha256": "709d1787678332f3486057803786227951c9f01c3f601ab2ab359351e059cda1"
+        },
+        "license": "Public domain as explicitly declared by the source record and JCAMP OWNER field",
+        "redistribution": "Allowed for this PNNL record; retain provenance. This does not waive copyright in unrelated NIST WebBook compilations.",
+        "provenance": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra; Sigma-Aldrich sample PNNL513043. This is the ordinary measured reference curve and is not SRM 1921b.",
+        "measurementDetails": {
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": null,
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "sourceRangeCm1": [
+            399.68954,
+            7797.4901
+          ]
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, PNNL513043, March 2017",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C9003536&Index=0&Type=IR-SPEC",
+          "license": "Public domain (declared in the source record and JCAMP header)",
+          "originalFile": "polystyrene-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24, compound file containing n and k blocks",
+          "sha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f"
+        },
+        "processing": {
+          "operation": "Decoded the JCAMP block whose YUNITS is absorption index; applied declared XFACTOR and YFACTOR.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        },
+        "sourceHashValidation": {
+          "id": "polystyrene-pnnl-2017",
+          "file": "source/polystyrene-pnnl.jdx",
+          "declaredSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+          "actualSha256": "0144330a4da5330c81ddd9d05d1726acd9e606f7bf34a8c22ae07928982b626f",
+          "matchesDeclaredHash": true,
+          "note": "",
+          "rawXKMatchesPreservedProcessedExactly": true
+        }
+      },
+      "limitationZh": "PNNL 样品为液态苯乙烯低聚物，不代表室温固态聚苯乙烯薄膜；该曲线与 SRM 1921b 认证峰位表是两个对象。"
+    },
+    {
+      "id": "octanoic-acid-pnnl-2017",
+      "labelZh": "辛酸",
+      "file": "processed/octanoic-acid.json",
+      "familyZh": "羧酸",
+      "readingIntroZh": "先联合羰基与宽 O–H 包络，再看长烷基链；该样本不代表所有羧酸的固定峰位。",
+      "readingOrder": [
+        "carbonyl",
+        "acid-oh-envelope",
+        "ch-stretch",
+        "co-region",
+        "ch-bend"
+      ],
+      "features": [
+        {
+          "id": "carbonyl",
+          "labelZh": "羧酸 C=O 伸缩",
+          "rangeCm1": [
+            1680,
+            1740
+          ],
+          "broad": false,
+          "explanationZh": "先看强羰基带：这一区域符合羧酸 C=O 伸缩。再找宽 O–H 包络；羰基位置也随氢键和结构改变，不能单峰区分所有羧酸。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1711.5648772199993,
+          "observedK": 0.38800001232851183,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "acid-oh-envelope",
+          "labelZh": "羧酸 O–H 宽包络（重叠）",
+          "rangeCm1": [
+            2500,
+            3300
+          ],
+          "broad": true,
+          "explanationZh": "观察宽包络而非单一尖峰：羧酸 O–H 与 C–H 伸缩重叠；区间最大值不等于纯 O–H 峰位。结合羰基带判断，不能把最大值直接命名为 O–H 模式。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "observedKind": "maximum of overlapping/broad envelope within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "长链 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3000
+          ],
+          "broad": false,
+          "explanationZh": "宽背景上的窄峰主要支持烷基 C–H 伸缩。辛酸同时有长碳链和羧酸；窄峰与宽 O–H 包络可能重叠。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2930.8712931599994,
+          "observedK": 0.12899999360942624,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "co-region",
+          "labelZh": "C–O 相关指纹区",
+          "rangeCm1": [
+            1200,
+            1320
+          ],
+          "broad": false,
+          "explanationZh": "这一指纹区可含羧酸 C–O 伸缩及其他耦合贡献。先用羰基与宽 O–H 建立线索，再把这里作为辅助证据。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1276.2016136399998,
+          "observedK": 0.07750000086949764,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-bend",
+          "labelZh": "烷基 CH₂/CH₃ 变形区",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "broad": false,
+          "explanationZh": "这处峰可含长链 CH₂ 和甲基变形。与 C–H 伸缩一起支持烷基骨架，不能据此区分羧酸与酯。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1457.96457086,
+          "observedK": 0.059000000435803,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Octanoic acid",
+        "cas": "124-07-2",
+        "datasetId": "octanoic-acid-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C124072&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.1,
+            4.8,
+            5.1,
+            15.4,
+            36.4,
+            97,
+            201,
+            502,
+            1058
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.68952816,
+            7797.4901
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/octanoic-acid-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+          "sha256": "71d9e1eb6c3dd08895e6aa16556319a988e99e58f4e3c07b310d8bac332a404d",
+          "metadataSha256": "f7dbe22cd3e4fb4ec76e2b0c649745cd0a0386a30fd0c4f58b4748187c445279",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C124072&Index=3&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/octanoic-acid.json",
+          "pointCount": 15345,
+          "sha256": "3bc4788158449224896b8d9c8bddfebc91342dad8ff1770a505e863a0b65853c"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL514789; Sigma, ≥99%, lot MKBV8509V; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.1,
+            4.8,
+            5.1,
+            15.4,
+            36.4,
+            97,
+            201,
+            502,
+            1058
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C124072&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C124072&Index=3&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "octanoic-acid-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "71d9e1eb6c3dd08895e6aa16556319a988e99e58f4e3c07b310d8bac332a404d",
+          "metadataFile": "source/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+          "metadataSha256": "f7dbe22cd3e4fb4ec76e2b0c649745cd0a0386a30fd0c4f58b4748187c445279",
+          "jcampHeaders": [
+            {
+              "TITLE": "Octanoic acid",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "124-07-2",
+              "MOLFORM": "C 8 H 16 O 2",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.5040117e-009",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "1.4130036",
+              "MAXX": "7797.49",
+              "MINX": "399.687",
+              "MAXY": "1.6149203",
+              "MINY": "1.204798",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "Octanoic acid",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "124-07-2",
+              "MOLFORM": "C 8 H 16 O 2",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Octanoic-acid.LIQ.SIGMA.PNNL514789.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "3.6135316e-010",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "2.8799999e-005",
+              "MAXX": "7797.49",
+              "MINX": "399.688",
+              "MAXY": "0.388",
+              "MINY": "1.84e-005",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      }
+    },
+    {
+      "id": "methyl-acetate-pnnl-2017",
+      "labelZh": "乙酸甲酯",
+      "file": "processed/methyl-acetate.json",
+      "familyZh": "酯",
+      "readingIntroZh": "先读羰基，再看 C–O 指纹和甲基；与酮和羧酸比较多处证据。",
+      "readingOrder": [
+        "carbonyl",
+        "co-acetate",
+        "co-fingerprint",
+        "ch-stretch",
+        "ch3-bend"
+      ],
+      "features": [
+        {
+          "id": "carbonyl",
+          "labelZh": "酯 C=O 伸缩",
+          "rangeCm1": [
+            1710,
+            1770
+          ],
+          "broad": false,
+          "explanationZh": "这处强带支持酯羰基伸缩。酯与酮的常见区间有所不同，但会受结构影响；再用 C–O 区验证，不能只看一个峰。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1747.1936883900007,
+          "observedK": 0.6560000190028832,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "co-acetate",
+          "labelZh": "乙酸酯 C–O 相关强带",
+          "rangeCm1": [
+            1190,
+            1280
+          ],
+          "broad": false,
+          "explanationZh": "这里的强带与乙酸酯 C–O 相关振动相符，可能混有骨架耦合。与羰基联合读谱，比只按羰基峰位命名更稳妥。",
+          "assignmentUrl": "https://www.athabascau.ca/science-and-technology/_documents/centre-for-science-files/labs/organic-chemistry/exp/6_ir_tutorial.pdf",
+          "observedCm1": 1246.7934962100007,
+          "observedK": 0.7179999955130422,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "co-fingerprint",
+          "labelZh": "C–O 相关指纹辅助区",
+          "rangeCm1": [
+            1000,
+            1080
+          ],
+          "broad": false,
+          "explanationZh": "这一低波数区可能含 C–O 与其他骨架耦合贡献。把它视为辅助指纹，联合较高波数 C–O 带和羰基，不作一峰一键归属。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1047.6939977800002,
+          "observedK": 0.3039999908005232,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "甲基 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "broad": false,
+          "explanationZh": "观察几处窄峰，支持甲基 C–H 伸缩。很多有机物都出现这些峰；酯的线索还需羰基和 C–O 一起给出。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2956.73519338,
+          "observedK": 0.02940000058275068,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可支持甲基变形。与甲基伸缩和羰基比较，指纹区中的振动常有耦合，不能据单峰认定乙酸甲酯。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1371.1704225900003,
+          "observedK": 0.23199999387679848,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Methyl acetate",
+        "cas": "79-20-9",
+        "datasetId": "methyl-acetate-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C79209&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 37 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            2.6,
+            4,
+            11.9,
+            14.5,
+            36.1,
+            51.5,
+            99.6,
+            200,
+            503,
+            1037
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48208111,
+          "sourceRangeCm1": [
+            399.7769859400005,
+            7797.7937
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "4 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.7769859400005,
+            7797.7937
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/methyl-acetate-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+          "sha256": "7847ad518de3d895dc85d66b1372b75549acca29e285fd2589b60710464c9c03",
+          "metadataSha256": "3bf606394938c5272bda0d8dab4baabe482ea77fec01a608338e4b166ced6de4",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C79209&Index=5&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/methyl-acetate.json",
+          "pointCount": 15347,
+          "sha256": "02ead6745034eed795b903e6101ac92ae2de9fbd8258e7714d5f688b705d7548"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL514676; Sigma-Aldrich, 99.5%, lot SHBG4345V; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 37 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            2.6,
+            4,
+            11.9,
+            14.5,
+            36.1,
+            51.5,
+            99.6,
+            200,
+            503,
+            1037
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48208111,
+          "sourceRangeCm1": [
+            399.7769859400005,
+            7797.7937
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "4 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C79209&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C79209&Index=5&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "methyl-acetate-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "7847ad518de3d895dc85d66b1372b75549acca29e285fd2589b60710464c9c03",
+          "metadataFile": "source/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+          "metadataSha256": "3bf606394938c5272bda0d8dab4baabe482ea77fec01a608338e4b166ced6de4",
+          "jcampHeaders": [
+            {
+              "TITLE": "Methyl acetate",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "79-20-9",
+              "MOLFORM": "C 3 H 6 O 2",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 37 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "4 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48208111",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.656718e-009",
+              "DELTAX": "-0.48208111",
+              "FIRSTX": "7797.7937",
+              "LASTX": "399.7771",
+              "FIRSTY": "1.3489819",
+              "MAXX": "7797.79",
+              "MINX": "399.782",
+              "MAXY": "1.7788874",
+              "MINY": "0.95463908",
+              "NPOINTS": "15347",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "Methyl acetate",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "79-20-9",
+              "MOLFORM": "C 3 H 6 O 2",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Methyl-acetate.LIQ.SIGMA-ALDRICH.PNNL514676.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 37 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "4 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48208111",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "6.6868961e-010",
+              "DELTAX": "-0.48208111",
+              "FIRSTX": "7797.7937",
+              "LASTX": "399.7771",
+              "FIRSTY": "4.5100001e-005",
+              "MAXX": "7797.79",
+              "MINX": "399.782",
+              "MAXY": "0.718",
+              "MINY": "1.91e-005",
+              "NPOINTS": "15347",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      }
+    },
+    {
+      "id": "acetonitrile-pnnl-2017",
+      "labelZh": "乙腈",
+      "file": "processed/acetonitrile.json",
+      "familyZh": "腈",
+      "readingIntroZh": "先找约 2250 cm⁻¹ 的窄带，再与甲基及指纹证据一起读。",
+      "readingOrder": [
+        "nitrile",
+        "ch-stretch",
+        "ch3-bend",
+        "cc-region"
+      ],
+      "features": [
+        {
+          "id": "nitrile",
+          "labelZh": "C≡N 伸缩",
+          "rangeCm1": [
+            2220,
+            2280
+          ],
+          "broad": false,
+          "explanationZh": "先看这处窄带：它支持腈基 C≡N 伸缩。NIST 模式表支持此归属，但气态频率不能直接代替这里的液态实测位置。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 2253.4788398599994,
+          "observedK": 0.06120000075048692,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "甲基 C–H 伸缩",
+          "rangeCm1": [
+            2900,
+            3040
+          ],
+          "broad": false,
+          "explanationZh": "这里的峰支持甲基伸缩；腈旁的甲基环境会影响位置。与 C≡N 带一起看，不按是否超过 3000 cm⁻¹ 单独认定芳香族。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 2944.37092924,
+          "observedK": 0.007019999976952884,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "甲基变形区",
+          "rangeCm1": [
+            1350,
+            1410
+          ],
+          "broad": false,
+          "explanationZh": "这一区域可含甲基对称变形以及组合带影响。联合甲基伸缩和腈带；NIST 对部分模式注明耦合，不能给每峰绝对单一归属。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 1375.5203647999997,
+          "observedK": 0.047699999400575406,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        },
+        {
+          "id": "cc-region",
+          "labelZh": "C–C 相关骨架振动",
+          "rangeCm1": [
+            890,
+            945
+          ],
+          "broad": false,
+          "explanationZh": "指纹区这处带与 C–C 伸缩相关模式相符。它只补充骨架证据；先用腈带建立官能团线索，不能仅凭这里鉴定乙腈。",
+          "assignmentUrl": "https://webbook.nist.gov/cgi/cbook.cgi?ID=C75058&Mask=800",
+          "observedCm1": 917.9791276599999,
+          "observedK": 0.031199999346597937,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "NIST Chemistry WebBook vibrational mode compilation (interpretation only; phase-specific frequencies are not substituted for measured data)"
+        }
+      ],
+      "metadata": {
+        "sample": "Acetonitrile",
+        "cas": "75-05-8",
+        "datasetId": "acetonitrile-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75058&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.8,
+            3.3,
+            15.7,
+            35.9,
+            39.9,
+            108,
+            197,
+            509,
+            522,
+            1211
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.68952816,
+            7797.4901
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/acetonitrile-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+          "sha256": "29ca2f3e90a25794ec72817a59b9389e50c5bed5aea7ae61f071fc27b405e871",
+          "metadataSha256": "954b890cf6fe2f5164e47c4d90c75e6ce700681951699869b9d8ac04fad14617",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75058&Index=28&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/acetonitrile.json",
+          "pointCount": 15345,
+          "sha256": "5131b24d51b194eafc0cb99014ac6d8ae2691548e0ce67261ecff05529253426"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL325466; Sigma-Aldrich, 98%, lot 73496JM; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.8,
+            3.3,
+            15.7,
+            35.9,
+            39.9,
+            108,
+            197,
+            509,
+            522,
+            1211
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75058&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75058&Index=28&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "acetonitrile-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "29ca2f3e90a25794ec72817a59b9389e50c5bed5aea7ae61f071fc27b405e871",
+          "metadataFile": "source/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+          "metadataSha256": "954b890cf6fe2f5164e47c4d90c75e6ce700681951699869b9d8ac04fad14617",
+          "jcampHeaders": [
+            {
+              "TITLE": "Acetonitrile",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "75-05-8",
+              "MOLFORM": "C 2 H 3 N",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.2752295e-009",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "1.3338007",
+              "MAXX": "7797.49",
+              "MINX": "399.686",
+              "MAXY": "1.3692672",
+              "MINY": "1.301872",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "Acetonitrile",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "75-05-8",
+              "MOLFORM": "C 2 H 3 N",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Acetonitrile.LIQ.SIGMA-ALDRICH.PNNL325466.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "5.6996942e-011",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "4.3300001e-006",
+              "MAXX": "7797.49",
+              "MINX": "399.689",
+              "MAXY": "0.0612",
+              "MINY": "3.93e-006",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      }
+    },
+    {
+      "id": "tert-butylamine-pnnl-2017",
+      "labelZh": "叔丁胺",
+      "file": "processed/tert-butylamine.json",
+      "familyZh": "伯胺",
+      "readingIntroZh": "叔丁胺的胺基是 NH₂，属于伯胺；先看 N–H 双带，再核对弯曲与烷基。",
+      "readingOrder": [
+        "nh-high",
+        "nh-low",
+        "nh-bend",
+        "ch-stretch",
+        "ch3-bend"
+      ],
+      "features": [
+        {
+          "id": "nh-high",
+          "labelZh": "NH₂ 伸缩：较高波数带",
+          "rangeCm1": [
+            3330,
+            3450
+          ],
+          "broad": false,
+          "explanationZh": "观察 N–H 区较高波数的一处带。伯胺 NH₂ 常有两条伸缩带；再与较低波数 N–H 带联合观察，别被“叔丁”名称误认为叔胺。",
+          "assignmentUrl": "https://webspectra.chem.ucla.edu/irtable.html",
+          "observedCm1": 3350.8508914999993,
+          "observedK": 0.005549999623243949,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "nh-low",
+          "labelZh": "NH₂ 伸缩：较低波数带",
+          "rangeCm1": [
+            3200,
+            3330
+          ],
+          "broad": false,
+          "explanationZh": "与较高波数的 N–H 带配对阅读，支持 NH₂ 伸缩。液态氢键可改变位置与带宽；双带也要结合 N–H 弯曲区验证。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 3280.4585245,
+          "observedK": 0.005519999936140829,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "nh-bend",
+          "labelZh": "NH₂ 弯曲相关区",
+          "rangeCm1": [
+            1550,
+            1650
+          ],
+          "broad": false,
+          "explanationZh": "这处指纹带可含 NH₂ 弯曲，模式可能耦合。与高波数 N–H 双带一起支持伯胺线索，不单凭它区分所有含氮化合物。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1601.1666459999997,
+          "observedK": 0.01679999875811061,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-stretch",
+          "labelZh": "烷基 C–H 伸缩",
+          "rangeCm1": [
+            2850,
+            3020
+          ],
+          "broad": false,
+          "explanationZh": "一组窄峰支持叔丁基的 C–H 伸缩。先与上方 N–H 区分，再把两者结合，理解同一分子可含不同官能团证据。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2960.3178964999997,
+          "observedK": 0.1299999901105231,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1340,
+            1405
+          ],
+          "broad": false,
+          "explanationZh": "这里可含叔丁基甲基变形。它为烷基骨架提供辅助信息，不能代替 N–H 双带来判断胺的类型。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1364.4361515,
+          "observedK": 0.10699999649073545,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "tert-Butylamine",
+        "cas": "75-64-9",
+        "datasetId": "tert-butylamine-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75649&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            0.748,
+            0.951,
+            3.81,
+            11.3,
+            15.9,
+            38.7,
+            55.5,
+            107,
+            206,
+            508,
+            1042
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.4821395,
+          "sourceRangeCm1": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/tert-butylamine-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+          "sha256": "751d8037172d6d0c43072d7932729592fdbc0bf6e4c700ece2a6b78d978efa0b",
+          "metadataSha256": "6aad33b3ca0811f41ac66f95aecd4b50aeec5af5e3dce016b1591c94d0a095c4",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75649&Index=2&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/tert-butylamine.json",
+          "pointCount": 15345,
+          "sha256": "3a1f1353ccf1447c849a79acb9aec287130c0ea10652b6a4cf5f5031f62053c3"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL520004; Aldrich, ≥99.5%, lot SHBG8066V; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            0.748,
+            0.951,
+            3.81,
+            11.3,
+            15.9,
+            38.7,
+            55.5,
+            107,
+            206,
+            508,
+            1042
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.4821395,
+          "sourceRangeCm1": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C75649&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C75649&Index=2&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "tert-butylamine-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "751d8037172d6d0c43072d7932729592fdbc0bf6e4c700ece2a6b78d978efa0b",
+          "metadataFile": "source/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+          "metadataSha256": "6aad33b3ca0811f41ac66f95aecd4b50aeec5af5e3dce016b1591c94d0a095c4",
+          "jcampHeaders": [
+            {
+              "TITLE": "tert-Butylamine",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "75-64-9",
+              "MOLFORM": "C 4 H 11 N",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.4821395",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.3482342e-009",
+              "DELTAX": "-0.4821395",
+              "FIRSTX": "7797.6235",
+              "LASTX": "399.67493",
+              "FIRSTY": "1.3628974",
+              "MAXX": "7797.62",
+              "MINX": "399.676",
+              "MAXY": "1.4476555",
+              "MINY": "1.2778445",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "tert-Butylamine",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "75-64-9",
+              "MOLFORM": "C 4 H 11 N",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.tert-Butylamine.LIQ.ALDRICH.PNNL520004.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.4821395",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.2107193e-010",
+              "DELTAX": "-0.4821395",
+              "FIRSTX": "7797.6235",
+              "LASTX": "399.67493",
+              "FIRSTY": "1.08e-005",
+              "MAXX": "7797.62",
+              "MINX": "399.677",
+              "MAXY": "0.13",
+              "MINY": "1.01e-005",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      }
+    },
+    {
+      "id": "octane-pnnl-2017",
+      "labelZh": "正辛烷",
+      "file": "processed/octane.json",
+      "familyZh": "烷烃",
+      "readingIntroZh": "先看 C–H 峰群，再看 CH₂/CH₃ 变形；作为含羰基和 O–H 样本的对照。",
+      "readingOrder": [
+        "ch-stretch-high",
+        "ch-stretch-low",
+        "ch2-bend",
+        "ch3-bend"
+      ],
+      "features": [
+        {
+          "id": "ch-stretch-high",
+          "labelZh": "C–H 伸缩峰群：高波数侧",
+          "rangeCm1": [
+            2900,
+            3000
+          ],
+          "broad": false,
+          "explanationZh": "这组窄峰主要支持烷基 C–H 伸缩。和较低波数侧一起看，先认识峰群，再用变形区补充骨架信息。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2925.5678646999995,
+          "observedK": 0.16699999553171166,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch-stretch-low",
+          "labelZh": "C–H 伸缩峰群：低波数侧",
+          "rangeCm1": [
+            2835,
+            2900
+          ],
+          "broad": false,
+          "explanationZh": "低波数侧也有 C–H 伸缩贡献，不能把整组峰只命名为一个模式。结合 CH₂/CH₃ 变形，并与含羰基样本比较。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 2856.1411648599997,
+          "observedK": 0.08039999744740008,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch2-bend",
+          "labelZh": "CH₂/CH₃ 变形区",
+          "rangeCm1": [
+            1430,
+            1485
+          ],
+          "broad": false,
+          "explanationZh": "这一区域可含 CH₂ 剪式及甲基变形。与伸缩峰群联合支持烷基骨架；这些振动并非正辛烷独有。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1467.6071680599998,
+          "observedK": 0.05290000139299931,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "ch3-bend",
+          "labelZh": "CH₃ 变形区",
+          "rangeCm1": [
+            1350,
+            1400
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可支持链端甲基变形。把它作为辅助线索，完整指纹和多处比较才能提高结构判断的可信度。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1378.4131439599996,
+          "observedK": 0.02969999980744038,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Octane",
+        "cas": "111-65-9",
+        "datasetId": "octane-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C111659&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.8,
+            7.6,
+            15,
+            40,
+            110,
+            197,
+            505,
+            1009
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.68952816,
+            7797.4901
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/octane-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+          "sha256": "c86535480f3d53280c51a1f9e951cbc79b0c0330280279ef91d35327677d1cae",
+          "metadataSha256": "3104ff6fe9de59ed7a4b662b85b800ab69bd6db4f9da6c351094b1070355ad75",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C111659&Index=1&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/octane.json",
+          "pointCount": 15345,
+          "sha256": "1c2e824b1baa3c0a8c2aac150a1b7c2c49507883cac862569cb2269ef263c2e3"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL511797; Sigma-Aldrich, ≥99%, lot SHBF6475V; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            1.8,
+            7.6,
+            15,
+            40,
+            110,
+            197,
+            505,
+            1009
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "None",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.48212986,
+          "sourceRangeCm1": [
+            399.68952816,
+            7797.4901
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C111659&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C111659&Index=1&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "octane-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "c86535480f3d53280c51a1f9e951cbc79b0c0330280279ef91d35327677d1cae",
+          "metadataFile": "source/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+          "metadataSha256": "3104ff6fe9de59ed7a4b662b85b800ab69bd6db4f9da6c351094b1070355ad75",
+          "jcampHeaders": [
+            {
+              "TITLE": "Octane",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "111-65-9",
+              "MOLFORM": "C 8 H 18",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.3661567e-009",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "1.3851233",
+              "MAXX": "7797.49",
+              "MINX": "399.686",
+              "MAXY": "1.4668996",
+              "MINY": "1.2782403",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "Octane",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "111-65-9",
+              "MOLFORM": "C 8 H 18",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Octane.LIQ.SIGMA-ALDRICH.PNNL511797.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.48212986",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.5553087e-010",
+              "DELTAX": "-0.48212986",
+              "FIRSTX": "7797.4901",
+              "LASTX": "399.68954",
+              "FIRSTY": "2.04e-006",
+              "MAXX": "7797.49",
+              "MINX": "399.69",
+              "MAXY": "0.167",
+              "MINY": "1.06e-006",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      }
+    },
+    {
+      "id": "styrene-pnnl-2017",
+      "labelZh": "苯乙烯单体（液态）",
+      "file": "processed/styrene.json",
+      "familyZh": "末端烯烃 / 芳香族",
+      "readingIntroZh": "先看末端乙烯基的成对面外带，再核对 C=C 与芳环；这是单体，不是液态低聚物谱。",
+      "readingOrder": [
+        "vinyl-cc",
+        "vinyl-oop-high",
+        "vinyl-oop-low",
+        "sp2-ch",
+        "aromatic-ring"
+      ],
+      "features": [
+        {
+          "id": "vinyl-cc",
+          "labelZh": "乙烯基 C=C 伸缩区",
+          "rangeCm1": [
+            1615,
+            1650
+          ],
+          "broad": false,
+          "explanationZh": "这里的带支持与苯环共轭的乙烯基 C=C 伸缩。位置会受共轭影响；先与末端 =CH₂ 面外带联合，不单凭这一带认定烯烃。",
+          "assignmentUrl": "https://clas.niu.edu/clas/chembio/research/analytical-lab/ftir/ir-frequencies-table.shtml",
+          "observedCm1": 1630.0950159999993,
+          "observedK": 0.03730000162448889,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "vinyl-oop-high",
+          "labelZh": "末端 =CH₂ 面外带：高波数侧",
+          "rangeCm1": [
+            975,
+            1010
+          ],
+          "broad": false,
+          "explanationZh": "约 990 cm⁻¹ 的带可与约 910 cm⁻¹ 的带成对支持末端乙烯基。指纹区可能耦合；要联合 C=C 和 =C–H 区域读谱。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 991.2601784999997,
+          "observedK": 0.11200000294410158,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "vinyl-oop-low",
+          "labelZh": "末端 =CH₂ 面外带：低波数侧",
+          "rangeCm1": [
+            890,
+            935
+          ],
+          "broad": false,
+          "explanationZh": "与约 990 cm⁻¹ 的带一起观察，支持 R–CH=CH₂ 的面外振动组合。不能把一个低波数指纹峰当作唯一物质鉴定。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 908.8143239999999,
+          "observedK": 0.18399999954030685,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "sp2-ch",
+          "labelZh": "sp² C–H 伸缩区（烯基 / 芳香重叠）",
+          "rangeCm1": [
+            3000,
+            3120
+          ],
+          "broad": false,
+          "explanationZh": "一组峰支持 sp² C–H 伸缩；苯乙烯同时含烯基和芳环，二者可重叠。不要把本区最大值全部归给烯基，需再看低波数组合。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 3027.335287,
+          "observedK": 0.01909999935250809,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        },
+        {
+          "id": "aromatic-ring",
+          "labelZh": "芳环骨架辅助带",
+          "rangeCm1": [
+            1475,
+            1510
+          ],
+          "broad": false,
+          "explanationZh": "这里的芳环骨架带说明同一单体还有苯环。与乙烯基特征分开联合观察，不能把苯乙烯与聚苯乙烯低聚物视作同一个样品。",
+          "assignmentUrl": "https://www2.chemistry.msu.edu/faculty/reusch/VirtTxtJml/Spectrpy/InfraRed/irspec1.htm",
+          "observedCm1": 1494.6138164999993,
+          "observedK": 0.10700000022463946,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Official university functional-group correlation reference; approximate, qualified interpretation"
+        }
+      ],
+      "metadata": {
+        "sample": "Styrene",
+        "cas": "100-42-5",
+        "datasetId": "styrene-pnnl-2017",
+        "source": "IARPA/PNNL Liquid Phase IR Spectra, March 2017",
+        "sourceUrl": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C100425&Index=0&Type=IR-SPEC",
+        "phase": "liquid",
+        "measurement": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            3.95,
+            8.71,
+            15.1,
+            29.9,
+            35.5,
+            54,
+            98.2,
+            202,
+            537,
+            1017
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "Vendor added 4-tert-butylcatechol as stabilizer.",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.4821395,
+          "sourceRangeCm1": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "JCAMP-DX 4.24 compound n/k blocks",
+          "file": "source/styrene-pnnl.jdx",
+          "metadata": "source/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+          "sha256": "1395e92de00cfdbfc5e53032d4fa4c8fc81082ebcc7902fc84de151197dda2a7",
+          "metadataSha256": "9d8e9672f1c24eb9498f54c0bd78634ac1a9cbf9f8850dd2f86589cf508147b1",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C100425&Index=4&Type=IR",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf"
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/styrene.json",
+          "pointCount": 15345,
+          "sha256": "37bf98d58d5a0014580020be387371afe78bf6282fec2ca7886bb10e34f676d4"
+        },
+        "license": "Public domain (explicit source OWNER declaration)",
+        "redistribution": "Allowed for this PNNL record; retain source provenance. Does not waive NIST compilation copyright for other records.",
+        "provenance": "PNNL PNNL518689; Sigma-Aldrich, ≥99%, lot MKBV4061V; measured 26 ± 1 C; original metadata PDF retained in full.",
+        "measurementDetails": {
+          "mode": "Optical constants derived from multiple path-length transmission absorbance measurements",
+          "instrument": "Bruker Tensor 27 FTIR",
+          "resolutionCm1": 2,
+          "sampleTemperatureC": 26,
+          "sampleTemperatureUncertaintyC": 1,
+          "pathLengthsUm": [
+            3.95,
+            8.71,
+            15.1,
+            29.9,
+            35.5,
+            54,
+            98.2,
+            202,
+            537,
+            1017
+          ],
+          "cellWindowMaterial": "KBr",
+          "preparation": "Vendor added 4-tert-butylcatechol as stabilizer.",
+          "purge": "UHP nitrogen",
+          "scansPerSingleChannel": 128,
+          "apodization": "Norton-Beer, Medium",
+          "phaseCorrection": "Mertz",
+          "zeroFill": "4x",
+          "spectralIntervalCm1": 0.4821395,
+          "sourceRangeCm1": [
+            399.6750119999997,
+            7797.6235
+          ],
+          "scannerVelocity": "10 kHz",
+          "aperture": "3 mm",
+          "detector": "DLTGS at room temperature",
+          "beamSplitter": "Broadband potassium bromide (KBr)",
+          "irSource": "Silicon carbide glow bar",
+          "foldingLimits": "15802 to 0 cm-1",
+          "publisherProcessing": "Multiple-path-length absorbance composites; reflective-loss correction; weighted linear fits; Kramers-Kronig calculation of n; source frequency correction already applied. Full sample-specific processing remains in original metadata PDF.",
+          "resolutionNote": "Instrument resolution is 2.0 cm^-1; ~0.482 cm^-1 is the sampled grid after 4x zero filling, not improved instrument resolution."
+        },
+        "sourceDetails": {
+          "citation": "Myers et al., IARPA/PNNL Liquid Phase IR Spectra, March 2017; optical-constants methods: Appl. Spectrosc. 2018, 72, 535–550, DOI 10.1177/0003702817742848",
+          "url": "https://webbook.nist.gov/cgi/cbook.cgi?Contrib=IARPA-IR-L&ID=C100425&Index=0&Type=IR-SPEC",
+          "downloadUrl": "https://webbook.nist.gov/cgi/cbook.cgi?JCAMP=C100425&Index=4&Type=IR",
+          "license": "Public domain (explicit source OWNER declaration)",
+          "owner": "Public domain",
+          "originalFile": "styrene-pnnl.jdx",
+          "originalFormat": "JCAMP-DX 4.24 compound n/k blocks",
+          "sha256": "1395e92de00cfdbfc5e53032d4fa4c8fc81082ebcc7902fc84de151197dda2a7",
+          "metadataFile": "source/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+          "metadataUrl": "https://webbook.nist.gov/chemistry/silmarils-liquids-n-k/docs/META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+          "metadataSha256": "9d8e9672f1c24eb9498f54c0bd78634ac1a9cbf9f8850dd2f86589cf508147b1",
+          "jcampHeaders": [
+            {
+              "TITLE": "Styrene",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "100-42-5",
+              "MOLFORM": "C 8 H 8",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.4821395",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "dispersion index",
+              "YLABEL": "Real refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "1.6847944e-009",
+              "DELTAX": "-0.4821395",
+              "FIRSTX": "7797.6235",
+              "LASTX": "399.67493",
+              "FIRSTY": "1.5162313",
+              "MAXX": "7797.62",
+              "MINX": "399.677",
+              "MAXY": "1.8090342",
+              "MINY": "1.2837718",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            },
+            {
+              "TITLE": "Styrene",
+              "JCAMP-DX": "4.24",
+              "DATA TYPE": "INFRARED SPECTRUM",
+              "ORIGIN": "Pacific Northwest National Laboratory Under IARPA Contract",
+              "OWNER": "Public domain",
+              "DATE": "March 2017",
+              "CAS REGISTRY NO": "100-42-5",
+              "MOLFORM": "C 8 H 8",
+              "$NIST SOURCE": "IARPA-IR-L",
+              "$NIST DOC FILE": "META.MIR.PUR.Styrene.LIQ.SIGMA-ALDRICH.PNNL518689.pdf",
+              "SPECTROMETER/DATA SYSTEM": "Bruker Tensor 27 FTIR",
+              "INSTRUMENT RESOLUTION": "2.0 cm-1",
+              "IR SOURCE": "Silicon carbide glow bar",
+              "APERTURE": "3 mm",
+              "BEAMSPLITTER": "Broadband potassium bromide (KBr)",
+              "DETECTOR": "DLTGS at room temperature",
+              "SCANNER SPEED": "10 kHz",
+              "PHASE CORRECTION": "Mertz",
+              "INTERFEROGRAM ZEROFILL": "4x",
+              "SPECTRAL INTERVAL AFTER ZEROFILLING": "0.4823 cm-1",
+              "SPECTRAL RANGE": "7800 to 400 cm-1 (1.282 to 25 microns)",
+              "STATE": "liquid",
+              "RESOLUTION": "0.4821395",
+              "APODIZATION": "Norton-Beer, Medium",
+              "FOLDING LIMITS": "15802 to 0 cm-1",
+              "NUMBER OF INTERFEROGRAMS AVERAGED PER SINGLE CHANNEL SPECTRUM": "128",
+              "XUNITS": "1/cm",
+              "YUNITS": "absorption index",
+              "YLABEL": "Imaginary refractive index",
+              "XFACTOR": "1",
+              "YFACTOR": "4.8149377e-010",
+              "DELTAX": "-0.4821395",
+              "FIRSTX": "7797.6235",
+              "LASTX": "399.67493",
+              "FIRSTY": "2.87e-005",
+              "MAXX": "7797.62",
+              "MINX": "399.673",
+              "MAXY": "0.517",
+              "MINY": "1.13e-007",
+              "NPOINTS": "15345",
+              "XYDATA": "(X++(Y..Y))",
+              "END": ""
+            }
+          ]
+        },
+        "processing": {
+          "operation": "Decoded only source YUNITS=absorption index (k) block; applied declared XFACTOR and YFACTOR, reconstructing the declared FIRSTX/DELTAX grid.",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false
+        }
+      },
+      "limitationZh": "这是液态苯乙烯单体；供应商添加 4-tert-butylcatechol 稳定剂。与液态苯乙烯低聚物（polystyrene）是不同样品。"
+    },
+    {
+      "id": "propyne-nasa-2021-8k",
+      "labelZh": "丙炔（8 K 非晶固体）",
+      "file": "processed/propyne.json",
+      "familyZh": "端炔",
+      "readingIntroZh": "这是 8 K 非晶丙炔的实测 k 谱；先看端炔 ≡C–H，再读较弱的 C≡C 与弯曲带。",
+      "readingOrder": [
+        "terminal-ch",
+        "triple-stretch",
+        "ch-bend",
+        "terminal-bend"
+      ],
+      "features": [
+        {
+          "id": "terminal-ch",
+          "labelZh": "端炔 ≡C–H 伸缩",
+          "rangeCm1": [
+            3233,
+            3333
+          ],
+          "broad": false,
+          "explanationZh": "先看约 3280 cm⁻¹ 的端炔 C–H 带。这里是 8 K 非晶固体，位置和宽度不代表室温气体或液体；再结合 C≡C 与弯曲区。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 3280.73741999999,
+          "observedK": 0.165468521416666,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array"
+        },
+        {
+          "id": "triple-stretch",
+          "labelZh": "C≡C 伸缩（较弱）",
+          "rangeCm1": [
+            2112,
+            2136
+          ],
+          "broad": false,
+          "explanationZh": "这处较弱带与论文给出的 C≡C 伸缩相符。三键伸缩可因对称性而很弱或不活跃，不能从缺少强峰否定炔键；本样本须与端炔 C–H 联合判断。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 2123.99996,
+          "observedK": 0.02221093362,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array"
+        },
+        {
+          "id": "ch-bend",
+          "labelZh": "C–H 弯曲相关区",
+          "rangeCm1": [
+            1414,
+            1462
+          ],
+          "broad": false,
+          "explanationZh": "这里的带可含丙炔 C–H 弯曲贡献，论文归属为近似模式描述。与端炔伸缩和 C≡C 一起读，指纹区通常包含耦合。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 1438.05717699999,
+          "observedK": 0.0935465302466666,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array"
+        },
+        {
+          "id": "terminal-bend",
+          "labelZh": "端炔 H–C≡C 弯曲区",
+          "rangeCm1": [
+            590,
+            720
+          ],
+          "broad": false,
+          "explanationZh": "低波数这一带支持端炔 C–H 弯曲。先对照高波数 ≡C–H 伸缩，再联合较弱 C≡C；非晶固体的带形不可套成所有端炔的固定规则。",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "observedCm1": 646.8906991,
+          "observedK": 0.268752962583333,
+          "observedKind": "local maximum of raw k within selected window",
+          "assignmentSource": "Hudson et al. 2021, Table 8 (amorphous propyne at 8 K); approximate assignments separate from measured k array"
+        }
+      ],
+      "metadata": {
+        "sample": "Propyne",
+        "cas": "74-99-7",
+        "datasetId": "propyne-nasa-2021-8k",
+        "source": "NASA Goddard Cosmic Ice Laboratory, C3 hydrocarbon optical constants (2021 publication)",
+        "sourceUrl": "https://science.gsfc.nasa.gov/691/cosmicice/constants.html",
+        "phase": "solid",
+        "phaseDetail": "amorphous ice",
+        "measurement": {
+          "mode": "Imaginary refractive index derived by publisher from normal-incidence transmission FTIR measurements and optical-constants analysis",
+          "instrument": "FTIR; paper identifies Thermo iS50 for phase checks; selected workbook does not separately name the optical-constants acquisition instrument",
+          "resolutionCm1": 0.5,
+          "scansPerSpectrum": 200,
+          "sampleTemperatureK": 8,
+          "phaseDetail": "amorphous ice",
+          "conditionsZh": "8 K 非晶固体；气相沉积在预冷 CsI 或 KBr 基底，正入射透射 FTIR 后由作者计算光学常数。不是室温液体谱。",
+          "substrate": "CsI or KBr; selected workbook block does not specify which substrate",
+          "sampleThicknessUm": null,
+          "thicknessNote": "Paper reports multiple ice thicknesses ~0.25–2 µm for intensity measurements. No unique thickness assigned to this optical-constants workbook block.",
+          "sourceRangeCm1": [
+            500.0234912,
+            4999.993763
+          ],
+          "spectralIntervalCm1": 0.06026500000007218,
+          "resolutionNote": "~0.0603 cm^-1 source grid spacing is not the 0.5 cm^-1 instrumental resolution.",
+          "supplier": "Sigma Aldrich",
+          "statedPurity": "≥99%",
+          "publisherProcessing": "Optical constants derived by publisher from measured transmission spectra using updated iterative optical-constants analysis with substrate effects and refractive-index measurements. Source contains negative baseline/numerical-processing values, which are retained and do not represent physical negative absorption.",
+          "knownContaminants": "Paper reports small features from ~0.1% CO2 at 2338 cm^-1 and ~1% allene at 1948 cm^-1 in amorphous propyne; no peaks are removed here."
+        },
+        "x": {
+          "quantity": "wavenumber",
+          "unit": "cm^-1",
+          "range": [
+            500.0234912,
+            4999.993763
+          ],
+          "order": "descending"
+        },
+        "y": {
+          "quantity": "imaginary refractive index",
+          "symbol": "k",
+          "unit": "dimensionless",
+          "absorptionDirection": "up"
+        },
+        "original": {
+          "format": "XLSX optical-constants workbook",
+          "file": "source/C3Hx_optical_constants_2020-05-29.xlsx",
+          "sha256": "88bdfb1d07546fc7344e02553907ea81403566fd53b4813a1e51d247d57b1edc",
+          "downloadUrl": "https://science.gsfc.nasa.gov/691/cosmicice/constants/C3_hydrocarbons/C3Hx_optical_constants_2020-05-29.xlsx",
+          "sheet": "C3H4 - propyne",
+          "columns": {
+            "x": "C",
+            "k": "E"
+          },
+          "firstDataRow": 2,
+          "lastDataRow": 74671
+        },
+        "local": {
+          "format": "JSON arrays",
+          "file": "processed/propyne.json",
+          "pointCount": 74670,
+          "sha256": "1f843956650b30c74055d365f009ced13fcece9e9aad19e47b6e20381fd88d09"
+        },
+        "license": "NASA Open Access Data Policy (OCdb Data Redistribution terms); attribution requested",
+        "licenseUrl": "https://ocdb.smce.nasa.gov/page/toc",
+        "redistribution": "Retain attribution to the NASA Cosmic Ice Laboratory and Hudson et al. Data redistribution is described by NASA OCdb policy; this is not a CC0 declaration and does not license reproduction of the publisher article.",
+        "provenance": "Hudson, Gerakines, Yarnall and Coones (2021), Infrared spectra and optical constants of astronomical ices: III. Propane, propylene, and propyne, Icarus 354, 114033, DOI 10.1016/j.icarus.2020.114033. Data: NASA Goddard Cosmic Ice Laboratory.",
+        "measurementDetails": {
+          "mode": "Imaginary refractive index derived by publisher from normal-incidence transmission FTIR measurements and optical-constants analysis",
+          "instrument": "FTIR; paper identifies Thermo iS50 for phase checks; selected workbook does not separately name the optical-constants acquisition instrument",
+          "resolutionCm1": 0.5,
+          "scansPerSpectrum": 200,
+          "sampleTemperatureK": 8,
+          "phaseDetail": "amorphous ice",
+          "conditionsZh": "8 K 非晶固体；气相沉积在预冷 CsI 或 KBr 基底，正入射透射 FTIR 后由作者计算光学常数。不是室温液体谱。",
+          "substrate": "CsI or KBr; selected workbook block does not specify which substrate",
+          "sampleThicknessUm": null,
+          "thicknessNote": "Paper reports multiple ice thicknesses ~0.25–2 µm for intensity measurements. No unique thickness assigned to this optical-constants workbook block.",
+          "sourceRangeCm1": [
+            500.0234912,
+            4999.993763
+          ],
+          "spectralIntervalCm1": 0.06026500000007218,
+          "resolutionNote": "~0.0603 cm^-1 source grid spacing is not the 0.5 cm^-1 instrumental resolution.",
+          "supplier": "Sigma Aldrich",
+          "statedPurity": "≥99%",
+          "publisherProcessing": "Optical constants derived by publisher from measured transmission spectra using updated iterative optical-constants analysis with substrate effects and refractive-index measurements. Source contains negative baseline/numerical-processing values, which are retained and do not represent physical negative absorption.",
+          "knownContaminants": "Paper reports small features from ~0.1% CO2 at 2338 cm^-1 and ~1% allene at 1948 cm^-1 in amorphous propyne; no peaks are removed here."
+        },
+        "sourceDetails": {
+          "citation": "Hudson, Gerakines, Yarnall and Coones (2021), Infrared spectra and optical constants of astronomical ices: III. Propane, propylene, and propyne, Icarus 354, 114033, DOI 10.1016/j.icarus.2020.114033. Data: NASA Goddard Cosmic Ice Laboratory.",
+          "url": "https://science.gsfc.nasa.gov/691/cosmicice/constants.html",
+          "downloadUrl": "https://science.gsfc.nasa.gov/691/cosmicice/constants/C3_hydrocarbons/C3Hx_optical_constants_2020-05-29.xlsx",
+          "publicationUrl": "https://doi.org/10.1016/j.icarus.2020.114033",
+          "assignmentUrl": "https://science.gsfc.nasa.gov/691/cosmicice/reprints/Hudson-2021-2746.pdf",
+          "license": "NASA Open Access Data Policy (OCdb Data Redistribution terms); attribution requested",
+          "licenseUrl": "https://ocdb.smce.nasa.gov/page/toc",
+          "licenseNote": "Retain attribution to the NASA Cosmic Ice Laboratory and Hudson et al. Data redistribution is described by NASA OCdb policy; this is not a CC0 declaration and does not license reproduction of the publisher article.",
+          "originalFile": "C3Hx_optical_constants_2020-05-29.xlsx",
+          "originalFormat": "XLSX optical-constants workbook",
+          "sha256": "88bdfb1d07546fc7344e02553907ea81403566fd53b4813a1e51d247d57b1edc",
+          "sheet": "C3H4 - propyne",
+          "columns": {
+            "x": "C",
+            "k": "E"
+          },
+          "firstDataRow": 2,
+          "lastDataRow": 74671,
+          "workbookHeaders": {
+            "A1": "Propyne at 8 K",
+            "A2": "Amorphous form",
+            "C1": "Wavenumber (cm-1)",
+            "D1": "n",
+            "E1": "k"
+          }
+        },
+        "processing": {
+          "operation": "Read original numeric C/E cells of the 8 K amorphous propyne block; preserve all source values including negative baseline/numerical-processing values.",
+          "noteZh": "保留作者从透射实验导出的原始 k 列，包括源文件中的负基线/数值处理值；这些数值不表示物理上的负吸收，不能裁零、补峰或改标为透过率。",
+          "downsampling": false,
+          "smoothing": false,
+          "interpolation": false,
+          "baselineCorrection": false,
+          "unitConversion": false,
+          "normalization": false,
+          "negativeKCount": 20158
+        }
+      },
+      "limitationZh": "8 K 非晶丙炔冰的光学常数，不能代表室温气态或液态丙炔。源谱含作者报告的 CO₂ / 丙二烯杂质与负基线/数值处理值，均原样保留；负值不代表物理上的负吸收。"
+    }
+  ]
+}

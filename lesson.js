@@ -226,7 +226,7 @@
     $('#qualityStats').innerHTML=`<table class="quality-table"><caption class="sr-only">当前采样与处理参数</caption><tr><th>实际采样点</th><th>OPD 间距</th><th>最大 |OPD|</th><th>输出格点间隔</th></tr><tr><td>${qualityRecord.n}</td><td>1 μm</td><td>${fmt(qualityRecord.n*qualityRecord.h/2,4)} cm</td><td>${fmt(s.gridSpacing,3)} cm⁻¹</td></tr></table><p class="chart-caption">谱线强度相同；显示值除以各自 Nh，以比较线形而非扫描长度的比例因子。不是各自峰高归一化，原始记录未修改。补零不会增加上表的实际采样点。</p>`;
   }
   function render(){
-    disposeStory?.();disposeStory=null;
+    if(typeof disposeStory==='function')disposeStory();else disposeStory?.dispose?.();disposeStory=null;
     window.disposeFTIRHome?.();window.disposeFTIRHome=null;
     const focused=document.activeElement;
     const focusId=focused?.id, focusChoice=focused?.dataset?.choice, focusValue=focused?.dataset?.value;

@@ -1,0 +1,22 @@
+# UTF-8 source files are kept as text with LF in the repository.
+* text=auto
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.ps1 text eol=lf
+*.py text eol=lf
+*.png binary
+*.pdf binary
+*.xlsx binary
+*.zip binary
+# Preserve third-party and scientific source bytes, including license headers.
+vendor/** -text
+reference-data/source/** -text
+reference-data/processed/** -text
+# Preserve the packaged film snapshot hashes across Git checkouts.
+/film/** -text
+# Only the final movie uses Git LFS.
+/film/video/FTIR_final_bilingual.mp4 filter=lfs diff=lfs merge=lfs -text

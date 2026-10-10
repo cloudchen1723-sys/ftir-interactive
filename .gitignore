@@ -1,0 +1,28 @@
+node_modules/
+build/
+coverage/
+.DS_Store
+*.log
+Thumbs.db
+.env
+.env.*
+*.tmp
+__pycache__/
+*.pyc
+.chrome-qa/
+.edge-qa/
+.aistudio/
+qa-screenshots/
+output/
+tmp/
+# Keep the finished offline classroom in Git; ignore other build artifacts.
+dist/*
+!dist/FTIR课堂单文件版.html
+# Keep future film render artifacts and dependencies out of the source snapshot.
+/film/source/out/
+/film/source/node_modules/
+/film/source/review/*
+!/film/source/review/absorption-render.config.ts
+!/film/source/review/style-upgrade/
+/film/source/review/style-upgrade/*
+!/film/source/review/style-upgrade/causal-continuity-v2-playback-audit.json

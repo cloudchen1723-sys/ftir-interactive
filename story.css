@@ -1,72 +1,929 @@
-/* Guided hierarchy: one evidence region, readable Chinese, restrained controls. */
-.story-lead{font-size:clamp(18px,1.7vw,23px);line-height:1.8;max-width:950px;margin:0 0 22px;color:#bfd1da}
-.story-instrument-grid [hidden],#periodChoices[hidden],#signalFocus[hidden],#compareSample[hidden]{display:none!important}
-.story-instrument-grid.structure-focus{grid-template-columns:minmax(0,1.65fr) minmax(230px,.7fr);align-items:center}
-.story-instrument-grid.signal-focus{display:block;max-width:940px;margin:auto}
-.structure-focus .story-detector{margin-bottom:30px}.structure-focus .story-detector>span{width:65px;height:65px;flex-shrink:0}
-.signal-focus .story-detector{display:none}.structure-focus .instrument-host{height:430px}
-.story-purpose #compareSample{display:block;margin:14px auto 0;font-size:16px}
-body[data-view=story] .story-steps{scrollbar-width:none}.story-steps::-webkit-scrollbar{display:none}
-@media(max-width:700px){.story-instrument-grid.structure-focus{grid-template-columns:1fr;gap:10px}.structure-focus .instrument-host{height:290px}.structure-focus .story-detector{margin-bottom:12px}.story-lead{font-size:18px}.path-stages{margin-bottom:0}}
-.lab-menu{margin:0 0 0 auto;padding:0;border:0;position:relative;z-index:10}.lab-menu summary{font-size:15px;font-weight:400;padding:12px}.sidebar .lab-menu nav{position:absolute;right:0;top:48px;display:grid;gap:0;background:#111e2a;border:1px solid #33444f;padding:12px 20px;min-width:220px;max-height:70vh;overflow:auto}.sidebar .lab-menu nav button{padding:12px;font-size:15px}.sidebar>nav button{font-size:15px}.sidebar .text-button{font-size:13px}
-body[data-view=story] main{padding-top:16px;max-width:1360px;margin:auto}body[data-view=story] .site-header .brand small{font-size:13px}body[data-view=story] .site-header{padding-top:16px;padding-bottom:16px}
-.story-chapters{display:flex;gap:10px;overflow-x:auto;padding:4px 0 12px;border-bottom:1px solid #ffffff14}.story-chapter{border:0;background:transparent;text-align:left;color:#95a8b6;padding:10px 14px;min-width:0;flex:1;font-size:14px}.story-chapter span{display:block;font:11px ui-monospace,monospace;letter-spacing:.08em;color:#708694;margin-bottom:5px}.story-chapter[aria-current=true]{color:#e1f1ed;background:#142630}.story-chapter[aria-current=true] span{color:#baf1e4}
-.story-steps{display:flex;gap:18px;overflow-x:auto;padding:8px 0 14px;border-bottom:1px solid #ffffff14;scrollbar-width:thin}.story-steps button{border:0;background:transparent;white-space:nowrap;color:#95a8b6;padding:8px 0;font-size:14px}.story-steps button span{font:12px ui-monospace,monospace;margin-right:7px;color:#708694}.story-steps button[aria-current]{color:#baf1e4}.story-steps button[aria-current] span{color:#baf1e4}
-.story-heading{margin:28px 0 22px}.story-heading p{color:#91a8b4;font-size:14px;margin:0 0 12px}.story-heading h1{font-size:clamp(27px,3.1vw,42px);font-weight:500;letter-spacing:.005em;max-width:1000px}.story-heading h1:focus{outline:none}
-.story-evidence{padding:16px 0;min-width:0}.story-finding{font-size:clamp(18px,1.6vw,23px);line-height:1.8;max-width:1000px;color:#d7e9eb;margin:26px 0;min-height:2em}.story-note{font-size:14px;color:#91a7b4;line-height:1.8;margin:14px 0}.story-science p{font-size:16px;max-width:950px}.story-science summary{font-size:16px;font-weight:400}.story-next{display:flex;justify-content:space-between;gap:16px;padding:26px 0 6px}.story-next button{font-size:17px;min-height:46px}
-.story-tabs{display:flex;gap:12px;flex-wrap:wrap;margin:12px 0 18px}.story-tabs button{font-size:16px;background:transparent;border:0;border-bottom:2px solid transparent;border-radius:0;padding:10px 12px}.story-tabs button[aria-pressed=true]{color:#9ce4d3;border-bottom-color:#73cdb8}.story-tabs button:hover:not(:disabled){background:#182931}
-body[data-view=story] label{display:block;font-size:17px;line-height:1.7}body[data-view=story] output{color:#b4e7dc;margin-left:12px}body[data-view=story] input[type=range]{min-height:38px;margin:6px 0 14px}body[data-view=story] .chart text{font-size:15px}body[data-view=story] .chart path.data{stroke-width:2.5}body[data-view=story] .chart{margin-top:8px}body[data-view=story] details{padding-top:18px}
-.story-purpose{display:grid;grid-template-columns:220px 1fr;align-items:center;gap:40px}.story-purpose>div:first-child{text-align:center}.specimen{width:130px;height:180px;border:1px solid #7f9cac;margin:20px auto 30px;transform:perspective(500px) rotateY(-12deg);border-radius:5px;position:relative;box-shadow:12px 10px 0 #182835}.specimen span{position:absolute;inset:17px;background:#bc977f80;opacity:0;transition:opacity .35s}.specimen.inserted span{opacity:1}
-.story-diagram{max-width:720px;margin:auto}.story-diagram svg,.story-bars{width:100%;max-height:340px;display:block}.story-diagram svg text,.story-bars text,.story-fallback text{fill:#d1e3eb;font:19px system-ui}.story-two{display:grid;grid-template-columns:1fr 1fr;gap:36px}.story-total{display:flex;justify-content:center;align-items:center;gap:30px;margin:20px 0 30px;font-size:19px}.story-total strong{font:32px ui-monospace,monospace;color:#acdfd3}
-.story-instrument-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:28px}.story-model-wrap{min-width:0;position:relative}.story-model-wrap .instrument-host{height:410px;min-height:0;background:radial-gradient(ellipse,#1b2e3b,transparent 70%)}.story-model-wrap .model-hotspot{background:transparent;backdrop-filter:none;padding:12px}.story-model-wrap .model-hotspot span{display:none}.story-model-wrap .model-hotspot:is(:hover,:focus-visible,.selected,.hovered) span{display:block;background:#102531;padding:5px}.story-part{font-size:16px;min-height:48px;line-height:1.6;color:#b1c8d2}.story-model-wrap>button{font-size:15px}.story-response{padding-top:8px;min-width:0}.story-detector{display:flex;gap:20px;align-items:center;font-size:16px}.story-detector>span{display:block;width:45px;height:45px;border-radius:50%;background:#ecdbb4;border:1px solid #d8cdaf}.story-detector strong{display:block;font:30px ui-monospace,monospace;margin-top:4px}.story-fallback{width:100%;height:100%}
-#fourierMeter{font:22px ui-monospace,monospace;padding:16px 0;color:#b5e2d9}.story-equation{font:clamp(17px,2vw,25px) ui-monospace,monospace;line-height:1.8;padding:15px 0;color:#b4e7dc}.story-mapping{display:flex;gap:28px;align-items:center;font-size:20px;max-width:1000px}.story-mapping strong{white-space:nowrap;font-weight:500}.story-mapping p{color:#b2c8d2}.story-purpose .chart{min-height:280px}.story-placeholder{min-height:300px;display:grid;place-content:center;text-align:center;border:1px solid #ffffff12;background:linear-gradient(135deg,#12232d,#10202a);padding:40px}.story-placeholder>span{font:12px ui-monospace,monospace;color:#9ce4d3;letter-spacing:.12em}.story-placeholder h2{font-size:clamp(24px,3vw,38px);font-weight:400;margin:14px 0}.story-placeholder p{color:#91a7b4;margin:0}
-@media(max-width:800px){.story-instrument-grid{grid-template-columns:1fr}.story-model-wrap .instrument-host{height:340px}.story-purpose{grid-template-columns:130px 1fr;gap:15px}.specimen{width:90px;height:125px}.story-steps{gap:20px}.story-two{gap:20px}.story-mapping{gap:16px;font-size:18px}.story-chapter{font-size:13px;padding:9px 10px}}
-@media(max-width:540px){body[data-view=story] main{padding:10px 16px 25px}.story-heading{margin-top:22px}.story-heading p{font-size:13px}.story-purpose{grid-template-columns:1fr}.story-purpose>div:first-child{display:flex;align-items:center;justify-content:center;gap:28px}.specimen{margin:10px 0;width:64px;height:85px;box-shadow:7px 5px 0 #182835}.story-purpose .chart{min-height:0}.story-two{grid-template-columns:1fr;gap:6px}.story-tabs{gap:4px}.story-tabs button{font-size:15px;padding:9px}.story-total{font-size:16px;gap:15px}.story-total strong{font-size:24px}.story-finding{font-size:18px;margin:18px 0}.story-mapping{display:block}.story-mapping>span{display:none}.story-diagram svg text{font-size:22px}.story-next button{font-size:15px}.sidebar{gap:10px}.sidebar>nav{gap:16px}.sidebar>nav button{font-size:14px}.lab-menu summary{font-size:14px;padding:10px 0}.story-model-wrap .instrument-host{height:320px}.story-detector{font-size:16px}.story-science p{font-size:16px}.story-steps button{font-size:14px}.story-heading h1{font-size:28px}}
+/* ==========================================================================
+   FTIR Unified Presentation Theater (1600 × 900 Fixed 16:9 Stage)
+   Ivory Paper & Navy/Gold Scientific Visual-First Storytelling Style
+   ========================================================================== */
 
-/* Slide-like teaching deck shell: one stage, one question, short handoff. */
-body[data-view=story] .story-deck{--ivory:#f4f0e6;--navy:#142b3a;--blue:#176b91;--gold:#f3c96d;position:relative;isolation:isolate;box-sizing:border-box;aspect-ratio:16/9;min-height:560px;max-height:calc(100svh - 32px);overflow:auto;padding:clamp(22px,3vw,48px) clamp(24px,5vw,96px) 34px;background:var(--ivory);color:var(--navy);border:1px solid #ded5c7;box-shadow:0 18px 50px #142b3a12;transition:opacity .2s ease,transform .34s cubic-bezier(.22,.8,.2,1)}
-body[data-view=story] .story-deck.active{z-index:2}body[data-view=story] .story-deck.visible{opacity:1;transform:none}body[data-view=story] .story-deck.leaving{position:absolute;inset:0;z-index:1;opacity:0;transform:translateX(-18px);pointer-events:none}
-body[data-view=story] .story-deck-progress{display:flex;align-items:center;gap:12px;color:#6c7c82;font:11px ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;margin-bottom:12px}.story-deck-progress i{display:block;height:1px;background:#d9cdbf;flex:1}.story-deck-progress b{font-weight:500;color:var(--navy)}
-body[data-view=story] .story-chapters{border-bottom:1px solid #d9cdbf;padding-bottom:9px;gap:8px}.story-chapter{color:#708087}.story-chapter span{color:#8b999c}.story-chapter[aria-current=true]{color:var(--navy);background:transparent;border-bottom:2px solid var(--blue)}.story-chapter[aria-current=true] span{color:var(--blue)}
-body[data-view=story] .story-steps{border-bottom:0;padding:8px 0 0;gap:20px}.story-steps button{color:#879396}.story-steps button span{color:#abb3b0}.story-steps button[aria-current]{color:var(--navy)}.story-steps button[aria-current] span{color:var(--blue)}
-body[data-view=story] .story-heading{margin:clamp(18px,2.5vw,34px) 0 14px}.story-heading p{color:#7d8a8d}.story-heading h1{color:var(--navy);font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-.02em}
-body[data-view=story] .story-scene-frame{min-height:230px}.story-evidence{padding:0}.story-finding{color:var(--navy);font-family:Georgia,'Times New Roman',serif;font-size:clamp(18px,1.55vw,23px);line-height:1.5;margin:12px 0 6px}.story-note{color:#718087}.story-next{border-top:1px solid #ded5c7;margin-top:12px;padding-top:13px}.story-next button{color:var(--navy);background:transparent;border:0}.story-next button.primary{color:var(--blue);font-weight:600}.story-deck-hint{position:absolute;right:clamp(24px,5vw,96px);bottom:12px;color:#9ba4a1;font:10px ui-monospace,monospace;opacity:0;transition:opacity .2s}.story-deck.chrome-visible .story-deck-hint{opacity:1}
-body[data-view=story] .scene-visual{max-width:980px;margin:0 auto}.scene-visual svg{width:100%;height:auto;display:block}.michelson-visual{border-top:1px solid #ded5c7;border-bottom:1px solid #ded5c7;padding:8px 0}.michelson-visual .optical-base{stroke:#c9d1ce;stroke-width:3;fill:none}.michelson-visual .beam-path{stroke:var(--blue);stroke-width:3;fill:none;stroke-dasharray:10 12;stroke-dashoffset:180;opacity:.2}.story-deck.visible .beam-path{animation:opticalFlow 3.2s linear infinite;opacity:1}.michelson-visual .beam-return{stroke:var(--gold);stroke-width:3;fill:none;opacity:.2}.story-deck.visible .beam-return{animation:beamReveal .55s ease .28s forwards}.michelson-visual .splitter{fill:#e8d9b7;stroke:#cdb98d}.michelson-visual .mirror{fill:var(--navy)}.michelson-visual .moving{transform-origin:450px 312px}.story-deck.visible .moving{animation:mirrorBreath 2.8s ease-in-out .4s infinite alternate}.michelson-visual .source,.michelson-visual .detector{fill:var(--blue)}.michelson-visual .labels{opacity:0;transition:opacity .3s}.michelson-visual .labels.show{opacity:1}.michelson-visual text{fill:var(--navy);font:14px ui-monospace,monospace}.michelson-visual .opd-bracket{stroke:var(--gold);stroke-width:2;stroke-dasharray:4 6;fill:none}.michelson-visual .opd-label{fill:#b17f23;font:18px Georgia,serif}.scene-stage-note{text-align:center;color:#617175;font:15px Georgia,serif;margin:4px 0 0}.encoded-visual{display:grid;grid-template-columns:1fr 1.8fr auto;gap:24px;align-items:center}.mirror-rail{color:#657479;font:12px ui-monospace,monospace}.mirror-rail .rail-label{display:block;margin-bottom:12px}.mirror-rail .rail{height:1px;background:#c6d0cc;position:relative}.mirror-rail .rail i{display:block;position:absolute;top:-7px;width:14px;height:14px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 5px #f3c96d33;transform:translateX(-50%)}.mirror-rail output{display:block;margin-top:12px;color:var(--navy)}.signal-readout{display:flex;align-items:center;gap:8px;font:11px ui-monospace,monospace;color:#718087}.signal-readout strong{font-size:19px;color:var(--navy)}.signal-lamp{display:block;width:12px;height:12px;background:var(--gold);border-radius:50%}.scene-control{font:14px ui-monospace,monospace!important;color:#647377!important}.scene-control output{color:#b17f23;margin-left:16px}.scene-switch{display:flex;gap:10px;justify-content:center;margin:3px 0}.scene-switch button{border:0;background:transparent;border-bottom:1px solid transparent;padding:5px 10px;color:#78878a}.scene-switch button[aria-pressed=true]{color:var(--blue);border-bottom-color:var(--blue)}.interferogram-visual{display:grid;gap:5px}.scene-addition{display:flex;justify-content:space-between;color:#657479;font:12px ui-monospace,monospace;margin-top:4px}.scene-addition b{color:#b17f23;font-weight:500}.story-equation{color:#b17f23;font-size:21px;padding:4px 0}.story-deck .chart{margin-top:0}.story-deck .chart text{fill:#657479}.story-deck .chart path.data{stroke:var(--blue);stroke-width:2.4}.story-deck .chart .marker{stroke:var(--gold)}
-@keyframes opticalFlow{to{stroke-dashoffset:0}}@keyframes beamReveal{from{opacity:0}to{opacity:.85}}@keyframes mirrorBreath{from{transform:translateY(0)}to{transform:translateY(4px)}}
-@media(max-width:800px){body[data-view=story] .story-deck{aspect-ratio:auto;min-height:calc(100svh - 90px);max-height:none;padding:22px 18px 42px}.encoded-visual{grid-template-columns:1fr;gap:10px}.story-deck-hint{right:18px}.scene-addition{font-size:11px}}
-.michelson-visual svg{max-height:280px}
+:root {
+  --bg-ivory: #fcfbf8;
+  --bg-backdrop: #eae5da;
+  --ink-navy: #0d1b2a;
+  --ink-subtle: #4b5d6c;
+  --ink-muted: #889aa8;
+  --science-blue: #1d5b94;
+  --science-blue-light: #eaf2f9;
+  --optics-amber: #c47c2b;
+  --optics-amber-light: #fcf4e8;
+  --hairline: rgba(13, 27, 42, 0.08);
+  --hairline-solid: #e2ded5;
+}
 
-/* Motion prototype: one continuous Michelson-to-signal visual. */
-.motion-prototype{max-width:1080px;margin:auto}.motion-prototype svg{width:100%;max-height:390px}.proto-axis{stroke:#c9d1ce;stroke-width:2;fill:none}.proto-input,.proto-arm,.proto-output{fill:none;stroke:#176b91;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.proto-arm{stroke:#b8c7c5;stroke-width:3}.proto-arm.moving-arm{stroke:#176b91}.proto-arm.moving-arm.is-focus{stroke:#f3c96d;stroke-width:6}.proto-output{stroke:#9fc9d5}.proto-splitter{fill:#e8d9b7;stroke:#cdb98d}.proto-mirror{fill:#142b3a;transition:y .45s ease}.proto-mirror.moving{fill:#f3c96d}.proto-source,.proto-detector{fill:#176b91}.proto-labels{opacity:0;transition:opacity .35s ease}.proto-labels.show{opacity:1}.proto-labels text{fill:#142b3a;font:14px ui-monospace,monospace}.proto-labels .moving-label{fill:#b17f23}.proto-bracket{stroke:#f3c96d;stroke-width:2;stroke-dasharray:5 6;fill:none}.proto-opd-label{fill:#b17f23;font:18px Georgia,serif}.proto-formula{margin:2px auto 0;color:#b17f23;font:clamp(20px,2.2vw,30px) ui-monospace,monospace;text-align:center}.proto-caption{text-align:center;color:#617175;font:clamp(16px,1.45vw,21px) Georgia,serif;margin-top:4px}.encoding-prototype{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;max-width:1080px;margin:auto}.encoding-plot{min-width:0}.encoding-readout{border-left:1px solid #d9cdbf;padding-left:24px;min-width:145px;color:#718087;font:12px ui-monospace,monospace}.encoding-readout strong{display:block;font-size:30px;color:#142b3a;margin:8px 0}.encoding-readout small{display:block;color:#b17f23}.story-replay,.story-auto{font-size:12px!important;color:#718087!important;padding:7px 9px!important}.story-replay:hover,.story-auto:hover{color:#176b91!important}
-@media(prefers-reduced-motion:reduce){.proto-mirror,.proto-labels{transition:none}.story-deck.visible .beam-path,.story-deck.visible .beam-return,.story-deck.visible .moving{animation:none}.proto-caption{transition:none}}
-@media(max-width:700px){.encoding-prototype{grid-template-columns:1fr;gap:8px}.encoding-readout{border-left:0;border-top:1px solid #d9cdbf;padding:8px 0;display:flex;gap:14px;align-items:baseline}.encoding-readout strong{display:inline;font-size:24px}.encoding-readout small{display:inline}.motion-prototype svg{max-height:300px}}
+body[data-view=story] {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: var(--bg-backdrop);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  color: var(--ink-navy);
+}
 
-/* The guided course is a presentation surface, not a page inside the old app chrome. */
-body[data-view=story]{background:#f4f0e6;overflow:hidden}
-body[data-view=story] .home-header,body[data-view=story] .site-header,body[data-view=story] .sidebar,body[data-view=story] footer{display:none}
-body[data-view=story] .shell{display:block;max-width:none;width:100vw;height:100vh}
-body[data-view=story] main{padding:0;width:100%;height:100%;max-width:none;margin:0}
-body[data-view=story] #content{width:100%;height:100%;padding:0}
-body[data-view=story] .story-deck{width:100%;height:100%;max-height:none;min-height:0;aspect-ratio:auto;border:0;box-shadow:none;padding:clamp(30px,4vw,72px) clamp(36px,7vw,140px) 42px;overflow:hidden}
-body[data-view=story] .story-heading h1{font-size:clamp(34px,4.2vw,72px);max-width:1100px}
-body[data-view=story] .story-scene-frame{min-height:0;height:clamp(290px,43vh,540px);display:flex;flex-direction:column;justify-content:center}
-body[data-view=story] .story-scene-frame.active{opacity:1}body[data-view=story] .story-scene-frame.leaving{opacity:0;transform:translateY(8px)}
-body[data-view=story] .story-next{position:absolute;left:clamp(36px,7vw,140px);right:clamp(36px,7vw,140px);bottom:22px;margin:0}
-body[data-view=story] .story-finding{position:absolute;left:clamp(36px,7vw,140px);bottom:75px;margin:0;max-width:900px}
-body[data-view=story] #storyDeep{display:none}
-@media(max-width:760px){body[data-view=story]{overflow:auto}body[data-view=story] .story-deck{height:auto;min-height:100svh;padding:24px 20px 82px}body[data-view=story] .story-scene-frame{height:auto;min-height:340px}body[data-view=story] .story-finding{position:static;margin:14px 0}.story-deck-progress{margin-bottom:6px}}
+body[data-view=story] .home-header,
+body[data-view=story] .site-header,
+body[data-view=story] .sidebar,
+body[data-view=story] footer {
+  display: none !important;
+}
 
-/* Scene 01: a single editorial focus, with the molecule carrying the explanation. */
-body[data-view=story] .story-chapters,body[data-view=story] .story-steps{display:none}
-body[data-view=story] .story-deck-progress{margin-bottom:clamp(24px,4vh,54px);font-size:12px;color:#526873}
-body[data-view=story] .story-deck-progress span{color:#142b3a;letter-spacing:.14em}
-body[data-view=story] .story-heading{margin:0 0 clamp(12px,2vh,28px);max-width:1120px}
-body[data-view=story] .story-heading p{display:none}
-body[data-view=story] .story-heading h1{font-size:clamp(40px,5.2vw,88px);line-height:1.08;margin:0;letter-spacing:-.055em}
-body[data-view=story] .scene-01 .story-scene-frame{height:clamp(360px,54vh,610px);display:block}
-body[data-view=story] .scene-01 .story-finding{bottom:84px;font-size:clamp(20px,2vw,30px);font-family:Georgia,'Times New Roman',serif;color:#142b3a;border:0}
-.molecular-layout{display:grid;grid-template-columns:minmax(270px,.65fr) minmax(520px,1.8fr);gap:clamp(36px,7vw,130px);align-items:center;height:100%}
-.molecular-copy{align-self:center;max-width:360px}.molecular-kicker{font:11px ui-monospace,monospace;letter-spacing:.14em;color:#526873;margin:0 0 22px}.molecular-brief{font:clamp(18px,1.65vw,25px) Georgia,'Times New Roman',serif;line-height:1.55;color:#142b3a;margin:0 0 36px}.molecular-modes{display:flex;flex-direction:column;align-items:flex-start;gap:7px}.molecular-modes button{border:0;border-bottom:1px solid transparent;border-radius:0;background:none;padding:8px 0;color:#526873;font-size:16px}.molecular-modes button[aria-pressed=true]{color:#168b7c;border-bottom-color:#168b7c}.molecular-status{display:flex;align-items:baseline;gap:12px;margin-top:42px}.molecular-status strong{font:17px ui-monospace,monospace;letter-spacing:.08em}.molecular-status span{color:#526873;font-size:14px}.status-active{color:#168b7c}.status-inactive{color:#526873}
-.molecular-stage{min-width:0;align-self:center}.molecular-stage .story-diagram{max-width:none}.molecular-stage .story-diagram svg{width:100%;max-height:420px}.molecular-stage label{display:block;width:min(420px,80%);margin:24px auto 5px;color:#526873;font-size:13px}.molecular-stage input[type=range]{display:block;width:min(420px,80%);margin:0 auto;accent-color:#168b7c}.molecular-stage .story-diagram svg text{fill:#142b3a;font:18px system-ui}.molecular-stage .story-diagram svg .dipole-label{font-size:18px;font-weight:600}.molecular-stage .story-diagram svg .dipole-label.active{fill:#168b7c}.molecular-stage .story-diagram svg circle{filter:none}
-@media(max-width:800px){.molecular-layout{grid-template-columns:1fr;gap:14px;height:auto}.molecular-copy{max-width:none}.molecular-brief{margin-bottom:16px}.molecular-modes{flex-direction:row;gap:24px}.molecular-status{margin-top:18px}.molecular-stage .story-diagram svg{max-height:270px}.molecular-stage label,.molecular-stage input[type=range]{width:100%}body[data-view=story] .scene-01 .story-finding{position:static;margin-top:18px}}
-@media(max-width:1100px){.molecular-layout{grid-template-columns:1fr;gap:18px}.molecular-copy{max-width:720px}.molecular-brief{max-width:620px}.molecular-modes{flex-direction:row;gap:26px}.molecular-status{margin-top:20px}.molecular-stage .story-diagram svg{max-height:300px}}
+body[data-view=story] .shell,
+body[data-view=story] main,
+body[data-view=story] #content {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-width: none;
+  overflow: hidden;
+}
+
+.theater-viewport {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: radial-gradient(circle at 50% 48%, #f0ece3 0%, #dcd6c8 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+/* Fixed 16:9 Virtual Theater Stage (1600 × 900) */
+.theater-stage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1600px;
+  height: 900px;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center center;
+  background: var(--bg-ivory);
+  color: var(--ink-navy);
+  overflow: hidden;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer; /* Whole stage is clickable to advance */
+  border: 1px solid #dcd5c7;
+  border-radius: 8px;
+  box-shadow: 0 24px 64px -16px rgba(13, 27, 42, 0.14), 0 0 1px 1px rgba(13, 27, 42, 0.06);
+}
+
+/* ==========================================================================
+   ZONE 1: TOP ZONE (0 to 110px) - Minimal, Chinese-First
+   ========================================================================== */
+.theater-header {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--hairline-solid);
+  box-sizing: border-box;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.theater-kicker {
+  height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 500 13px system-ui, sans-serif;
+  letter-spacing: .05em;
+  color: var(--ink-subtle);
+  margin-bottom: 4px;
+}
+
+.theater-kicker-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.theater-kicker-left span b {
+  color: var(--science-blue);
+  font-weight: 700;
+}
+
+.theater-dot-sep {
+  color: var(--ink-muted);
+}
+
+.theater-exit-btn {
+  font: 500 12px system-ui, sans-serif;
+  color: var(--ink-subtle);
+  background: #f4efe6;
+  border: 1px solid #d4cdc1;
+  border-radius: 4px;
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: all .15s ease;
+  pointer-events: auto;
+}
+
+.theater-exit-btn:hover {
+  background: #ebe4d8;
+  color: var(--ink-navy);
+}
+
+.theater-title {
+  margin: 0;
+  font: 600 28px/1.25 Georgia, "Songti SC", "SimSun", serif;
+  color: var(--ink-navy);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ==========================================================================
+   ZONE 2: CENTRAL VISUAL STAGE (100px to 780px, height: 680px, width: 1480px)
+   ========================================================================== */
+.theater-visual {
+  position: absolute;
+  left: 60px;
+  top: 100px;
+  width: 1480px;
+  height: 680px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+/* ==========================================================================
+   ZONE 3: BOTTOM CONCLUSION ZONE (780px to 900px, height: 120px)
+   ========================================================================== */
+.theater-footer {
+  position: absolute;
+  left: 60px;
+  right: 60px;
+  top: 780px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  border-top: 1px solid var(--hairline-solid);
+  box-sizing: border-box;
+  z-index: 15;
+  pointer-events: none;
+}
+
+.theater-takeaway-wrap {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+}
+
+.theater-takeaway {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--ink-navy);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.theater-takeaway strong {
+  color: var(--science-blue);
+  font-weight: 600;
+}
+
+/* Subtle corner controls: No big PPT buttons! */
+.theater-aux-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  pointer-events: auto;
+}
+
+.theater-hint-next {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--science-blue);
+  background: var(--science-blue-light);
+  border: 1px solid rgba(29, 91, 148, 0.2);
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all .15s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.theater-hint-next:hover {
+  background: #deebf7;
+  border-color: var(--science-blue);
+}
+
+.theater-btn-back {
+  font-size: 13px;
+  color: var(--ink-subtle);
+  background: transparent;
+  border: 1px solid #d4cdc1;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+
+.theater-btn-back:hover {
+  background: #f4efe6;
+  color: var(--ink-navy);
+}
+
+/* ==========================================================================
+   SCENE 01: 4-COLUMN MOLECULAR VIBRATION (CLEAN COMPARISON)
+   ========================================================================== */
+.mol-4col-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mol-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 10px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #e8e3d8;
+  border-radius: 8px;
+  transition: opacity 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.mol-col.dimmed {
+  opacity: 0.28;
+}
+
+.mol-col.active {
+  opacity: 1;
+  border-color: #b5cde2;
+  box-shadow: 0 8px 24px -6px rgba(29, 91, 148, 0.12);
+}
+
+.mol-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  text-align: center;
+}
+
+.mol-mol {
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-subtle);
+  letter-spacing: 0.05em;
+}
+
+.mol-mode {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-navy);
+}
+
+.mol-card-svg {
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+}
+
+.mol-verdict {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  text-align: center;
+  padding-top: 10px;
+  border-top: 1px solid #eee9de;
+  width: 90%;
+}
+
+.mol-dipole-val {
+  font-family: ui-monospace, monospace;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .02em;
+}
+
+.mol-ir-status {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.status-active .mol-dipole-val { color: var(--science-blue); }
+.status-active .mol-ir-status { color: var(--science-blue); }
+
+.status-inactive .mol-dipole-val { color: var(--ink-muted); }
+.status-inactive .mol-ir-status { color: var(--ink-muted); }
+
+/* ==========================================================================
+   SCENE 02: DETECTOR DILEMMA
+   ========================================================================== */
+.det-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.det-chart-box {
+  height: 520px;
+  background: #fff;
+  border: 1px solid #e8e3d8;
+  border-radius: 8px;
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.det-chart-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.det-chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--ink-navy);
+}
+
+.det-switch-btn {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--science-blue);
+  background: var(--science-blue-light);
+  border: 1px solid #bfd7ec;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .15s ease;
+}
+
+.det-switch-btn:hover {
+  background: #d9e9f7;
+}
+
+.det-meter-box {
+  height: 520px;
+  background: #fff;
+  border: 1px solid #e8e3d8;
+  border-radius: 8px;
+  padding: 36px 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.det-meter-label {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--ink-subtle);
+  margin-bottom: 20px;
+}
+
+.det-meter-value {
+  font-family: ui-monospace, monospace;
+  font-size: 72px;
+  font-weight: 800;
+  color: var(--science-blue);
+  line-height: 1;
+  margin-bottom: 24px;
+}
+
+.det-meter-desc {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--ink-subtle);
+  max-width: 440px;
+  margin: 0;
+}
+
+/* ==========================================================================
+   SCENE 03: 3D INSTRUMENT (NO BLANK, FULL RESPONSIVE)
+   ========================================================================== */
+.theater-3d-host {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: radial-gradient(circle at 50% 50%, #fdfcf9 0%, #f2ede4 100%);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.theater-3d-host canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.th3d-camera-bar {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 20;
+}
+
+.th3d-cam-btn {
+  padding: 7px 14px;
+  font-size: 13px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #d4cdc1;
+  border-radius: 4px;
+  color: var(--ink-navy);
+  cursor: pointer;
+  transition: all .15s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.th3d-cam-btn.active {
+  background: var(--science-blue);
+  color: #fff;
+  border-color: var(--science-blue);
+}
+
+.theater-3d-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 24px;
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(8px);
+  padding: 12px 20px;
+  border-radius: 6px;
+  border: 1px solid #e2dacd;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.theater-3d-overlay strong {
+  font-size: 16px;
+  color: var(--ink-navy);
+}
+
+.theater-3d-overlay small {
+  font-size: 13px;
+  color: var(--ink-subtle);
+}
+
+/* 3D Hotspot Badges - Prominent, clean, scientific */
+.theater-3d-host .model-hotspot {
+  position: absolute;
+  z-index: 25;
+  transform: translate(-50%, -100%);
+  display: flex !important;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1.5px solid var(--science-blue);
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(13, 27, 42, 0.14);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-navy);
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.theater-3d-host .model-hotspot i {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--amber-gold);
+}
+
+.theater-3d-host .model-hotspot span {
+  display: inline-block !important;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-navy);
+}
+
+.theater-3d-host .model-hotspot[hidden] {
+  display: none !important;
+}
+
+/* Silent Mode Support */
+.theater-viewport.silent-mode .theater-footer,
+.theater-viewport.silent-mode .theater-3d-overlay,
+.theater-viewport.silent-mode .det-meter-desc,
+.theater-viewport.silent-mode .det-chart-head small {
+  display: none !important;
+}
+
+/* Top View Light Pulse Overlay */
+.th3d-pulse-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* ==========================================================================
+   SCENE 04: MICHELSON OPTICAL & FORMULA DERIVATION
+   ========================================================================== */
+.michelson-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   SCENE 05: INTERFEROGRAM FORMATION
+   ========================================================================== */
+.ifg-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   SCENE 06: FOURIER RECOVERY 3-STAGE VISUAL EXPLAINER (3Blue1Brown Inspired)
+   ========================================================================== */
+.fourier-3col-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 46% 22% 32%;
+  gap: 16px;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 6px 0;
+}
+
+.fourier-col {
+  background: #ffffff;
+  border: 1px solid #e8e3d8;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.fourier-col-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.fourier-col-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--ink-navy);
+}
+
+.fourier-col-tag {
+  font-size: 12px;
+  font-family: ui-monospace, monospace;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f4f1ea;
+  color: #556770;
+}
+
+.fourier-col-tag.tag-amber {
+  background: #fdf5ea;
+  color: #c47c2b;
+  border: 1px solid rgba(196, 124, 43, 0.25);
+}
+
+.fourier-col-tag.tag-blue {
+  background: #eef5fb;
+  color: #1d5b94;
+  border: 1px solid rgba(29, 91, 148, 0.25);
+}
+
+/* Middle Accumulator Column */
+.fourier-meter-box {
+  margin-top: auto;
+  padding: 12px;
+  background: #fbfaf7;
+  border: 1px solid #e8e3d8;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fourier-meter-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #556770;
+}
+
+.fourier-meter-val {
+  font-family: ui-monospace, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink-navy);
+}
+
+.fourier-meter-track {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background: #e8e4db;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.fourier-meter-center {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #889aa8;
+  z-index: 2;
+}
+
+.fourier-meter-bar {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  left: 50%;
+  background: #1d5b94;
+  transition: width 0.35s cubic-bezier(0.2, 0.8, 0.3, 1), left 0.35s cubic-bezier(0.2, 0.8, 0.3, 1), background-color 0.3s;
+}
+
+.fourier-meter-bar.match-resonance {
+  background: #c47c2b;
+  box-shadow: 0 0 10px rgba(196, 124, 43, 0.5);
+}
+
+.fourier-probe-card {
+  border: 1px solid #eedfc9;
+  border-radius: 6px;
+  background: #fffdf9;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.resonance-glow {
+  animation: fourierResonance 1s ease infinite alternate;
+}
+
+@keyframes fourierResonance {
+  from { stroke-width: 3px; filter: drop-shadow(0 0 2px rgba(196, 124, 43, 0.4)); }
+  to { stroke-width: 4.5px; filter: drop-shadow(0 0 8px rgba(196, 124, 43, 0.8)); }
+}
+
+/* ==========================================================================
+   SCENE 07: RATIO & ABSORBANCE
+   ========================================================================== */
+.ratio-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   SCENE 08: REAL REFERENCE FINGERPRINT
+   ========================================================================== */
+.fingerprint-layout {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 30px;
+  align-items: center;
+}
+
+/* ==========================================================================
+   SCENE 09: FULL SCIENTIFIC FLOW MAP (NO CARDS, CLEAN FLOW)
+   ========================================================================== */
+.summary-flow-layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ==========================================================================
+   INTRO + CLOSURE · CONTINUOUS CAUSAL SCENES
+   ========================================================================== */
+.n1-continuous,
+.n2-continuous,
+.n9-continuous {
+  width: 100%;
+  height: 100%;
+  color: var(--ink-navy);
+}
+
+.n1-continuous svg,
+.n2-continuous svg,
+.n9-continuous > svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.n1-eyebrow,
+.n1-mode,
+.n2-title,
+.n9-real-label {
+  fill: var(--ink-navy);
+  font-size: 24px;
+  font-weight: 750;
+  letter-spacing: .01em;
+}
+
+.n1-small,
+.n2-subtitle,
+.n9-subtitle,
+.n9-axis-label,
+.n9-tick {
+  fill: var(--ink-subtle);
+  font-size: 17px;
+}
+
+.n1-blue { fill: var(--science-blue); font-weight: 700; }
+.n1-gold { fill: #9a621f; font-weight: 700; }
+.n1-atom,
+.n9-atom {
+  fill: #fff;
+  font-size: 25px;
+  font-weight: 800;
+  text-anchor: middle;
+}
+
+.n1-motion,
+.n9-mode-arrow {
+  stroke: var(--science-blue);
+  stroke-width: 5;
+}
+
+.n1-dipole {
+  stroke: #c47c2b;
+  stroke-width: 5;
+}
+
+.n1-result {
+  fill: var(--science-blue);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.n1-status {
+  fill: var(--ink-subtle);
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.n1-formula {
+  fill: var(--ink-navy);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.n1-question,
+.n2-question {
+  fill: var(--ink-navy);
+  font-size: 25px;
+  font-weight: 720;
+}
+
+.n2-subtitle { font-size: 18px; }
+.n2-wave-label,
+.n2-value {
+  fill: var(--ink-subtle);
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 20px;
+  font-weight: 650;
+}
+
+.n2-value { fill: var(--ink-navy); font-size: 23px; }
+.n2-detector-label { fill: var(--ink-navy); font-size: 22px; font-weight: 720; }
+.n2-total { fill: var(--science-blue); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 25px; font-weight: 800; }
+.n2-bridge { fill: #9a621f; font-size: 17px; font-weight: 650; }
+
+.n9-real-label { font-size: 21px; letter-spacing: .08em; }
+.n9-subtitle { font-size: 17px; }
+.n9-axis { fill: none; stroke: #87959d; stroke-width: 2; }
+.n9-axis-label { font-size: 16px; }
+.n9-tick { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 15px; }
+.n9-peak-label { fill: #9a621f; font-family: ui-monospace, SFMono-Regular, Consolas, monospace; font-size: 17px; font-weight: 800; }
+.n9-mode-title { fill: var(--ink-navy); font-size: 24px; font-weight: 760; }
+.n9-explain { fill: var(--ink-subtle); font-size: 18px; }
+.n9-warning { fill: #9a621f; font-size: 18px; font-weight: 760; }
+.n9-load-status { fill: #9a621f; font-size: 18px; font-weight: 700; }
+.n9-chain-label { fill: var(--ink-navy); font-size: 18px; font-weight: 700; }
+.n9-final-answer { fill: var(--ink-navy); font-size: 24px; font-weight: 760; }
+
+#n2-question {
+  transition: opacity .28s ease;
+}
+
+#n1-bond-dipoles,
+#n1-net-dipole,
+#n1-energy-path,
+#n1-formula,
+#n1-result,
+#n1-question,
+#n9-mode-link,
+#n9-causal-chain {
+  transition: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #n1-bond-dipoles,
+  #n1-net-dipole,
+  #n1-energy-path,
+  #n1-formula,
+  #n1-result,
+  #n1-question,
+  #n2-question,
+  #n9-mode-link,
+  #n9-causal-chain { transition: none !important; }
+}
+
+/* Visual refactor pass: typography and stage hierarchy at classroom scale. */
+.theater-title { font-size: 44px; line-height: 1.12; letter-spacing: -.025em; }
+.theater-kicker { font-size: 16px; letter-spacing: .08em; }
+.theater-takeaway { font-size: 27px; line-height: 1.25; max-width: 1080px; }
+.theater-hint-next { font-size: 17px; padding: 8px 16px; }
+.theater-stage { border-radius: 0; box-shadow: 0 24px 70px -18px rgba(13,27,42,.18); }
+.theater-visual svg text { font-size: 18px; }
+.theater-visual svg .axis-label, .theater-visual svg .tick-label { font-size: 16px; }
+.michelson-layout svg rect[fill="#ffffff"], .ratio-layout svg rect[fill="#fff"] { fill: transparent; stroke: none; }
+.michelson-layout svg text { font-size: 18px; }
+.michelson-layout svg #formulaCard text:last-child { font-size: 30px; }
+.po-stage svg text { font-size: 18px; }
+.mol-4col-grid > * { background: transparent !important; border: 0 !important; box-shadow: none !important; }
+.mol-4col-grid { gap: 42px; }
+.fourier-3col-layout { display:grid; grid-template-columns: 1.35fr 1fr 1.1fr; gap: 48px; width:100%; height:100%; align-items:stretch; }
+.fourier-col { background: transparent; border: 0; border-radius: 0; padding: 0; min-width:0; }
+.fourier-col-header { border-bottom: 1px solid var(--hairline-solid); padding: 0 0 14px; margin-bottom: 20px; }
+.fourier-col-title { font-size: 24px; color: var(--ink-navy); }
+.fourier-col-tag { font-size: 15px; }
+.fourier-probe-card, .fourier-meter-box { background: transparent; border: 0; border-bottom: 1px solid var(--hairline-solid); border-radius: 0; padding: 16px 0; }
+.fingerprint-layout { grid-template-columns: 1fr; gap: 18px; }
+.fingerprint-layout > div:first-child { background: transparent !important; border: 0 !important; padding: 8px 0 !important; }
+.fingerprint-layout > div:last-child { background: transparent !important; border: 0 !important; padding: 0 !important; height: auto !important; flex-direction:row !important; justify-content:flex-start !important; gap:24px; text-align:left !important; }
+.fingerprint-layout > div:last-child svg { width:120px !important; height:120px !important; }
+.fingerprint-layout > div:last-child p { max-width:620px; font-size:18px !important; }
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation-duration:.001ms !important; transition-duration:.001ms !important; } }

@@ -1,0 +1,169 @@
+{
+  "status": "Preview mix; not mastered or perceptually certified",
+  "sources": [
+    {
+      "part": 1,
+      "duration": 129.9069387755102,
+      "sampleRate": 44100,
+      "channels": 2,
+      "rmsDb": -14.273521375019273,
+      "peakDb": -0.06678927904741645,
+      "leadingBelow45dB": 2.7,
+      "trailingBelow45dB": 2.7,
+      "clippedSamples": 0,
+      "attackProxyPerSecond": 1.0007163683893021
+    },
+    {
+      "part": 2,
+      "duration": 128.6269387755102,
+      "sampleRate": 44100,
+      "channels": 2,
+      "rmsDb": -14.268085230035723,
+      "peakDb": -0.19650413263677116,
+      "leadingBelow45dB": 1.9,
+      "trailingBelow45dB": 2.7,
+      "clippedSamples": 0,
+      "attackProxyPerSecond": 1.00290033509342
+    },
+    {
+      "part": 3,
+      "duration": 96.10739229024944,
+      "sampleRate": 44100,
+      "channels": 2,
+      "rmsDb": -14.303738760959753,
+      "peakDb": -0.00026507636037961915,
+      "leadingBelow45dB": 0.0,
+      "trailingBelow45dB": 1.3,
+      "clippedSamples": 2,
+      "attackProxyPerSecond": 0.9988825803334138
+    }
+  ],
+  "sourceRanges": [
+    [
+      3.0,
+      127.5
+    ],
+    [
+      1.2,
+      126.4
+    ],
+    [
+      0.5,
+      94.5
+    ]
+  ],
+  "sourceOrder": [
+    1,
+    2,
+    3
+  ],
+  "crossfadeSeconds": 5,
+  "crossfadePictureRanges": [
+    [
+      119.5,
+      124.5
+    ],
+    [
+      266,
+      271
+    ]
+  ],
+  "textureRepeat": {
+    "part": 2,
+    "sourceJump": [
+      111.3,
+      80
+    ],
+    "crossfadePictureRange": [
+      225.6,
+      230.6
+    ],
+    "addedSeconds": 26.3
+  },
+  "fullSilence": [],
+  "nearSilence": [],
+  "baseGain": 0.22,
+  "startFadeSeconds": 4,
+  "endFadeSeconds": 5,
+  "duration": 360,
+  "sampleRate": 44100,
+  "mixPeakDb": -13.151811765850676,
+  "limitations": "Objective decode/envelope checks only; no claim of human audition or melody/vocal assessment.",
+  "exportChecks": {
+    "formerQuietWindows": [
+      {
+        "window": [
+          39.5,
+          44
+        ],
+        "rmsDb": -26.218723343117325
+      },
+      {
+        "window": [
+          64.5,
+          67
+        ],
+        "rmsDb": -30.427018214750554
+      },
+      {
+        "window": [
+          84,
+          88
+        ],
+        "rmsDb": -26.608825218218758
+      },
+      {
+        "window": [
+          104,
+          108
+        ],
+        "rmsDb": -24.597390508906916
+      },
+      {
+        "window": [
+          160,
+          167
+        ],
+        "rmsDb": -24.98041284185989
+      },
+      {
+        "window": [
+          235.4359,
+          240.2821
+        ],
+        "rmsDb": -24.987692160721252
+      },
+      {
+        "window": [
+          128,
+          134
+        ],
+        "rmsDb": -35.176014715480875
+      },
+      {
+        "window": [
+          152,
+          156
+        ],
+        "rmsDb": -25.44705210005597
+      },
+      {
+        "window": [
+          262.359,
+          270.795
+        ],
+        "rmsDb": -27.93560195319204
+      },
+      {
+        "window": [
+          334,
+          341
+        ],
+        "rmsDb": -27.783040440798217
+      }
+    ],
+    "videoPacketsAndTimestampsIdentical": true,
+    "originalMusicHashesUnchanged": true,
+    "exportedAudioPeakDb": -13.021150588989258
+  }
+}
